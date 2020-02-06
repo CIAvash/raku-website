@@ -1,0 +1,40 @@
+<div class="highlight"><pre><span></span><span class="k">sub</span> <span class="n">MAIN</span>(
+    <span class="nb">Str</span>   <span class="nv">$file</span> <span class="k">where</span> *.<span class="nb">IO</span>.<span class="n">f</span> = <span class="s">&#39;file.dat&#39;</span>,  <span class="c1">#= an existing file to frobnicate </span>
+    <span class="nb">Int</span>  :<span class="n">size</span>(:<span class="nv">$length</span>) = <span class="mi">24</span>,              <span class="c1">#= length/size needed for frobnication </span>
+    <span class="nb">Bool</span> :<span class="nv">$verbose</span>,                         <span class="c1">#= required verbosity </span>
+) {
+    <span class="nb">say</span> <span class="nv">$length</span> <span class="k">if</span> <span class="nv">$length</span>.<span class="nb">defined</span>;
+    <span class="nb">say</span> <span class="nv">$file</span>   <span class="k">if</span> <span class="nv">$file</span>.<span class="nb">defined</span>;
+    <span class="nb">say</span> <span class="s">&#39;Verbosity &#39;</span>, (<span class="nv">$verbose</span> ?? <span class="s">&#39;on&#39;</span> !! <span class="s">&#39;off&#39;</span>);
+}
+
+<span class="c1"># $ script-name</span>
+<span class="c1"># Usage:</span>
+<span class="c1"># script-name [--size|--length=&lt;Int&gt;] [--verbose] [&lt;file&gt;]</span>
+   
+<span class="c1">#    [&lt;file&gt;]                 an existing file to frobnicate</span>
+<span class="c1">#    --size|--length=&lt;Int&gt;    length/size needed for frobnication</span>
+<span class="c1">#    --verbose                required verbosity</span>
+
+<span class="c1"># $ perl6 frobnicate.p6 --verbose</span>
+<span class="c1"># 24</span>
+<span class="c1"># file.dat</span>
+<span class="c1"># Verbosity on</span>
+
+<span class="c1"># Another example with multi MAIN</span>
+<span class="k">multi</span> <span class="n">MAIN</span> (<span class="s">&#39;install&#39;</span>, <span class="nb">Str</span> <span class="nv">$something</span>, <span class="nb">Bool</span> :<span class="nv">$force</span>) {
+    <span class="nb">say</span> <span class="s">&quot;Installing $something {&#39;by force&#39; if $force}&quot;</span>;
+}
+
+<span class="k">multi</span> <span class="n">MAIN</span> (<span class="s">&#39;run&#39;</span>, <span class="nb">Str</span> <span class="nv">$something</span>) {
+    <span class="nb">say</span> <span class="s">&quot;Running $something&quot;</span>;
+}
+
+<span class="c1"># $ script-name</span>
+<span class="c1"># Usage:</span>
+<span class="c1"># script-name [--force] install &lt;something&gt;</span>
+<span class="c1"># script-name run &lt;something&gt;</span>
+
+<span class="c1"># $ script-name --force install raku</span>
+<span class="c1"># Installing raku by force</span>
+</pre></div>

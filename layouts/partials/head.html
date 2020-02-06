@@ -1,0 +1,33 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>{{if (eq .Kind "home") }} {{ $.Site.Title }} {{ else }} {{ i18n "raku" }} - {{ .Title }}{{ end }}</title>
+  <meta name="description" content="{{ $.Site.Title }}">
+
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="/assets/css/highlight.atom.css">
+  
+  {{ if (eq $.Site.Language.Lang "en") }}
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  {{ end }}
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  {{ if (eq $.Site.Language.Lang "fa") }}
+  <link rel="stylesheet" href="/assets/css/bootstrap.rtl.min.css">
+  {{ end }}
+
+  {{ $style := resources.Get "sass/main.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.Permalink }}">
+
+  {{ if (eq $.Site.Language.Lang "fa") }}
+  {{ $rtlstyle := resources.Get "sass/rtl.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $rtlstyle.Permalink }}"> 
+  {{ $fastyle := resources.Get "sass/fa.scss" | toCSS | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $fastyle.Permalink }}">
+  {{ end }}
+  
+
+  <link rel="alternate" type="application/rss+xml" href="{{ "/blog/index.xml" | relLangURL }}" title="Raku core blog">
+</head>

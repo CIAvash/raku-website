@@ -1,0 +1,21 @@
+{{ define "header" }}
+<header class="jumbotron">
+  <h1>{{ .CurrentSection.Title }}</h1>
+  {{ with .CurrentSection.Params.description }}<p class="lead">{{.}}</p>{{ end }}
+</header>
+{{ end }}
+
+{{ define "main" }}
+<article>
+  <header>
+    <h2 class="section-heading">{{ .Title }}</h2>
+    <div class="article-meta">
+      <span class="article-author">{{ with .Params.author }}by {{.}} • {{ end }}</span>
+      {{ with .Date }}
+      <time datetime="{{.Format "2006-01-02"}}">{{.Format "Jan 2, 2006"}}</time>
+      {{ end }}
+    </div>
+  </header>
+  {{ .Content }}
+</article>
+{{ end }}

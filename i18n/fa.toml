@@ -1,0 +1,185 @@
+[raku]
+other = "راکو"
+
+[raku_programming_language]
+other = "زبان برنامه‌نویسی راکو"
+
+[raku_description]
+other = "یک زبان برنامه‌نویسی قدرتمند، سرشار از ویژگی، چندالگویی"
+
+[download]
+other = "دانلود"
+
+[why_raku]
+other = "چرا راکو؟"
+
+[card_hello]
+other = "راحتی نوشتن"
+
+[card_hello_desc]
+other = "به دنیا سلام بگو!"
+
+[card_objectoriented]
+other = "برنامه‌نویسی شی‌گرا"
+
+[card_objectoriented_desc]
+other = "استفاده از کلاس‌ها و رول‌ها و مولتی‌دیسپچ با سینتکس راحت و زیبا"
+
+[card_functional]
+other = "برنامه‌نویسی تابعی"
+
+[card_functional_desc]
+other = "لیست‌های کندرو، سیکوئنس‌های بی‌نهایت، جانکشن‌ها و اپراتورهای فید، ترکیب تابع، متا و هایپر"
+
+[card_grammars]
+other = "گرامرها و عبارات باقاعده"
+
+[card_grammars_desc]
+other = "گرامرها برای تجزیه و پارس کردن راحت داده‌ها و عبارات باقاعده از نو ساخته شده"
+
+[card_async]
+other = "async و کانکارنسی سطح بالا"
+
+[card_async_desc]
+other = "استفاده از تایپ‌های Promise، Supply، Channel و بلاکهای supply، react و whenever"
+
+[card_unicode]
+other = "پشتیبانی عالی از یونیکد"
+
+[card_unicode_desc]
+other = "پشتیبانی یونیکد بر اساس گرافیم"
+
+[card_types]
+other = "تایپ‌ها"
+
+[card_types_desc]
+other = "تایپ‌گذاری تدریجی اختیاری و تایپ‌‌های نیتیو"
+
+[card_cli]
+other = "رابط خط فرمان"
+
+[card_cli_desc]
+other = "ایجاد آسان رابط خط فرمان، در دسترس به وسیله تابع MAIN و تولید خودکار پیام نحوه استفاده"
+
+[card_native]
+other = "رابطه با کتابخانه‌های خارجی"
+
+[card_native_desc]
+other = "رابطه با زبان‌های C/C++ به وسیله NativeCall و رابطه با زبان‌های دیگر به وسیله ماژول‌های Inline::*"
+
+[card_version]
+other = "نسخه زبان برنامه‌نویسی"
+
+[card_version_desc]
+other = "نسخه زبان برنامه‌نویسی را برای استفاده مشخص کنید"
+
+[card_mutable]
+other = "زبان تغییرپذیر"
+
+[card_mutable_desc]
+other = "توابع، اپراتورها، traitها و دیتاتایپ‌های خود را تعریف کنید"
+
+[card_batteries]
+other = "به همراه باتری‌ها"
+
+[card_batteries_desc]
+other = "مجموعه وسیعی از دیتاتایپ‌ها و اپراتورها در دسترسند"
+
+[card_error]
+other = "پیغام‌های خطا"
+
+[card_error_desc]
+other = "پیغام‌های خطای مطلوب زمان کامپایل و زمان اجرا"
+
+[card_backends]
+other = "Backendها"
+
+[card_backends_desc]
+other = "روی back-endهای مختلفی اجرا می‌شود. در حال حاضر MoarVM، JVM و جاوااسکریپت در حال توسعه هستند"
+
+[resources]
+other = "منابع"
+
+[guides]
+other = "راهنماها"
+
+[raku_guide]
+other = "راهنمای راکو"
+
+[books]
+other = "کتاب‌ها"
+
+[new_to_programming]
+other = "ناآشنا به برنامه‌نویسی هستید؟"
+
+[comming_from_another_pl]
+other = "از زبان برنامه‌نویسی دیگری می‌آیید؟"
+
+[if_comming_from_another_pl]
+other = "اگر از زبان برنامه‌نویسی دیگری می‌آیید، <a href=\"https://docs.raku.org/language.html#Migration_guides\">این مستندات</a> ممکن است به شما کمک کنند:"
+
+[python]
+other = "پایتون"
+
+[javascript]
+other = "جاوااسکریپت"
+
+[ruby]
+other = "روبی"
+
+[haskell]
+other = "هسکل"
+
+[perl]
+other = "پرل"
+
+[using_inline_modules]
+other = "اگر می‌خواهید از زبان‌های برنامه‌نوسی دیگر و کتابخانه‌های آنها داخل راکو استفاده کنید، می‌توانید از ماژول‌های Inline::* استفاده کنید، مانند:"
+
+[community]
+other = "کامیونیتی"
+
+[irc]
+other = "آی‌آر‌سی"
+
+[logs]
+other = "لاگ‌ها"
+
+[matrix]
+other = "ماتریکس"
+
+[room]
+other = "اتاق"
+
+[proprietary]
+other = "انحصاری"
+
+[discord]
+other = "دیسکورد"
+
+[raku_server]
+other = "سرور راکو"
+
+[social_media]
+other = "شبکه‌های اجتماعی"
+
+[twitter]
+other = "توئیتر"
+
+[reddit]
+other = "ردیت"
+
+[github]
+other = "گیت‌هاب"
+
+[stack_overflow]
+other = "استگ اورفلو"
+
+[rss]
+other = "آراس‌اس"
+
+[blog_feed]
+other = "فید بلاگ"
+
+[language]
+other = "زبان"

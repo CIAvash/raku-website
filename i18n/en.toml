@@ -1,0 +1,191 @@
+[raku]
+other = "Raku"
+
+[raku_programming_language]
+other = "Raku Programming Language"
+
+[raku_description]
+other = "A powerful, feature-rich, multi-paradigm programming language"
+
+[download]
+other = "Download"
+
+[why_raku]
+other = "Why Raku?"
+
+[card_hello]
+other = "Easy to write"
+
+[card_hello_desc]
+other = "Say hello to the world!"
+
+[card_objectoriented]
+other = "Object-oriented programming"
+
+[card_objectoriented_desc]
+other = "Using classes and roles and multiple dispatch with a nice and easy syntax"
+
+[card_functional]
+other = "Functional programming"
+
+[card_functional_desc]
+other = "Lazy lists, infinite sequences, junctions and feed, function composition, meta and hyper operators"
+
+[card_grammars]
+other = "Grammars and Regex"
+
+[card_grammars_desc]
+other = "Grammars for easily parsing data with new re-thought regular expressions"
+
+[card_async]
+other = "High-level async & concurrency"
+
+[card_async_desc]
+other = "Using Promise, Supply, Channel types and supply, react and whenever blocks"
+
+[card_unicode]
+other = "Excellent Unicode Support"
+
+[card_unicode_desc]
+other = "Full Grapheme based unicode support"
+
+[card_types]
+other = "Types"
+
+[card_types_desc]
+other = "Optional gradual typing and native data types"
+
+[card_cli]
+other = "Command-Line Interface"
+
+[card_cli_desc]
+other = "Easy command-line interface, accessible by MAIN subroutine with multiple dispatch and automated usage message generation"
+
+[card_native]
+other = "Interfacing to external libraries"
+
+[card_native_desc]
+other = "Interfacing to C/C++ with NativeCall and others with Inline::* modules"
+
+[card_version]
+other = "Language Version"
+
+[card_version_desc]
+other = "Specify which version of the language to use"
+
+[card_mutable]
+other = "Mutable Language"
+
+[card_mutable_desc]
+other = "Define your own functions, operators, traits and data-types"
+
+[card_batteries]
+other = "Batteries included"
+
+[card_batteries_desc]
+other = "Large selection of data-types and operators are available"
+
+[card_error]
+other = "Error messages"
+
+[card_error_desc]
+other = "Nice compile-time and run-time error messages"
+
+[card_backends]
+other = "Backends"
+
+[card_backends_desc]
+other = "Runs on a variety of back-ends. Currently MoarVM & JVM, JavaScript in development"
+
+[resources]
+other = "Resources"
+
+[guides]
+other = "Guides"
+
+[raku_guide]
+other = "Raku Guide"
+
+[learn_raku_in_y_minutes]
+other = "Learn Raku in Y Minutes"
+
+[books]
+other = "Books"
+
+[new_to_programming]
+other = "New to programming?"
+
+[think_raku]
+other = "Think Raku"
+
+[comming_from_another_pl]
+other = "Comming from another programming language?"
+
+[if_comming_from_another_pl]
+other = "If you are comming from another programming language, <a href=\"https://docs.raku.org/language.html#Migration_guides\">these documentations</a> may be of help to you:"
+
+[python]
+other = "Python"
+
+[javascript]
+other = "JavaScript"
+
+[ruby]
+other = "Ruby"
+
+[haskell]
+other = "Haskell"
+
+[perl]
+other = "Perl"
+
+[using_inline_modules]
+other = "If you want to use other programming languages and their libraries inside Raku, you can use Inline::* modules, such as:"
+
+[community]
+other = "Community"
+
+[irc]
+other = "IRC"
+
+[logs]
+other = "logs"
+
+[matrix]
+other = "Matrix"
+
+[room]
+other = "Room"
+
+[proprietary]
+other = "Proprietary"
+
+[discord]
+other = "Discord"
+
+[raku_server]
+other = "Raku server"
+
+[social_media]
+other = "Social Media"
+
+[twitter]
+other = "Twitter"
+
+[reddit]
+other = "Reddit"
+
+[github]
+other = "GitHub"
+
+[stack_overflow]
+other = "Stack Overflow"
+
+[rss]
+other = "RSS"
+
+[blog_feed]
+other = "Blog feed"
+
+[language]
+other = "Language"

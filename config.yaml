@@ -1,0 +1,96 @@
+DefaultContentLanguage: en
+permalinks:
+  blog: /:section/:year/:month/:day/:filename/
+languages:
+  en:
+    contentDir: content/en
+    languageName: English
+    title: Raku Programming Language
+    menu:
+      main:
+        - identifier: downloads
+          name: Download
+          url: /downloads/
+          weight: 1
+        - identifier: documentation
+          name: Documentation
+          url: https://docs.raku.org/
+          weight: 2
+        - identifier: resources
+          name: Resources
+          url: /resources/
+          weight: 3
+        - identifier: community
+          name: Community
+          url: /community/
+          weight: 4
+        - identifier: blog
+          name: Blog
+          url: /blog/
+          weight: 5
+        - identifier: modules
+          name: Modules
+          url: https://modules.raku.org/
+          weight: 6
+        - identifier: fun
+          name: Fun
+          url: /fun/
+          weight: 7
+        - identifier: whatever
+          name: Whatever
+          url: /whatever/
+          weight: 8
+        - identifier: faq
+          name: FAQ
+          url: https://docs.raku.org/language/faq
+          weight: 9
+        - identifier: about
+          name: About
+          url: /about
+          weight: 10
+  fa:
+    contentDir: content/fa
+    languageName: فارسی
+    title: زبان برنامه‌نویسی راکو
+    menu:
+      main:
+        - identifier: downloads
+          name: دانلود
+          url: /fa/downloads/
+          weight: 1
+        - identifier: documentation
+          name: مستندات
+          url: https://docs.raku.org/
+          weight: 2
+        - identifier: resources
+          name: منابع
+          url: /fa/resources/
+          weight: 3
+        - identifier: community
+          name: کامیونیتی
+          url: /fa/community/
+          weight: 4
+        - identifier: blog
+          name: بلاگ
+          url: /fa/blog/
+          weight: 5
+        - identifier: modules
+          name: ماژول‌ها
+          url: https://modules.raku.org/
+          weight: 6
+        - identifier: fun
+          name: فان
+          url: /fa/fun/
+          weight: 7
+        # - identifier: whatever
+        #   name: Whatever
+        #   url: /fa/whatever/
+        #   weight: 8
+        - identifier: faq
+          name: پرسش‌های متداول
+          url: https://docs.raku.org/language/faq
+          weight: 9
+        - identifier: about
+          name: درباره
+          url: /fa/about
+          weight: 10

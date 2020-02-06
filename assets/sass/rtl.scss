@@ -1,0 +1,39 @@
+body {
+    direction: rtl;
+    text-align: right;
+}
+
+.navbar {
+    .logo {
+        transform: rotate(15deg);
+    }
+
+    a[href*="//"]::after {
+        margin-left: 0;
+        margin-right: 3px;
+    }
+}
+
+.accordion-input:checked {
+    ~ .accordion-content {
+        .highlight {
+            direction: ltr;
+            text-align: left;
+
+            @media (min-width: 992px) {
+                right: 3px;
+                left: auto;
+            }
+        }
+    }
+
+    ~ .accordion-button .card {
+        &::before {
+            content: '<';
+            position: absolute;
+            right: -18px;
+            left: auto;
+            top: 12px;
+        }
+    }
+}

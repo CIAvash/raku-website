@@ -1,0 +1,296 @@
+{{ define "header"}}
+<header class="jumbotron">
+  <h1>{{ i18n "raku_programming_language" }}</h1>
+  <p class="lead">{{ i18n "raku_description" }}</p>
+  <a href="" class="btn btn-primary">{{ i18n "download" }}</a>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<div class="row">
+  <div class="col-lg-12">
+    <section id="why-raku" class="accordion">
+      <h2 class="section-heading">{{ i18n "why_raku" }}</h2>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-hello" class="accordion-input" checked>
+        <label for="accordion-input-hello" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_hello" }}</h3>
+              <p class="card-text">{{ i18n "card_hello_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/hello_world.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-objectoriented" class="accordion-input">
+        <label for="accordion-input-objectoriented" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_objectoriented" }}</h3>
+              <p class="card-text">{{ i18n "card_objectoriented_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/object-oriented.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-functional" class="accordion-input">
+        <label for="accordion-input-functional" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_functional" }}</h3>
+              <p class="card-text">{{ i18n "card_functional_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/functional.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-grammars" class="accordion-input">
+        <label for="accordion-input-grammars" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_grammars" }}</h3>
+              <p class="card-text">{{ i18n "card_grammars_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/grammars.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-async" class="accordion-input">
+        <label for="accordion-input-async" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_async" }}</h3>
+              <p class="card-text">{{ i18n "card_async_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/async.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-unicode" class="accordion-input">
+        <label for="accordion-input-unicode" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_unicode" }}</h3>
+              <p class="card-text">{{ i18n "card_unicode_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/unicode.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-types" class="accordion-input">
+        <label for="accordion-input-types" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_types" }}</h3>
+              <p class="card-text">{{ i18n "card_types_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/types.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-cli" class="accordion-input">
+        <label for="accordion-input-cli" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_cli" }}</h3>
+              <p class="card-text">{{ i18n "card_cli_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/cli.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-native" class="accordion-input">
+        <label for="accordion-input-native" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_native" }}</h3>
+              <p class="card-text">{{ i18n "card_native_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/nativecall.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-version" class="accordion-input">
+        <label for="accordion-input-version" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_version" }}</h3>
+              <p class="card-text">{{ i18n "card_version_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/version.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-mutable" class="accordion-input">
+        <label for="accordion-input-mutable" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_mutable" }}</h3>
+              <p class="card-text">{{ i18n "card_mutable_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/mutable.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-batteries" class="accordion-input">
+        <label for="accordion-input-batteries" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_batteries" }}</h3>
+              <p class="card-text">{{ i18n "card_batteries_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/batteries.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-error" class="accordion-input">
+        <label for="accordion-input-error" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_error" }}</h3>
+              <p class="card-text">{{ i18n "card_error_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          {{ readFile "/code_examples/error.html" | safeHTML }}
+        </div>
+      </div>
+      <div class="accordion-item">
+        <input type="radio" name="accordion-input" id="accordion-input-backends" class="accordion-input">
+        <label for="accordion-input-backends" class="accordion-button">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title h5">{{ i18n "card_backends" }}</h3>
+              <p class="card-text">{{ i18n "card_backends_desc" }}</p>
+            </div>
+          </div>
+        </label>
+        <div class="accordion-content">
+          
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <section id="resources">
+      <h2 class="section-heading">{{ i18n "resources" }}</h2>
+      <h3>{{ i18n "guides" }}</h3>
+      <ul>
+        <li><a href="https://raku.guide/">{{ i18n "raku_guide" }}</a></li>
+        <li><a href="https://learnxinyminutes.com/docs/raku/">{{ i18n "learn_raku_in_y_minutes" }}</a></li>
+      </ul>
+      <!-- <h3>Examples</h3>
+           <ul>
+           <li><a href="https://rosettacode.org/wiki/Category:Perl_6">Rosetta Code</a></li>
+           <li><a href="https://examples.perl6.org/">Raku Examples</a></li>
+           </ul> -->
+      <h3>{{ i18n "books" }}</h3>
+      <h4>{{ i18n "new_to_programming" }}</h4>
+      <ul>
+        <li><a href="https://github.com/LaurentRosenfeld/think_raku">{{ i18n "think_raku" }}</a></li>
+      </ul>
+      <!-- <h3>Try online</h3> -->
+      <h3>{{ i18n "comming_from_another_pl" }}</h3>
+      <p>{{ i18n "if_comming_from_another_pl" | safeHTML }}
+        <br>
+        <a href="https://docs.raku.org/language/py-nutshell">{{ i18n "python" }}</a>,
+        <a href="https://docs.raku.org/language/js-nutshell">{{ i18n "javascript" }}</a>,
+        <a href="https://docs.raku.org/language/rb-nutshell">{{ i18n "ruby" }}</a>,
+        <a href="https://docs.raku.org/language/haskell-to-p6">{{ i18n "haskell" }}</a>,
+        <a href="https://docs.raku.org/language/5to6-overview">{{ i18n "perl" }}</a>
+      </p>
+      <p>{{ i18n "using_inline_modules" }}
+        <br>
+        <a href="https://github.com/niner/Inline-Python">Inline::Python</a>,
+        <a href="https://github.com/niner/Inline-Perl5">Inline::Perl</a>,
+        <a href="https://modules.raku.org/dist/Inline::Go:cpan:AZAWAWI">Inline::Go</a>,
+        <a href="https://github.com/awwaiid/p6-Inline-Ruby">Inline::Ruby</a>,
+        <a href="https://github.com/raydiak/Inline-Lua">Inline::Lua</a>
+      </p>
+    </section>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <section id="community">
+      <h2 class="section-heading">{{ i18n "community" }}</h2>
+      <ul>
+        <li>{{ i18n "irc" }}: <a href="https://webchat.freenode.net/?channels=raku&nick=">#raku</a>, <a href="http://colabti.org/irclogger/irclogger_log/raku">{{ i18n "logs" }}</a></li>
+        <li>{{ i18n "matrix" }}:
+          <ul>
+            <li>{{ i18n "room" }}: <a href="https://matrix.to/#/#freenode_#raku:matrix.org">#freenode_#raku:matrix.org</a></li>
+            <li>{{ i18n "community" }}: <a href="https://matrix.to/#/+raku:matrix.org">+raku:matrix.org</a></li>
+          </ul>
+        </li>
+        <li>{{ i18n "proprietary" }}:
+          <ul>
+            <li>{{ i18n "discord" }}: <a href="https://discord.gg/VzYpdQ6">{{ i18n "raku_server" }}</a></li>
+          </ul>
+      </ul>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section id="social-media">
+      <h2 class="section-heading">{{ i18n "social_media" }}</h2>
+      <ul>
+        <li>{{ i18n "twitter" }}: <a href="https://twitter.com/raku_news">@raku_news</a>, <a href="https://twitter.com/hashtag/rakulang">#rakulang</a></li>
+        <li>{{ i18n "reddit" }}: <a href="https://www.reddit.com/r/rakulang/">r/rakulang</a></li>
+        <li>{{ i18n "github" }}: <a href="https://github.com/Raku">@Raku</a></li>
+        <li>{{ i18n "stack_overflow" }}: <a href="https://stackoverflow.com/questions/tagged/raku">[raku]</a></li>
+        <li>{{ i18n "rss" }}: <a href="{{ "/blog/index.xml" | relLangURL }}">{{ i18n "blog_feed" }}</a></li>
+      </ul>
+    </section>
+  </div>
+  <div class="col-md-4">
+    <section id="language">
+      <h2 class="section-heading">{{ i18n "language" }}</h2>
+      <ul>
+        {{ range $.Site.Home.AllTranslations }}
+        <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
+        {{ end }}
+      </ul>
+    </section>
+  </div>
+</div>
+{{ .Content }}
+{{ end }}

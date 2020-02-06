@@ -1,0 +1,33 @@
+<div class="highlight"><pre><span></span><span class="c1"># Promise</span>
+<span class="k">my</span> <span class="nv">$promise</span> = <span class="n">start</span> {
+    <span class="k">my</span> <span class="nv">$i</span> = <span class="mi">0</span>;
+    <span class="k">for</span> <span class="mi">1</span> .. <span class="mi">10</span> {
+        <span class="nv">$i</span> += <span class="nv">$_</span>
+    }
+    <span class="nv">$i</span>
+}
+<span class="k">my</span> <span class="nv">$result</span> = <span class="n">await</span> <span class="nv">$promise</span>;
+<span class="nb">say</span> <span class="nv">$result</span>;
+<span class="c1"># OUTPUT: 55</span>
+
+<span class="c1"># Supply</span>
+<span class="k">my</span> <span class="nv">$bread-supplier</span> = <span class="n">Supplier</span>.<span class="nb">new</span>;
+<span class="k">my</span> <span class="nv">$vegetable-supplier</span> = <span class="n">Supplier</span>.<span class="nb">new</span>;
+
+<span class="k">my</span> <span class="nv">$supply</span> = <span class="n">supply</span> {
+    <span class="n">whenever</span> <span class="nv">$bread-supplier</span>.<span class="n">Supply</span> {
+        <span class="n">emit</span>(<span class="s">&quot;We&#39;ve got bread: &quot;</span> ~ <span class="nv">$_</span>);
+    };
+    <span class="n">whenever</span> <span class="nv">$vegetable-supplier</span>.<span class="n">Supply</span> {
+        <span class="n">emit</span>(<span class="s">&quot;We&#39;ve got a vegetable: &quot;</span> ~ <span class="nv">$_</span>);
+    };
+}
+<span class="nv">$supply</span>.<span class="n">tap</span>(-&gt; <span class="nv">$v</span> { <span class="nb">say</span> <span class="s">&quot;$v&quot;</span> });
+
+<span class="nv">$vegetable-supplier</span>.<span class="n">emit</span>(<span class="s">&quot;Radish&quot;</span>);
+<span class="c1"># OUTPUT: «We&#39;ve got a vegetable: Radish␤» </span>
+<span class="nv">$bread-supplier</span>.<span class="n">emit</span>(<span class="s">&quot;Thick sliced&quot;</span>);
+<span class="c1"># OUTPUT: «We&#39;ve got bread: Thick sliced␤» </span>
+<span class="nv">$vegetable-supplier</span>.<span class="n">emit</span>(<span class="s">&quot;Lettuce&quot;</span>);
+<span class="c1"># OUTPUT: «We&#39;ve got a vegetable: Lettuce␤» </span>
+</pre></div>

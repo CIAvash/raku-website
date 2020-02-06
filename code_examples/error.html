@@ -1,0 +1,10 @@
+<div class="highlight"><pre><span></span><span class="k">sub</span> <span class="n">add</span> (<span class="nb">Int</span> <span class="nv">$a</span>, <span class="nb">Int</span> <span class="nv">$b</span>) {
+    <span class="nv">$a</span> + <span class="nv">$b</span>
+}
+
+<span class="n">add</span> <span class="s">&#39;string&#39;</span>;
+<span class="c1"># ===SORRY!=== Error while compiling error.p6</span>
+<span class="c1"># Calling add(Str) will never work with declared signature (Int $a, Int $b)</span>
+<span class="c1"># at file.p6:5</span>
+<span class="c1"># ------&gt; &lt;BOL&gt;⏏add &#39;string&#39;;</span>
+</pre></div>

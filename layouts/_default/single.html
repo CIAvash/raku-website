@@ -1,0 +1,10 @@
+{{ define "header" }}
+<header class="jumbotron">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<p class="lead">{{.}}</p>{{ end }}
+</header>
+{{ end }}
+
+{{ define "main" }}
+{{ .Content }}
+{{ end }}

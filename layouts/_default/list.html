@@ -1,0 +1,27 @@
+{{ define "header" }}
+<header class="jumbotron">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}<p class="lead">{{.}}</p>{{ end }}
+</header>
+{{ end }}
+
+{{ define "main" }}
+{{ .Content }}
+{{ range .Pages }}
+<article>
+  <header>
+    <h2 class="section-heading"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    <div class="article-meta">
+      <span class="article-author">{{ with .Params.author }}by {{.}} • {{ end }}</span>
+      {{ with .Date }}
+      <time datetime="{{.Format "2006-01-02"}}">{{.Format "Jan 2, 2006"}}</time>
+      {{ end }}
+    </div>
+  </header>
+  {{ .Summary }}
+  <footer>
+    <a href="{{ .Permalink }}">Read More»</a>
+  </footer>
+</article>
+{{ end }}
+{{ end }}
