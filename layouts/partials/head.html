@@ -27,6 +27,8 @@
   {{ $fastyle := resources.Get "sass/fa.scss" | toCSS | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $fastyle.Permalink }}">
   {{ end }}
+
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
   
 
   <link rel="alternate" type="application/rss+xml" href="{{ "/blog/index.xml" | relLangURL }}" title="Raku core blog">
