@@ -112,10 +112,10 @@ other = "کتاب‌ها"
 [new_to_programming]
 other = "ناآشنا به برنامه‌نویسی هستید؟"
 
-[comming_from_another_pl]
+[coming_from_another_pl]
 other = "از زبان برنامه‌نویسی دیگری می‌آیید؟"
 
-[if_comming_from_another_pl]
+[if_coming_from_another_pl]
 other = "اگر از زبان برنامه‌نویسی دیگری می‌آیید، <a href=\"https://docs.raku.org/language.html#Migration_guides\">این مستندات</a> ممکن است به شما کمک کنند:"
 
 [python]

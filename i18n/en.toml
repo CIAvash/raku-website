@@ -118,11 +118,11 @@ other = "New to programming?"
 [think_raku]
 other = "Think Raku"
 
-[comming_from_another_pl]
+[coming_from_another_pl]
 other = "Comming from another programming language?"
 
-[if_comming_from_another_pl]
-other = "If you are comming from another programming language, <a href=\"https://docs.raku.org/language.html#Migration_guides\">these documentations</a> may be of help to you:"
+[if_coming_from_another_pl]
+other = "If you are coming from another programming language, <a href=\"https://docs.raku.org/language.html#Migration_guides\">these documentations</a> may be of help to you:"
 
 [python]
 other = "Python"
