@@ -118,6 +118,9 @@ other = "New to programming?"
 [think_raku]
 other = "Think Raku"
 
+[try_online]
+other = "Try Online"
+
 [coming_from_another_pl]
 other = "Coming from another programming language?"
 

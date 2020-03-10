@@ -112,6 +112,9 @@ other = "کتاب‌ها"
 [new_to_programming]
 other = "ناآشنا به برنامه‌نویسی هستید؟"
 
+[try_online]
+other = "آنلاین امتحان کنید"
+
 [coming_from_another_pl]
 other = "از زبان برنامه‌نویسی دیگری می‌آیید؟"
 
