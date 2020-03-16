@@ -109,6 +109,9 @@ other = "Raku Guide"
 [learn_raku_in_y_minutes]
 other = "Learn Raku in Y Minutes"
 
+[examples]
+other = "Examples"
+
 [books]
 other = "Books"
 

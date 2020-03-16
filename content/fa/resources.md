@@ -13,7 +13,7 @@ title: منابع
 {{</col>}}
 {{<col "md-4">}}
 {{<section id="CodeExamples" heading="نمونه کدها">}}
-- [Rosetta Code](https://rosettacode.org/wiki/Category:Perl_6)، مسائل برنامه‌نویسی حل شده به وسیله راکو در کنار صدها زبان دیگر
+- [Rosetta Code](https://rosettacode.org/wiki/Category:Raku)، مسائل برنامه‌نویسی حل شده به وسیله راکو در کنار صدها زبان دیگر
 - [Raku Examples](https://examples.perl6.org/)، نمونه برنامه‌های نوشته شده در راکو
 {{</section>}}
 {{</col>}}

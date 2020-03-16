@@ -14,7 +14,7 @@ description: The Raku community provides a wide range of resources in different 
 {{</col>}}
 {{<col "md-4">}}
 {{<section id="CodeExamples" heading="Code Examples">}}
-- [Rosetta Code](https://rosettacode.org/wiki/Category:Perl_6), programming problems solved in Raku side-by-side with hundreds of other languages
+- [Rosetta Code](https://rosettacode.org/wiki/Category:Raku), programming problems solved in Raku side-by-side with hundreds of other languages
 - [Raku Examples](https://examples.perl6.org/), lots of example programs written in Raku
 {{</section>}}
 {{</col>}}
