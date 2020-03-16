@@ -69,9 +69,6 @@ description: The Raku community provides a wide range of resources in different 
 - [Available Raku compilers](/compilers/)
 {{</section>}}
 {{</col>}}
-{{</row>}}
-
-{{<row>}}
 {{<col "md-4">}}
 {{<section id="PromoteRaku" heading="Promote Raku">}}
 - [Marketing materials](https://marketing.raku.org/)
