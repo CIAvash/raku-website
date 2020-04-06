@@ -29,11 +29,12 @@ body {
 
     ~ .accordion-button .card {
         &::before {
-            content: '<';
-            position: absolute;
-            right: -18px;
-            left: auto;
-            top: 12px;
+            display: none;
+            // content: '<';
+            // position: absolute;
+            // right: -18px;
+            // left: auto;
+            // top: 12px;
         }
     }
 }
