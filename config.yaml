@@ -1,4 +1,4 @@
-DefaultContentLanguage: en
+DefaultContentLanguage: fa
 permalinks:
   blog: /:section/:year/:month/:day/:filename/
 languages:
