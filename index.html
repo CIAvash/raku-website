@@ -1,0 +1,253 @@
+<!doctype html><html lang=fa><head><meta name=generator content="Hugo 0.81.0"><meta charset=utf-8><meta name=viewport content="width=device-width"><title>زبان برنامه‌نویسی راکو</title><meta name=description content="زبان برنامه‌نویسی راکو"><link rel=stylesheet href=/assets/css/bootstrap.min.css><link rel=stylesheet href=/assets/css/highlight.atom.css><link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel=stylesheet><link rel=stylesheet href=/assets/css/bootstrap.rtl.min.css><link rel=stylesheet href=/sass/main.min.2d8cd1590fea5951e514d00bd426d57ce85ffd0d6189d8e88281beee41652659.css><link rel=stylesheet href=/sass/rtl.min.88e456b25175f0a0f732c5c5442ea714ad010439b5d05ea03378a637e3171e51.css><link rel=stylesheet href=/sass/fa.min.3c6781bf64141e8471ab59a4e89cfebacb5fcc5900009911fd751ec25dc6cd22.css><link href=/favicon.ico rel="shortcut icon" type=image/x-icon><link rel=alternate type=application/rss+xml href=/blog/index.xml title="Raku core blog"></head><body><div class=container-sm><nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class=navbar-brand href=/><img class=logo src=/assets/img/Camelia.svg width=64px height=64px alt="Camelia Logo">راکو</a><ul class="navbar-nav navbar-collapse"><li class=nav-item><a class=nav-link href=/fa/downloads/>دانلود</a></li><li class=nav-item><a class=nav-link href=https://docs.raku.org/>مستندات</a></li><li class=nav-item><a class=nav-link href=/fa/resources/>منابع</a></li><li class=nav-item><a class=nav-link href=/fa/community/>کامیونیتی</a></li><li class=nav-item><a class=nav-link href=/fa/blog/>بلاگ</a></li><li class=nav-item><a class=nav-link href=https://modules.raku.org/>ماژول‌ها</a></li><li class=nav-item><a class=nav-link href=/fa/fun/>فان</a></li><li class=nav-item><a class=nav-link href=https://docs.raku.org/language/faq>پرسش‌های متداول</a></li><li class=nav-item><a class=nav-link href=/fa/about>درباره</a></li></ul></nav><header class=jumbotron><h1>زبان برنامه‌نویسی راکو</h1><p class=lead>یک زبان برنامه‌نویسی قدرتمند، سرشار از ویژگی، چندالگویی</p><a href=/downloads class="btn btn-primary">دانلود</a></header><main id=content><div class=row><div class=col-lg-12><section id=why-raku class=accordion><h2 class=section-heading>چرا راکو؟</h2><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-hello class=accordion-input checked>
+<label for=accordion-input-hello class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">راحتی نوشتن</h3><p class=card-text>به دنیا سلام بگو!</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=nb>say</span> <span class=s>&#39;Hello World&#39;</span>;
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-objectoriented class=accordion-input>
+<label for=accordion-input-objectoriented class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">برنامه‌نویسی شی‌گرا</h3><p class=card-text>استفاده از کلاس‌ها و رول‌ها و مولتی‌دیسپچ با سینتکس راحت و زیبا</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=c1># Multiple dispatch</span>
+<span class=k>multi</span> <span class=k>sub</span> <span class=n>fib</span> (<span class=mi>0</span> --&gt; <span class=mi>0</span>) {}
+<span class=k>multi</span> <span class=k>sub</span> <span class=n>fib</span> (<span class=mi>1</span> --&gt; <span class=mi>1</span>) {}
+<span class=k>multi</span> <span class=k>sub</span> <span class=n>fib</span> (\<span class=n>n</span> <span class=k>where</span> * &gt; <span class=mi>1</span>) {
+    <span class=n>fib</span>(<span class=n>n</span> - <span class=mi>1</span>) + <span class=n>fib</span>(<span class=n>n</span> - <span class=mi>2</span>)
+}
+<span class=nb>say</span> <span class=n>fib</span> <span class=mi>10</span>;
+<span class=c1># OUTPUT: 55</span>
+
+<span class=c1># Roles and classes</span>
+<span class=k>role</span> <span class=n>Shape</span> {
+    <span class=k>method</span> <span class=n>area</span> { ... }
+
+    <span class=k>method</span> <span class=n>print_area</span> {
+        <span class=nb>say</span> <span class=s>&quot;Area of {self.^name} is {self.area}.&quot;</span>;
+    }
+}
+
+<span class=k>class</span> <span class=n>Rectangle</span> <span class=nb>does</span> <span class=n>Shape</span> {
+    <span class=k>has</span> <span class=nv>$.width</span> <span class=k>is</span> <span class=k>required</span>;
+    <span class=k>has</span> <span class=nv>$.height</span> <span class=k>is</span> <span class=k>required</span>;
+
+    <span class=k>method</span> <span class=n>area</span> {
+        <span class=nv>$!width</span> * <span class=nv>$!height</span>
+    }
+}
+
+<span class=n>Rectangle</span>.<span class=nb>new</span>(<span class=n>width</span> =&gt; <span class=mi>5</span>, <span class=n>height</span> =&gt; <span class=mi>7</span>).<span class=n>print_area</span>;
+<span class=c1># OUTPUT: Area of Rectangle is 35.</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-functional class=accordion-input>
+<label for=accordion-input-functional class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">برنامه‌نویسی تابعی</h3><p class=card-text>لیست‌های کندرو، سیکوئنس‌های بی‌نهایت، جانکشن‌ها و اپراتورهای فید، ترکیب تابع، متا و هایپر</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=c1># Inifinite and lazy list</span>
+<span class=k>my</span> <span class=nv>@fib</span> = <span class=mi>0</span>, <span class=mi>1</span>, * + * ... ∞;
+<span class=nb>say</span> <span class=nv>@fib</span>[^<span class=mi>11</span>];
+<span class=c1># OUTPUT: (0 1 1 2 3 5 8 13 21 34 55)</span>
+
+<span class=c1># Feed operator</span>
+<span class=nv>@fib</span>[^<span class=mi>20</span>] ==&gt; <span class=nb>grep</span>(<span class=nv>&amp;is-prime</span>) ==&gt; <span class=nb>say</span>();
+<span class=c1># OUTPUT: (2 3 5 13 89 233 1597)</span>
+
+<span class=c1># Function composition</span>
+<span class=k>my</span> <span class=nv>&amp;reverse_primes</span> = <span class=nv>&amp;reverse</span> ∘ <span class=nv>&amp;grep</span>.<span class=nb>assuming</span>(<span class=nv>&amp;is-prime</span>);
+<span class=nb>say</span> <span class=n>reverse_primes</span> ^<span class=mi>20</span>;
+<span class=c1># OUTPUT: (19 17 13 11 7 5 3 2)</span>
+
+<span class=k>my</span> <span class=nv>@a</span> = <span class=mi>1</span><span class=o>..</span><span class=mi>4</span>;
+<span class=k>my</span> <span class=nv>@b</span> = <span class=s>&#39;a&#39;</span>..<span class=s>&#39;d&#39;</span>;
+<span class=c1># Zip two lists using Z meta operator</span>
+<span class=nb>say</span> <span class=nv>@a</span> <span class=o>Z</span> <span class=nv>@b</span>;
+<span class=c1># OUTPUT: ((1 a) (2 b) (3 c) (4 d))</span>
+<span class=nb>say</span> <span class=nv>@a</span> <span class=o>Z</span>=&gt; <span class=nv>@b</span>;
+<span class=c1># OUTPUT: (1 =&gt; a 2 =&gt; b 3 =&gt; c 4 =&gt; d)</span>
+
+<span class=c1># Hyper Operators</span>
+<span class=nb>say</span> <span class=nv>@b</span> «~» <span class=nv>@a</span>;
+<span class=c1># OUTPUT: [a1 b2 c3 d4]</span>
+
+<span class=c1># Junctions</span>
+<span class=nb>say</span> <span class=s>&#39;Find all the words starting with a lowercase vowel&#39;</span>.<span class=n>words</span>.<span class=n>grep:</span> *.<span class=n>starts-with:</span> <span class=nb>any</span> <span class=s>&lt;a e i o u&gt;</span>;
+<span class=c1># OUTPUT: (all a)</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-grammars class=accordion-input>
+<label for=accordion-input-grammars class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">گرامرها و عبارات باقاعده</h3><p class=card-text>گرامرها برای تجزیه و پارس کردن راحت داده‌ها و عبارات باقاعده از نو ساخته شده</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>grammar</span> <span class=n>INIParser</span> {
+    <span class=k>token</span><span class=n> TOP</span> {<span class=sr> &lt;block&gt; &lt;section&gt;* </span>}
+    <span class=k>token</span><span class=n> section</span> {<span class=sr> &lt;header&gt; &lt;block&gt; </span>}
+    <span class=k>token</span><span class=n> header</span> {<span class=sr> &#39;[&#39; ~ &#39;]&#39; \w+ \n+ </span>}
+    <span class=k>token</span><span class=n> block</span> {<span class=sr> [&lt;pair&gt; | &lt;comment&gt;]* </span>}
+    <span class=k>rule</span><span class=n> pair</span> {<span class=sr> &lt;key&gt; &#39;=&#39; &lt;value&gt; </span>}
+    <span class=k>token</span><span class=n> comment</span> {<span class=sr> &#39;;&#39; \N* \n+ </span>}
+    <span class=k>token</span><span class=n> key</span> {<span class=sr> \w+ </span>}
+    <span class=k>token</span><span class=n> value</span> {<span class=sr> &lt;-[\n ;]&gt;+ </span>}
+}
+
+<span class=k>my</span> <span class=nv>$match</span> = <span class=n>INIParser</span>.<span class=n>parse:</span> <span class=s>q:to/END/;</span>
+<span class=s>; Comment</span>
+<span class=s>key1=value1</span>
+<span class=s>key2 = value2</span>
+
+<span class=s>; Section 1</span>
+<span class=s>[section1]</span>
+<span class=s>key3=value3</span>
+<span class=s>END</span>
+
+
+<span class=nb>say</span> <span class=nv>$match&lt;block&gt;&lt;pair&gt;</span>[<span class=mi>0</span>]<span class=s>&lt;value&gt;</span>;
+<span class=c1># OUTPUT: ｢value1｣</span>
+
+<span class=nb>say</span> <span class=nv>$match&lt;section&gt;</span>[<span class=mi>0</span>]<span class=s>&lt;block&gt;&lt;pair&gt;</span>[<span class=mi>0</span>]<span class=s>&lt;value&gt;</span>;
+<span class=c1># OUTPUT: ｢value3｣</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-async class=accordion-input>
+<label for=accordion-input-async class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">async و کانکارنسی سطح بالا</h3><p class=card-text>استفاده از تایپ‌های Promise، Supply، Channel و بلاکهای supply، react و whenever</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=c1># Promise</span>
+<span class=k>my</span> <span class=nv>$promise</span> = <span class=n>start</span> {
+    <span class=k>my</span> <span class=nv>$i</span> = <span class=mi>0</span>;
+    <span class=k>for</span> <span class=mi>1</span> .. <span class=mi>10</span> {
+        <span class=nv>$i</span> += <span class=nv>$_</span>
+    }
+    <span class=nv>$i</span>
+}
+<span class=k>my</span> <span class=nv>$result</span> = <span class=n>await</span> <span class=nv>$promise</span>;
+<span class=nb>say</span> <span class=nv>$result</span>;
+<span class=c1># OUTPUT: 55</span>
+
+<span class=c1># Supply</span>
+<span class=k>my</span> <span class=nv>$bread-supplier</span> = <span class=n>Supplier</span>.<span class=nb>new</span>;
+<span class=k>my</span> <span class=nv>$vegetable-supplier</span> = <span class=n>Supplier</span>.<span class=nb>new</span>;
+
+<span class=k>my</span> <span class=nv>$supply</span> = <span class=n>supply</span> {
+    <span class=n>whenever</span> <span class=nv>$bread-supplier</span>.<span class=n>Supply</span> {
+        <span class=n>emit</span>(<span class=s>&quot;We&#39;ve got bread: &quot;</span> ~ <span class=nv>$_</span>);
+    };
+    <span class=n>whenever</span> <span class=nv>$vegetable-supplier</span>.<span class=n>Supply</span> {
+        <span class=n>emit</span>(<span class=s>&quot;We&#39;ve got a vegetable: &quot;</span> ~ <span class=nv>$_</span>);
+    };
+}
+<span class=nv>$supply</span>.<span class=n>tap</span>(-&gt; <span class=nv>$v</span> { <span class=nb>say</span> <span class=s>&quot;$v&quot;</span> });
+
+<span class=nv>$vegetable-supplier</span>.<span class=n>emit</span>(<span class=s>&quot;Radish&quot;</span>);
+<span class=c1># OUTPUT: «We&#39;ve got a vegetable: Radish␤» </span>
+<span class=nv>$bread-supplier</span>.<span class=n>emit</span>(<span class=s>&quot;Thick sliced&quot;</span>);
+<span class=c1># OUTPUT: «We&#39;ve got bread: Thick sliced␤» </span>
+<span class=nv>$vegetable-supplier</span>.<span class=n>emit</span>(<span class=s>&quot;Lettuce&quot;</span>);
+<span class=c1># OUTPUT: «We&#39;ve got a vegetable: Lettuce␤» </span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-unicode class=accordion-input>
+<label for=accordion-input-unicode class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">پشتیبانی عالی از یونیکد</h3><p class=card-text>پشتیبانی یونیکد بر اساس گرافیم</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=nb>say</span> <span class=s>&#39;🦋&#39;</span>.<span class=nb>chars</span>;
+<span class=c1># OUTPUT: 1</span>
+<span class=nb>say</span> <span class=s>&#39;🦋&#39;</span>.<span class=nb>codes</span>;
+<span class=c1># OUTPUT: 1</span>
+<span class=nb>say</span> <span class=s>&#39;🦋&#39;</span>.<span class=n>encode</span>.<span class=nb>bytes</span>;
+<span class=c1># OUTPUT: 4</span>
+
+<span class=k>my</span> <span class=nv>$raku</span> = <span class=s>&#39;راکو&#39;</span>;
+<span class=nb>say</span> <span class=nv>$raku</span>.<span class=nb>chars</span>;
+<span class=c1># OUTPUT: 4</span>
+<span class=nb>say</span> <span class=nv>$raku</span>.<span class=n>uninames</span>;
+<span class=c1># OUTPUT: (ARABIC LETTER REH ARABIC LETTER ALEF ARABIC LETTER KEHEH ARABIC LETTER WAW)</span>
+<span class=nb>say</span> <span class=nv>$raku</span>.<span class=nb>comb</span>;
+<span class=c1># OUTPUT: (ر ا ک و)</span>
+<span class=nb>say</span> +<span class=nv>$raku</span>.<span class=nb>comb</span>;
+<span class=c1># OUTPUT: 4</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-types class=accordion-input>
+<label for=accordion-input-types class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">تایپ‌ها</h3><p class=card-text>تایپ‌گذاری تدریجی اختیاری و تایپ‌‌های نیتیو</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>subset</span> <span class=n>ℕ</span> <span class=k>of</span> <span class=nb>Int</span> <span class=k>where</span> * &gt; <span class=mi>0</span>;
+
+<span class=k>sub</span> <span class=n>f</span> (<span class=n>ℕ</span> <span class=nv>$a</span>, <span class=n>ℕ</span> <span class=nv>$b</span> --&gt; <span class=nb>Array</span> <span class=k>of</span> <span class=n>ℕ</span>) {
+    <span class=nb>Array</span>[<span class=n>ℕ</span>].<span class=n>new:</span> <span class=nv>$a²</span>, <span class=nv>$b²</span>;
+}
+
+<span class=nb>say</span> <span class=n>f</span> <span class=mi>1</span>,<span class=mi>2</span>;
+<span class=c1># OUTPUT: [1 4]</span>
+
+<span class=c1># Native Types</span>
+<span class=k>my</span> <span class=nb>int</span> <span class=nv>@a</span> = ^<span class=mi>10_000_000</span>;
+<span class=nb>say</span> [+] <span class=nv>@a</span>;
+<span class=c1># OUTPUT: 49999995000000</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-cli class=accordion-input>
+<label for=accordion-input-cli class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">رابط خط فرمان</h3><p class=card-text>ایجاد آسان رابط خط فرمان، در دسترس به وسیله تابع MAIN و تولید خودکار پیام نحوه استفاده</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>sub</span> <span class=n>MAIN</span>(
+    <span class=nb>Str</span>   <span class=nv>$file</span> <span class=k>where</span> *.<span class=nb>IO</span>.<span class=n>f</span> = <span class=s>&#39;file.dat&#39;</span>,  <span class=c1>#= an existing file to frobnicate </span>
+    <span class=nb>Int</span>  :<span class=n>size</span>(:<span class=nv>$length</span>) = <span class=mi>24</span>,              <span class=c1>#= length/size needed for frobnication </span>
+    <span class=nb>Bool</span> :<span class=nv>$verbose</span>,                         <span class=c1>#= required verbosity </span>
+) {
+    <span class=nb>say</span> <span class=nv>$length</span> <span class=k>if</span> <span class=nv>$length</span>.<span class=nb>defined</span>;
+    <span class=nb>say</span> <span class=nv>$file</span>   <span class=k>if</span> <span class=nv>$file</span>.<span class=nb>defined</span>;
+    <span class=nb>say</span> <span class=s>&#39;Verbosity &#39;</span>, (<span class=nv>$verbose</span> ?? <span class=s>&#39;on&#39;</span> !! <span class=s>&#39;off&#39;</span>);
+}
+
+<span class=c1># $ script-name</span>
+<span class=c1># Usage:</span>
+<span class=c1># script-name [--size|--length=&lt;Int&gt;] [--verbose] [&lt;file&gt;]</span>
+   
+<span class=c1>#    [&lt;file&gt;]                 an existing file to frobnicate</span>
+<span class=c1>#    --size|--length=&lt;Int&gt;    length/size needed for frobnication</span>
+<span class=c1>#    --verbose                required verbosity</span>
+
+<span class=c1># $ perl6 frobnicate.p6 --verbose</span>
+<span class=c1># 24</span>
+<span class=c1># file.dat</span>
+<span class=c1># Verbosity on</span>
+
+<span class=c1># Another example with multi MAIN</span>
+<span class=k>multi</span> <span class=n>MAIN</span> (<span class=s>&#39;install&#39;</span>, <span class=nb>Str</span> <span class=nv>$something</span>, <span class=nb>Bool</span> :<span class=nv>$force</span>) {
+    <span class=nb>say</span> <span class=s>&quot;Installing $something {&#39;by force&#39; if $force}&quot;</span>;
+}
+
+<span class=k>multi</span> <span class=n>MAIN</span> (<span class=s>&#39;run&#39;</span>, <span class=nb>Str</span> <span class=nv>$something</span>) {
+    <span class=nb>say</span> <span class=s>&quot;Running $something&quot;</span>;
+}
+
+<span class=c1># $ script-name</span>
+<span class=c1># Usage:</span>
+<span class=c1># script-name [--force] install &lt;something&gt;</span>
+<span class=c1># script-name run &lt;something&gt;</span>
+
+<span class=c1># $ script-name --force install raku</span>
+<span class=c1># Installing raku by force</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-native class=accordion-input>
+<label for=accordion-input-native class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">رابطه با کتابخانه‌های خارجی</h3><p class=card-text>رابطه با زبان‌های C/C++ به وسیله NativeCall و رابطه با زبان‌های دیگر به وسیله ماژول‌های Inline::*</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=c1># Using NativeCall to access libnotify and show a notification</span>
+<span class=k>use</span> <span class=n>NativeCall</span>;
+
+<span class=k>sub</span> <span class=n>notify_init</span> (<span class=n>str</span> <span class=nv>$appname</span> --&gt; <span class=nb>int32</span>) <span class=k>is</span> <span class=n>native</span>(<span class=s>&#39;notify&#39;</span>) { * }
+<span class=k>sub</span> <span class=n>notify_uninit</span> <span class=k>is</span> <span class=n>native</span>(<span class=s>&#39;notify&#39;</span>) { * }
+<span class=k>class</span> <span class=n>NotifyNotification</span> <span class=k>is</span> <span class=n>repr</span>(<span class=s>&#39;CPointer&#39;</span>) { * }
+<span class=k>sub</span> <span class=n>notify_notification_new</span> (<span class=n>str</span> <span class=nv>$summary</span>, <span class=n>str</span> <span class=nv>$body</span>, <span class=n>str</span> <span class=nv>$icon</span> --&gt; <span class=n>NotifyNotification</span>) <span class=k>is</span> <span class=n>native</span>(<span class=s>&#39;notify&#39;</span>) { * }
+<span class=k>sub</span> <span class=n>notify_notification_show</span> (<span class=n>NotifyNotification</span>) <span class=k>is</span> <span class=n>native</span>(<span class=s>&#39;notify&#39;</span>) { * }
+
+<span class=k>if</span> <span class=n>notify_init</span> <span class=s>&#39;MyApp&#39;</span> {
+    <span class=n>notify_notification_show</span> <span class=n>notify_notification_new</span> <span class=s>&#39;My Notification&#39;</span>, <span class=s>&#39;Notification Body&#39;</span>, <span class=nb>Str</span>;
+    <span class=n>notify_uninit</span>;
+}
+
+<span class=c1># Using Inline::Python to access python and its libraries</span>
+<span class=k>use</span> <span class=n>Inline::Python</span>;
+<span class=k>my</span> <span class=nv>$py</span> = <span class=n>Inline::Python</span>.<span class=nb>new</span>();
+<span class=nv>$py</span>.<span class=nb>run</span>(<span class=s>&#39;print &quot;hello world&quot;&#39;</span>);
+<span class=c1># OUTPUT: hello world</span>
+
+<span class=c1># Or</span>
+<span class=nb>say</span> <span class=n>EVAL</span>(<span class=s>&#39;1+3&#39;</span>, :<span class=n>lang</span><span class=s>&lt;Python&gt;</span>);
+<span class=c1># OUTPUT: 4</span>
+
+<span class=k>use</span> <span class=n>string:from</span><span class=s>&lt;Python&gt;</span>;
+<span class=nb>say</span> <span class=n>string::capwords</span>(<span class=s>&#39;foo bar&#39;</span>);
+<span class=c1># OUTPUT: Foo Bar</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-version class=accordion-input>
+<label for=accordion-input-version class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">نسخه زبان برنامه‌نویسی</h3><p class=card-text>نسخه زبان برنامه‌نویسی را برای استفاده مشخص کنید</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>use</span> <span class=n>v6</span>.<span class=n>c</span>;
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-mutable class=accordion-input>
+<label for=accordion-input-mutable class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">زبان تغییرپذیر</h3><p class=card-text>توابع، اپراتورها، traitها و دیتاتایپ‌های خود را تعریف کنید</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=c1># TODO: Add operator, slang, macro examples</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-batteries class=accordion-input>
+<label for=accordion-input-batteries class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">به همراه باتری‌ها</h3><p class=card-text>مجموعه وسیعی از دیتاتایپ‌ها و اپراتورها در دسترسند</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=nb>say</span> <span class=n>Date</span>.<span class=n>today</span>.<span class=n>year</span>;
+<span class=c1># Output: 2020</span>
+<span class=nb>say</span> <span class=n>Date</span>.<span class=n>today</span>.<span class=n>later</span>(:<span class=mi>2</span><span class=n>years</span>).<span class=n>year</span>;
+<span class=c1># Output: 2022</span>
+
+<span class=c1># TODO: Add more examples</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-error class=accordion-input>
+<label for=accordion-input-error class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">پیغام‌های خطا</h3><p class=card-text>پیغام‌های خطای مطلوب زمان کامپایل و زمان اجرا</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>sub</span> <span class=n>add</span> (<span class=nb>Int</span> <span class=nv>$a</span>, <span class=nb>Int</span> <span class=nv>$b</span>) {
+    <span class=nv>$a</span> + <span class=nv>$b</span>
+}
+
+<span class=n>add</span> <span class=s>&#39;string&#39;</span>;
+<span class=c1># ===SORRY!=== Error while compiling error.p6</span>
+<span class=c1># Calling add(Str) will never work with declared signature (Int $a, Int $b)</span>
+<span class=c1># at file.p6:5</span>
+<span class=c1># ------&gt; &lt;BOL&gt;⏏add &#39;string&#39;;</span>
+</pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-backends class=accordion-input>
+<label for=accordion-input-backends class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Backendها</h3><p class=card-text>روی back-endهای مختلفی اجرا می‌شود. در حال حاضر MoarVM، JVM و جاوااسکریپت در حال توسعه هستند</p></div></div></label><div class=accordion-content></div></div></section></div></div><div class=row><div class=col-lg-12><section id=resources><h2 class=section-heading>منابع</h2><h3>راهنماها</h3><ul><li><a href=https://raku.guide/>راهنمای راکو</a></li><li><a href=https://learnxinyminutes.com/docs/raku/>Learn Raku in Y Minutes</a></li></ul><h3>مثالها</h3><ul><li><a href=https://rosettacode.org/wiki/Category:Raku>Rosetta Code</a></li></ul><h3>کتاب‌ها</h3><h4>ناآشنا به برنامه‌نویسی هستید؟</h4><ul><li><a href=https://github.com/LaurentRosenfeld/think_raku>Think Raku</a></li></ul><h3>آنلاین امتحان کنید</h3><ul><li><a href=https://glot.io/new/raku>glot.io</a></li><li><a href=https://repl.it/languages/raku>repl.it</a></li></ul><h3>از زبان برنامه‌نویسی دیگری می‌آیید؟</h3><p>اگر از زبان برنامه‌نویسی دیگری می‌آیید، <a href=https://docs.raku.org/language.html#Migration_guides>این مستندات</a> ممکن است به شما کمک کنند:<br><a href=https://docs.raku.org/language/py-nutshell>پایتون</a>,
+<a href=https://docs.raku.org/language/js-nutshell>جاوااسکریپت</a>,
+<a href=https://docs.raku.org/language/rb-nutshell>روبی</a>,
+<a href=https://docs.raku.org/language/haskell-to-p6>هسکل</a>,
+<a href=https://docs.raku.org/language/5to6-overview>پرل</a></p><p>اگر می‌خواهید از زبان‌های برنامه‌نوسی دیگر و کتابخانه‌های آنها داخل راکو استفاده کنید، می‌توانید از ماژول‌های Inline::* استفاده کنید، مانند:<br><a href=https://github.com/niner/Inline-Python>Inline::Python</a>,
+<a href=https://github.com/niner/Inline-Perl5>Inline::Perl</a>,
+<a href=https://modules.raku.org/dist/Inline::Go:cpan:AZAWAWI>Inline::Go</a>,
+<a href=https://github.com/awwaiid/p6-Inline-Ruby>Inline::Ruby</a>,
+<a href=https://github.com/raydiak/Inline-Lua>Inline::Lua</a></p></section></div></div><div class=row><div class=col-md-4><section id=community><h2 class=section-heading>کامیونیتی</h2><ul><li>آی‌آر‌سی: <a href="https://webchat.freenode.net/?channels=raku&nick=">#raku</a>, <a href=http://colabti.org/irclogger/irclogger_log/raku>لاگ‌ها</a></li><li>ماتریکس:<ul><li>اتاق: <a href=https://matrix.to/#/#freenode_#raku:matrix.org>#freenode_#raku:matrix.org</a></li><li>کامیونیتی: <a href=https://matrix.to/#/+raku:matrix.org>+raku:matrix.org</a></li></ul></li><li>انحصاری:<ul><li>دیسکورد: <a href=https://discord.gg/VzYpdQ6>سرور راکو</a></li></ul></ul></section></div><div class=col-md-4><section id=social-media><h2 class=section-heading>شبکه‌های اجتماعی</h2><ul><li>توئیتر: <a href=https://twitter.com/raku_news>@raku_news</a>, <a href=https://twitter.com/hashtag/rakulang>#rakulang</a></li><li>ردیت: <a href=https://www.reddit.com/r/rakulang/>r/rakulang</a></li><li>گیت‌هاب: <a href=https://github.com/Raku>@Raku</a></li><li>استگ اورفلو: <a href=https://stackoverflow.com/questions/tagged/raku>[raku]</a></li><li>آراس‌اس: <a href=/blog/index.xml>فید بلاگ</a></li></ul></section></div><div class=col-md-4><section id=language><h2 class=section-heading>زبان</h2><ul><li><a href=/en/>English</a></li><li><a href=/>فارسی</a></li></ul></section></div></div></main><script type=text/javascript src=/assets/js/accordion.js></script></div></body></html>
