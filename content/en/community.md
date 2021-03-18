@@ -7,7 +7,7 @@ description:  We are a bunch of volunteers developing Raku and Raku applications
 {{<col "md-6">}}
 {{<section>}}
 ### Internet Relay Chat (IRC)
-Much discussion happens on [#raku, our IRC channel](/community/irc). This is the fastest way to get help.
+Much discussion happens on [#raku, our IRC channel]({{< relref "/irc" >}}). This is the fastest way to get help.
 ### Matrix
 There is a matrix [room](https://matrix.to/#/%23freenode_%23raku:matrix.org) and also a [community](https://matrix.to/#/+raku:matrix.org). 
 ### Discord
@@ -20,7 +20,7 @@ Many questions and answers marked with [Raku tag](https://stackoverflow.com/ques
 {{<section id="MailingLists" heading="Mailing Lists">}}
 For more persistent discussions (and for the poor folks who can't use IRC) we have several mailing lists.
 
-As of 2014, the lists have very low traffic (because most activity is on [#raku](/community/irc)), but every question sent to it usually gets answered swiftly by at least one person.
+As of 2014, the lists have very low traffic (because most activity is on [#raku]({{< relref "/irc" >}})), but every question sent to it usually gets answered swiftly by at least one person.
 
 You can subscribe to each list by sending an email to list-name-subscribe@perl.org.
 

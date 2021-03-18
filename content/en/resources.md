@@ -67,7 +67,7 @@ description: The Raku community provides a wide range of resources in different 
 {{</col>}}
 {{<col "md-4">}}
 {{<section id="Compilers" heading="Compilers">}}
-- [Available Raku compilers](/compilers/)
+- [Available Raku compilers]({{< relref "/compilers" >}})
 {{</section>}}
 {{</col>}}
 {{<col "md-4">}}

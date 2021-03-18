@@ -1,7 +1,7 @@
 ---
 title: raku IRC channel
-description: Much real-time discussion happens on our IRC channel, #raku on irc.freenode.net. We try to be very nice to newcomers, so feel free to join us, and ask any Raku questions you might have.
-url: /community/irc
+description: Much real-time discussion happens on our IRC channel, "#raku" on irc.freenode.net. We try to be very nice to newcomers, so feel free to join us, and ask any Raku questions you might have.
+url: community/irc
 ---
 
 {{<row>}}

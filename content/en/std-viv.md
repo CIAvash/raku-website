@@ -1,7 +1,7 @@
 ---
 title: STD and viv
 description: Raku has a grammar that can be tweaked by the user. Hence the structure of the grammar must be the same in all Raku compilers. This structure is given STD.pm6, the standard grammar. It is both specification and runnable code.
-url: /compilers/std-viv
+url: compilers/std-viv
 ---
 
 {{<alert "danger">}}
