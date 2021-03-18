@@ -3,12 +3,14 @@
         <img class="logo" src="/assets/img/Camelia.svg" width="64px" height="64px" alt="Camelia Logo">{{ i18n "raku" }}
     </a>
     <ul class="navbar-nav navbar-collapse">
+        {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li class="nav-item">
             {{ if hasPrefix .URL "http" }}
             <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
             {{ else }}
-            <a class="nav-link" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
+            {{ $url := .URL  | relLangURL }}
+            <a class="nav-link{{if (hasPrefix $currentPage.RelPermalink $url) }} active{{end}}" href="{{ $url }}">{{ .Name }}</a>
             {{ end }}
         </li>
         {{ end }}

@@ -72,6 +72,10 @@ pre code {
         padding: 5px 0px !important;
         color: #bbb !important;
 
+        &.active {
+            color: lighten($color3, 33%) !important;
+        }
+
         &:hover {
             color: lighten($color3, 33%) !important;
         }
