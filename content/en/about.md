@@ -6,7 +6,7 @@ description: This website is, just like Raku, a volunteer driven project. Conten
 {{<row>}}
 {{<col "md-6">}}
 {{<section id="Contributing" heading="Contributing to this website">}}
-<!-- TODO: Write Contributing guidelines -->
+If you find a bug or want to contribute to this website, you can find the source code repository [here](https://github.com/CIAvash/raku-website).
 {{</section>}}
 {{</col>}}
 {{<col "md-6">}}

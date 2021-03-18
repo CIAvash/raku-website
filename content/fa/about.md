@@ -5,7 +5,7 @@ title: درباره
 {{<row>}}
 {{<col "md-6">}}
 {{<section id="Contributing" heading="همکاری کردن با این وب‌سایت">}}
-<!-- TODO: Write Contributing guidelines -->
+اگر باگی پیدا کردید یا می‌خواهید کمکی به سایت بکنید، می‌توانید مخزن کد منبع را [اینجا](https://github.com/CIAvash/raku-website) پیدا کنید.
 {{</section>}}
 {{</col>}}
 {{<col "md-6">}}
