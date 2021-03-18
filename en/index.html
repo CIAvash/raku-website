@@ -153,8 +153,8 @@
 <span class=nb>say</span> [+] <span class=nv>@a</span>;
 <span class=c1># OUTPUT: 49999995000000</span>
 </pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-cli class=accordion-input>
-<label for=accordion-input-cli class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Command-Line Interface</h3><p class=card-text>Easy command-line interface, accessible by MAIN subroutine with multiple dispatch and automated usage message generation</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>sub</span> <span class=n>MAIN</span>(
-    <span class=nb>Str</span>   <span class=nv>$file</span> <span class=k>where</span> *.<span class=nb>IO</span>.<span class=n>f</span> = <span class=s>&#39;file.dat&#39;</span>,  <span class=c1>#= an existing file to frobnicate </span>
+<label for=accordion-input-cli class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Command-Line Interface</h3><p class=card-text>Easy command-line interface, accessible by MAIN subroutine with multiple dispatch and automated usage message generation</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>sub</span> <span class=nb>MAIN</span>(
+    <span class=nb>Str</span>   <span class=nv>$file</span> <span class=n>where</span> *.<span class=nb>IO</span>.<span class=nb>f</span> = <span class=s>&#39;file.dat&#39;</span>,  <span class=c1>#= an existing file to frobnicate </span>
     <span class=nb>Int</span>  :<span class=n>size</span>(:<span class=nv>$length</span>) = <span class=mi>24</span>,              <span class=c1>#= length/size needed for frobnication </span>
     <span class=nb>Bool</span> :<span class=nv>$verbose</span>,                         <span class=c1>#= required verbosity </span>
 ) {
@@ -171,17 +171,17 @@
 <span class=c1>#    --size|--length=&lt;Int&gt;    length/size needed for frobnication</span>
 <span class=c1>#    --verbose                required verbosity</span>
 
-<span class=c1># $ perl6 frobnicate.p6 --verbose</span>
+<span class=c1># $ raku frobnicate.raku --verbose</span>
 <span class=c1># 24</span>
 <span class=c1># file.dat</span>
 <span class=c1># Verbosity on</span>
 
 <span class=c1># Another example with multi MAIN</span>
-<span class=k>multi</span> <span class=n>MAIN</span> (<span class=s>&#39;install&#39;</span>, <span class=nb>Str</span> <span class=nv>$something</span>, <span class=nb>Bool</span> :<span class=nv>$force</span>) {
+<span class=k>multi</span> <span class=nb>MAIN</span> (<span class=s>&#39;install&#39;</span>, <span class=nb>Str</span> <span class=nv>$something</span>, <span class=nb>Bool</span> :<span class=nv>$force</span>) {
     <span class=nb>say</span> <span class=s>&quot;Installing $something {&#39;by force&#39; if $force}&quot;</span>;
 }
 
-<span class=k>multi</span> <span class=n>MAIN</span> (<span class=s>&#39;run&#39;</span>, <span class=nb>Str</span> <span class=nv>$something</span>) {
+<span class=k>multi</span> <span class=nb>MAIN</span> (<span class=s>&#39;run&#39;</span>, <span class=nb>Str</span> <span class=nv>$something</span>) {
     <span class=nb>say</span> <span class=s>&quot;Running $something&quot;</span>;
 }
 
