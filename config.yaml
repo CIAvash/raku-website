@@ -82,10 +82,10 @@ languages:
           name: فان
           url: /fun/
           weight: 7
-        # - identifier: whatever
-        #   name: Whatever
-        #   url: /whatever/
-        #   weight: 8
+        - identifier: whatever
+          name: هر چی
+          url: /whatever/
+          weight: 8
         - identifier: faq
           name: پرسش‌های متداول
           url: https://docs.raku.org/language/faq

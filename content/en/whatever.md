@@ -5,9 +5,7 @@ description: Everything that can't be categorized otherwise fits into the "Whate
 
 {{<row>}}
 {{<col "md-8">}}
-{{<section id="Whatever" heading="Module Management, Editors, IDEs, *">}}
-### Module Management
-- [Zef](https://modules.perl6.org/dist/zef) Raku module manager
+{{<section id="Whatever" heading="Editors, IDEs, *">}}
 ### Editors and IDEs
 - [CommaIDE](https://commaide.com/): designed specifically for Raku. Community edition available for free, additional features and more regular updates through paid Supporter Program.
 - [Atom](https://atom.io/):
@@ -18,10 +16,11 @@ description: Everything that can't be categorized otherwise fits into the "Whate
 - Vim: [Raku syntax highlighting](https://github.com/Raku/vim-raku) for better highlighting
 - [Neovim](https://neovim.io/): [vim-perl6 plugin](https://github.com/vim-perl/vim-perl6) for better highlighting
 - Emacs:
-  - [perl6-mode](https://github.com/perl6/perl6-mode), an Emacs major mode for Raku which provides syntax highlighting (and more)
-  - [flycheck-perl6](https://github.com/hinrik/flycheck-perl6), makes Flycheck syntax-check Raku code.
+  - [raku-mode](https://github.com/Raku/raku-mode), an Emacs major mode for Raku which provides syntax highlighting (and more)
+  - [flycheck-raku](https://github.com/Raku/flycheck-raku), makes Flycheck syntax-check Raku code.
   - [Unified Raku + Perl + Moose/MooseX::Declare](https://github.com/jrockway/cperl-mode) syntax highlighting
   - [Spacemacs](https://github.com/syl20bnr/spacemacs): Emacs wrapper with vim key-bindings and with extra stuff
+  - [Doom Emacs](https://github.com/hlissner/doom-emacs): Emacs wrapper with vim key-bindings and with extra stuff
 - Nano: [Raku syntax highlighting](https://github.com/hankache/raku.nanorc)
 - [Padre, the Perl IDE](http://padre.perlide.org/): [Padre::Plugin::Perl6](https://metacpan.org/pod/Padre::Plugin::Perl6), Raku highlighting and code execution
 - [CudaText](http://uvviewsoft.com/cudatext/): Raku lexer is present in Addon Manager
