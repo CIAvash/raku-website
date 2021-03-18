@@ -232,14 +232,14 @@
 
 <span class=c1># TODO: Add more examples</span>
 </pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-error class=accordion-input>
-<label for=accordion-input-error class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Error messages</h3><p class=card-text>Nice compile-time and run-time error messages</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>sub</span> <span class=n>add</span> (<span class=nb>Int</span> <span class=nv>$a</span>, <span class=nb>Int</span> <span class=nv>$b</span>) {
+<label for=accordion-input-error class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Error messages</h3><p class=card-text>Nice compile-time and run-time error messages</p></div></div></label><div class=accordion-content><div class=highlight><pre><span></span><span class=k>sub</span> <span class=nb>add</span> (<span class=nb>Int</span> <span class=nv>$a</span>, <span class=nb>Int</span> <span class=nv>$b</span>) {
     <span class=nv>$a</span> + <span class=nv>$b</span>
 }
 
-<span class=n>add</span> <span class=s>&#39;string&#39;</span>;
-<span class=c1># ===SORRY!=== Error while compiling error.p6</span>
+<span class=nb>add</span> <span class=s>&#39;string&#39;</span>;
+<span class=c1># ===SORRY!=== Error while compiling error.raku</span>
 <span class=c1># Calling add(Str) will never work with declared signature (Int $a, Int $b)</span>
-<span class=c1># at file.p6:5</span>
+<span class=c1># at file.raku:5</span>
 <span class=c1># ------&gt; &lt;BOL&gt;⏏add &#39;string&#39;;</span>
 </pre></div></div></div><div class=accordion-item><input type=radio name=accordion-input id=accordion-input-backends class=accordion-input>
 <label for=accordion-input-backends class=accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Backends</h3><p class=card-text>Runs on a variety of back-ends. Currently MoarVM & JVM, JavaScript in development</p></div></div></label><div class=accordion-content></div></div></section></div></div><div class=row><div class=col-lg-12><section id=resources><h2 class=section-heading>Resources</h2><h3>Guides</h3><ul><li><a href=https://raku.guide/>Raku Guide</a></li><li><a href=https://learnxinyminutes.com/docs/raku/>Learn Raku in Y Minutes</a></li></ul><h3>Courses</h3><ul><li><a href=https://course.raku.org/>A Complete Course of the Raku programming language</a></li></ul><h3>Examples</h3><ul><li><a href=https://rosettacode.org/wiki/Category:Raku>Rosetta Code</a></li></ul><h3>Books</h3><h4>New to programming?</h4><ul><li><a href=https://github.com/LaurentRosenfeld/think_raku>Think Raku</a></li></ul><h3>Try Online</h3><ul><li><a href=https://glot.io/new/raku>glot.io</a></li><li><a href=https://repl.it/languages/raku>repl.it</a></li></ul><h3>Coming from another programming language?</h3><p>If you are coming from another programming language, <a href=https://docs.raku.org/language.html#Migration_guides>these documentations</a> may be of help to you:<br><a href=https://docs.raku.org/language/py-nutshell>Python</a>,
