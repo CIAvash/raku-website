@@ -18,9 +18,10 @@ title: منابع
 {{</section>}}
 {{</col>}}
 {{<col "md-4">}}
-{{<section id="Screencasts" heading="Screencasts">}}
+{{<section id="Screencasts" heading="ویدئو">}}
 - [szabgab.com](https://szabgab.com/perl6.html#screencast)
 - [Youtube Raku videos](https://www.youtube.com/playlist?list=PLRuESFRW2Fa77XObvk7-BYVFwobZHdXdK) انگلیسی
+- [Programming in Raku - Youtube videos](https://www.youtube.com/playlist?list=PLY6oTPmKnKbbMOdyKsY9U2KS4BCOMmAzR) انگلیسی
 - [Youtube Raku videos](https://www.youtube.com/playlist?list=PLRuESFRW2Fa6PBxZ8oQhKqV8zZak3bHNN) غیر انگلیسی
 {{</section>}}
 {{</col>}}
@@ -31,7 +32,7 @@ title: منابع
 {{<section id="Blogs" heading="بلاگ‌ها">}}
 - [Raku Blog Aggregator](https://pl6anet.org/)
 - [Rakudo Weekly](https://rakudoweekly.blog/) تغییرات داخل و حواشی راکودو
-- [Raku Advent Calendar](https://rakuadventcalendar.wordpress.com/) [کمک برای شرکت‌کننده‌ها](https://github.com/Raku/advent/blob/master/CONTRIBUTING.md)
+- [Raku Advent Calendar](https://raku-advent.blog/) [کمک برای شرکت‌کننده‌ها](https://github.com/Raku/advent/blob/master/CONTRIBUTING.md)
 {{</section>}}
 {{</col>}}
 {{<col "md-4">}}
@@ -43,13 +44,13 @@ title: منابع
 {{</col>}}
 {{<col "md-4">}}
 {{<section id="RakufromOtherLanguages" heading="راکو از زبان‌های دیگر">}}
-- Haskell: [Raku from Haskell](https://docs.raku.org/language/haskell-to-p6)
-- Perl:
+- هسکل: [Raku from Haskell](https://docs.raku.org/language/haskell-to-p6)
+- پرل:
 - [perlgeek.de/en/article/5-to-6](https://perlgeek.de/en/article/5-to-6)
 - [docs.raku.org migration guides](https://docs.raku.org/language.html#Migration_guides)
-- Python: [Raku from Python](https://docs.raku.org/language/py-nutshell)
-- Ruby: [Raku from Ruby](https://docs.raku.org/language/rb-nutshell)
-- JavaScript (Node.JS): [Raku from JavaScript](https://docs.raku.org/language/js-nutshell)
+- پایتون: [Raku from Python](https://docs.raku.org/language/py-nutshell)
+- روبی: [Raku from Ruby](https://docs.raku.org/language/rb-nutshell)
+- جاوااسکریپت (Node.JS): [Raku from JavaScript](https://docs.raku.org/language/js-nutshell)
 {{</section>}}
 {{</col>}}
 {{</row>}}
@@ -74,7 +75,7 @@ title: منابع
 این [نمودار کتاب‌های راکو](https://perl6book.com/) را ببینید یا از لیست زیر یکی را انتخاب کنید.
 
 - [Perl 6 at a Glance](https://deeptext.media/perl6-at-a-glance/), by Andrew Shitov (published, print)
-- [Think Perl 6: How to Think Like a Computer Scientist](http://greenteapress.com/wp/think-perl-6/), by Laurent Rosenfeld (published, print)
+- [Think Raku: How to Think Like a Computer Scientist](http://greenteapress.com/wp/think-perl-6/), by Laurent Rosenfeld (published, print)
 - [Perl 6 Fundamentals](https://www.apress.com/us/book/9781484228982), by Moritz Lenz (published, print and ebook)
 - [Parsing with Perl 6 Regexes and Grammars](https://smile.amazon.com/dp/1484232275/), by Moritz Lenz (published, print and ebook)
 - [Learning Perl 6](https://www.learningperl6.com/), by Brian D. Foy (published, print)
