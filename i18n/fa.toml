@@ -106,6 +106,12 @@ other = "راهنماها"
 [raku_guide]
 other = "راهنمای راکو"
 
+[courses]
+other = "دوره‌های آموزشی"
+
+[complete_raku_course]
+other = "دوره‌ی کامل آموزش زبان برنامه‌نویسی راکو"
+
 [examples]
 other = "مثالها"
 
