@@ -16,7 +16,7 @@ sub MAIN(
 #    --size|--length=<Int>    length/size needed for frobnication
 #    --verbose                required verbosity
 
-# $ perl6 frobnicate.p6 --verbose
+# $ raku frobnicate.raku --verbose
 # 24
 # file.dat
 # Verbosity on
