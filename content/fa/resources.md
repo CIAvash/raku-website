@@ -59,9 +59,9 @@ title: منابع
 {{<col "md-4">}}
 {{<section id="PracticeOnline" heading="تمرین آنلاین">}}
 - [Raku track on exercism.io](https://exercism.io/tracks/raku)
-- [Online Perl 6 REPL (glot.io)](https://glot.io/new/perl6)
+- [Online Raku REPL (glot.io)](https://glot.io/new/raku)
+- [Online Raku REPL (repl.it)](https://repl.it/languages/raku)
 - [Online Perl 6 REPL (tio.run)](https://tio.run/#perl6)
-- [Online Perl 6 REPL (ideone.com)](https://ideone.com/)
 {{</section>}}
 {{</col>}}
 {{<col "md-4">}}
