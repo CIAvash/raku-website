@@ -10,6 +10,9 @@ other = "A powerful, feature-rich, multi-paradigm programming language"
 [download]
 other = "Download"
 
+[get_involved]
+other = "Get Involved"
+
 [why_raku]
 other = "Why Raku?"
 
@@ -201,3 +204,42 @@ other = "Blog feed"
 
 [language]
 other = "Language"
+
+[git_repos]
+other = "Git Repos"
+
+[git_repo]
+other = "Git Repo"
+
+[raku_organization]
+other = "Raku Organization"
+
+[documentation]
+other = "Documentation"
+
+[user_experience]
+other = "User Experience"
+
+[problem_solving]
+other = "Problem Solving"
+
+[marketing]
+other = "Marketing"
+
+[raku_steering_counsil]
+other = "Raku Steering Council"
+
+[raku_governance_code]
+other = "Raku Governance Code"
+
+[code_of_conduct]
+other = "Code of Conduct"
+
+[papers]
+other = "Papers"
+
+[announcements]
+other = "Announcements"
+
+[minutes]
+other = "Minutes"

@@ -3,6 +3,7 @@
     <h1>{{ i18n "raku_programming_language" }}</h1>
     <p class="lead">{{ i18n "raku_description" }}</p>
     <a href="{{ "/downloads" | relLangURL }}" class="btn btn-primary">{{ i18n "download" }}</a>
+    <a href="{{ "/community#GettingInvolved" | relLangURL }}" class="btn btn-secondary">{{ i18n "get_involved" }}</a>
 </header>
 {{ end }}
 
@@ -254,48 +255,6 @@
                 <a href="https://github.com/awwaiid/p6-Inline-Ruby">Inline::Ruby</a>,
                 <a href="https://github.com/raydiak/Inline-Lua">Inline::Lua</a>
             </p>
-        </section>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <section id="community">
-            <h2 class="section-heading">{{ i18n "community" }}</h2>
-            <ul>
-                <li>{{ i18n "irc" }}: <a href="https://webchat.freenode.net/?channels=raku&nick=">#raku</a>, <a href="http://colabti.org/irclogger/irclogger_log/raku">{{ i18n "logs" }}</a></li>
-                <li>{{ i18n "matrix" }}:
-                    <ul>
-                        <li>{{ i18n "room" }}: <a href="https://matrix.to/#/#freenode_#raku:matrix.org">#freenode_#raku:matrix.org</a></li>
-                        <li>{{ i18n "community" }}: <a href="https://matrix.to/#/+raku:matrix.org">+raku:matrix.org</a></li>
-                    </ul>
-                </li>
-                <li>{{ i18n "proprietary" }}:
-                    <ul>
-                        <li>{{ i18n "discord" }}: <a href="https://discord.gg/VzYpdQ6">{{ i18n "raku_server" }}</a></li>
-                    </ul>
-            </ul>
-        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="social-media">
-            <h2 class="section-heading">{{ i18n "social_media" }}</h2>
-            <ul>
-                <li>{{ i18n "twitter" }}: <a href="https://twitter.com/raku_news">@raku_news</a>, <a href="https://twitter.com/hashtag/rakulang">#rakulang</a></li>
-                <li>{{ i18n "reddit" }}: <a href="https://www.reddit.com/r/rakulang/">r/rakulang</a></li>
-                <li>{{ i18n "github" }}: <a href="https://github.com/Raku">@Raku</a></li>
-                <li>{{ i18n "stack_overflow" }}: <a href="https://stackoverflow.com/questions/tagged/raku">[raku]</a></li>
-                <li>{{ i18n "rss" }}: <a href="{{ "/blog/index.xml" | relLangURL }}">{{ i18n "blog_feed" }}</a></li>
-            </ul>
-        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="language">
-            <h2 class="section-heading">{{ i18n "language" }}</h2>
-            <ul>
-                {{ range $.Site.Home.AllTranslations }}
-                <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
-                {{ end }}
-            </ul>
         </section>
     </div>
 </div>

@@ -36,9 +36,6 @@ Discussions on various Raku compilers
 ### perl6-users
 User questions about the Raku language and compilers
 [[Subscribe]](mailto:perl6-users-subscribe@perl.org) [[Archive]](http://nntp.perl.org/group/perl.perl6.users/)
-### perl6-workshops
-Coordination of events related to Raku (often together with other Perl or open source events).
-[[List info: Subscription]](https://groups.google.com/group/perl6-workshops?hl=en)
 {{</section>}}
 {{</col>}}
 {{</row>}}
@@ -47,23 +44,25 @@ Coordination of events related to Raku (often together with other Perl or open s
 Whether you're an open source veteran or someone that doesn't know what "open source" means, there are many ways that you can get involved and contribute to the Raku project.
 ### I am new
 #### Learn Raku and Write about your Experience
-Use the [resources](/resources) to learn Raku and [write](https://planet.raku.org/) about your experience along the way! Let us know when you do write something if you want to share it with the larger Raku community (you should!).
+Use the [resources]({{< relref "/resources" >}}) to learn Raku and [write](https://planet.raku.org/) about your experience along the way! Let us know when you do write something if you want to share it with the larger Raku community (you should!).
 
 Some writing topics could be programs you've written, tricks you've learned, cool things about the Raku, etc. Because of your fresh perspective as a learner, writing educational/training material would be a great idea as well.
 
-If anything is Less Than Awesome in your experience you can [chat with us](/community/irc), or open an issue on the [User Experience](https://github.com/perl6/user-experience) repository.
+If anything is Less Than Awesome in your experience, you can [chat with us]({{< relref "/irc" >}}), or open an issue on the [User Experience](https://github.com/Raku/user-experience) repository.
+
+If you see Less Than Awesome error messages when you run your code, [chat with us]({{< relref "/irc" >}}) or open an issue on the compiler's repository.
 #### Give Feedback on the Docs
-Through your experience of learning and using Raku, you will have utitilized the [docs](https://docs.raku.org/). You're in a good position to help us make these docs more robust. If you notice something missing, or something that could be better clarified, open an issue on the [Github Repo](https://github.com/Raku/doc).
+Through your experience of learning and using Raku, you will have utitilized the [docs](https://docs.raku.org/). You're in a good position to help us make these docs more robust. If you notice something missing, or something that could be better clarified, open an issue on the [Doc Repo](https://github.com/Raku/doc).
 
 ### I already know the language
-#### Help us write tests
-Help increase test coverage of the official Raku test suite called [roast](https://github.com/perl6/roast). This is the high bar that all Raku implementations must meet. There's a lot of ground to cover, so get up to speed with the [Test module](https://docs.raku.org/language/testing), if you don't already know it, and [join us](https://perl6.party/post/A-Date-With-The-Bug-Queue-or-Let-Me-Help-You-Help-Me-Help-You)!
 #### Contribute to the Ecosystem
-Once you've learned the language, you can write modules and share them in the ecosystem. We use [zef](https://github.com/ugexe/zef) for packaging. See [this guide](https://docs.raku.org/language/modules) if you have questions about how to organize modules. If you don't know what to write, check out the [most wanted modules](https://github.com/perl6/perl6-most-wanted/blob/master/most-wanted/modules.md) list.
+Once you've learned the language, you can write modules and share them in the ecosystem. We use [zef](https://github.com/ugexe/zef) for packaging. See [this guide](https://docs.raku.org/language/modules) if you have questions about how to organize modules. If you don't know what to write, check out the [most wanted modules](https://github.com/Raku/raku-most-wanted/blob/master/most-wanted/modules.md) list.
+#### Help us write tests
+Help increase test coverage of the official Raku test suite called [roast](https://github.com/Raku/roast). This is the high bar that all Raku implementations must meet. There's a lot of ground to cover, so get up to speed with the [Test module](https://docs.raku.org/language/testing), if you don't already know it, and [join us](https://perl6.party/post/A-Date-With-The-Bug-Queue-or-Let-Me-Help-You-Help-Me-Help-You)!
 #### Hack on the Rakudo Compiler
-[Rakudo](https://rakudo.org/) is the most popular Raku compiler right now. Hacking on Rakudo innards is a lot easier than you would think, since most of it is written in Raku. However, since it isn't completely self-hosting, some parts are written in [NQP](https://github.com/perl6/nqp).
+[Rakudo](https://rakudo.org/) is the most popular Raku compiler right now. Hacking on Rakudo innards is a lot easier than you would think, since most of it is written in Raku. However, since it isn't completely self-hosting, some parts are written in [NQP](https://github.com/Raku/nqp).
 
-NQP is a subset of Raku that is much smaller and simpler than Raku. Rakudo targets NQP. Then NQP targets various backend VMs like MoarVM, Javascript, and Java.
+NQP is a subset of Raku that is much smaller and simpler than Raku. Rakudo targets NQP. Then NQP targets various backend VMs like MoarVM, Javascript and Java.
 
 So [you can get started right away](https://perl6.party/post/A-Date-With-The-Bug-Queue-or-Let-Me-Help-You-Help-Me-Help-You) by writing Raku, and if/when you need to access some very low-level functionality you can learn NQP. You can get up to speed fairly fast with this [NQP learning course](https://github.com/edumentab/rakudo-and-nqp-internals-course). So feel free to jump right in! 
 {{</fullsection>}}

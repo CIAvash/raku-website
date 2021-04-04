@@ -10,6 +10,9 @@ other = "یک زبان برنامه‌نویسی قدرتمند، سرشار ا�
 [download]
 other = "دانلود"
 
+[get_involved]
+other = "مشارکت کنید"
+
 [why_raku]
 other = "چرا راکو؟"
 
@@ -195,3 +198,42 @@ other = "فید بلاگ"
 
 [language]
 other = "زبان"
+
+[git_repos]
+other = "مخازن گیت"
+
+[git_repo]
+other = "مخزن گیت"
+
+[raku_organization]
+other = "سازمان راکو"
+
+[documentation]
+other = "مستندات"
+
+[user_experience]
+other = "تجربه کاربر"
+
+[problem_solving]
+other = "حل مشکلات"
+
+[marketing]
+other = "بازاریابی"
+
+[raku_steering_counsil]
+other = "انجمن هدایت راکو"
+
+[raku_governance_code]
+other = "قوانین مدیریت راکو"
+
+[code_of_conduct]
+other = "قوانین رفتار"
+
+[papers]
+other = "مقالات"
+
+[announcements]
+other = "اعلانات"
+
+[minutes]
+other = "صورت جلسه"

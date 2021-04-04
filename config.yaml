@@ -37,7 +37,7 @@ languages:
           url: /fun/
           weight: 7
         - identifier: whatever
-          name: Whatever
+          name: Tools+Whatever
           url: /whatever/
           weight: 8
         - identifier: faq
@@ -83,7 +83,7 @@ languages:
           url: /fun/
           weight: 7
         - identifier: whatever
-          name: هر چی
+          name: ابزارها+هرچی
           url: /whatever/
           weight: 8
         - identifier: faq

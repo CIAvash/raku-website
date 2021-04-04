@@ -1,5 +1,5 @@
 ---
-title: Whatever
+title: Tools+Whatever
 description: Everything that can't be categorized otherwise fits into the "Whatever" slot, or as the Raku hacker would write it, *.
 ---
 

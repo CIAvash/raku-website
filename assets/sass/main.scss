@@ -36,13 +36,13 @@ section, article {
     margin: 5px 0;
     border-radius: 4px;
     overflow-wrap: break-word;
+}
 
-    .section-heading {
-        color: $color12;
-        border-bottom: 1px solid;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-    }
+.section-heading {
+    color: darken($color5, 9%);
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 code {
@@ -94,7 +94,7 @@ pre code {
     color: $color5 !important;
 }
 
-.bg-dark, .jumbotron, section, article {
+.bg-dark, .jumbotron, section, article, .main-footer {
     background-color: $color2 !important;
 }
 
@@ -104,6 +104,10 @@ pre code {
     background-color: transparent;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+
+    .btn {
+        margin-right: 5px;
+    }
 }
 
 .accordion-input {
@@ -128,6 +132,7 @@ pre code {
 
     pre {
         padding: 10px;
+        white-space: pre-wrap;
     }
 }
 
@@ -147,28 +152,39 @@ pre code {
             display: inline-block;
             vertical-align: top;
             position: relative;
+            width: 94%;
+            margin-left: 5%;
 
             .highlight {
                 font-family: 'Roboto Mono', monospace;
-                overflow-x: auto;
 
                 pre {
                     color: lightsteelblue;
                 }
 
-                @media (min-width: 992px) {
-                    width: 565px;
-                    min-height: 480px;
-                    display: grid;
-                    position: absolute;
-                    top: 0;
-                    left: 3px;
-                    margin-left: 0;
-                }
                 @media (min-width: 1200px) {
                     width: 580px;
                 }
             }
+
+            @media (min-width: 768px) {
+                margin-left: 4%;
+            }
+
+            @media (min-width: 991px) {
+                width: auto;
+                margin-left: 0;
+
+                .highlight {
+                        width: 565px;
+                        min-height: 480px;
+                        display: grid;
+                        position: absolute;
+                        top: 0;
+                        left: 3px;
+                        margin-left: 0;
+                    }
+                }
         }
         ~ .accordion-button .card {
             background-color: lighten($color11, 13%);
@@ -186,7 +202,7 @@ pre code {
 
 .accordion-button {
     cursor: pointer;
-    width: 100%;
+    width: 95%;
 
     @media (min-width: 992px){
         width: 300px;
@@ -219,12 +235,38 @@ article {
     margin: 1rem 0;
 }
 
+.main-footer {
+    margin-top: 5px;
+    padding: 10px 15px;
+    border-radius: 5px 5px 0 0;
+
+    .section-heading {
+        font-size: 125%;
+    }
+}
+
 @media (max-width: 991.98px) {
     .navbar {
         justify-content: center;
 
         .navbar-nav, .nav-item, .nav-link {
             display: inline-block;
+        }
+    }
+
+    .section-heading {
+        font-size: 150%;
+
+        .main-footer & {
+            font-size: 115%;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar {
+        .nav-link {
+            margin: 0 4px;
         }
     }
 }
