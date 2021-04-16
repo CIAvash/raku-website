@@ -243,3 +243,6 @@ other = "Announcements"
 
 [minutes]
 other = "Minutes"
+
+[email]
+other = "Email"
