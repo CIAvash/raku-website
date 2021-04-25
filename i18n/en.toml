@@ -246,3 +246,6 @@ other = "Minutes"
 
 [email]
 other = "Email"
+
+[documentation_team]
+other = "Documentation Team"
