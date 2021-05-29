@@ -9,7 +9,7 @@ description:  We are a bunch of volunteers developing Raku and Raku applications
 ### Internet Relay Chat (IRC)
 Much discussion happens on [#raku, our IRC channel]({{< relref "/irc" >}}). This is the fastest way to get help.
 ### Matrix
-There is a matrix [room](https://matrix.to/#/%23freenode_%23raku:matrix.org) and also a [community](https://matrix.to/#/+raku:matrix.org). 
+There is a matrix [room](https://matrix.to/#/#raku:libera.chat) and also a [community](https://matrix.to/#/+raku:matrix.org). 
 ### Discord
 If you prefer Discord for live chat, there is [a Discord server](https://discord.gg/VzYpdQ6) available that is also bridged to the IRC.
 ### Stack Overflow

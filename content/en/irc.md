@@ -1,6 +1,6 @@
 ---
 title: raku IRC channel
-description: Much real-time discussion happens on our IRC channel, "#raku" on irc.freenode.net. We try to be very nice to newcomers, so feel free to join us, and ask any Raku questions you might have.
+description: Much real-time discussion happens on our IRC channel, "#raku" on irc.libera.chat. We try to be very nice to newcomers, so feel free to join us, and ask any Raku questions you might have.
 url: community/irc
 ---
 
@@ -9,9 +9,9 @@ url: community/irc
 {{<section id="Raku" heading="#raku">}}
 We discuss questions about Raku, how to install a compiler, proposals for small enhancements to the specification, ideas for new modules - you name it.
 
-If you don't have an IRC client installed, you can use [your browser to connect to IRC](https://webchat.freenode.net/?channels=raku&nick=).
+If you don't have an IRC client installed, you can use [your browser to connect to IRC](https://web.libera.chat/?channel=#raku).
 
-If you prefer to chat on Matrix or Discord, our [Discord server](https://discord.gg/VzYpdQ6) and [matrix room](https://matrix.to/#/#freenode_#raku:matrix.org) are bridged with the IRC channels.
+If you prefer to chat on Matrix or Discord, our [Discord server](https://discord.gg/VzYpdQ6) and [matrix room](https://matrix.to/#/#raku:libera.chat) are bridged with the IRC channels.
 
 If you missed an interesting discussion on #raku - don't worry, there are [public logs available at colabti.org](http://colabti.org/irclogger/irclogger_log/raku).
 {{</section>}}
@@ -68,9 +68,9 @@ An IRC bot for getting interesting information about Unicode characters. It can 
 - [yoleaux](https://docs.perl6.org/language/glossary#yoleaux_)
 Provides various functions, such as leaving messages for people and translating text ([see this handy reference](http://dpk.io/yoleaux) for what yoleaux can do.)
 - [PufferBot](https://github.com/Kaiepi/p6-RakudoBot)
-An IRC bot for testing builds of Rakudo on OpenBSD. It can be addressed by its full name ('PufferBot'). Talks only in [#perl6-dev](https://webchat.freenode.net/?channels=#perl6-dev).
+An IRC bot for testing builds of Rakudo on OpenBSD. It can be addressed by its full name ('PufferBot'). Talks only in [#raku-dev](https://web.libera.chat/?channel=#raku-dev).
 - [BeastieBot](https://github.com/Kaiepi/p6-RakudoBot)
-An IRC bot for testing builds of Rakudo on FreeBSD. It can be addressed by its full name ('BeastieBot'). Talks only in [#perl6-dev](https://webchat.freenode.net/?channels=#perl6-dev).
+An IRC bot for testing builds of Rakudo on FreeBSD. It can be addressed by its full name ('BeastieBot'). Talks only in [#raku-dev](https://web.libera.chat/?channel=#raku-dev).
 {{</section>}}
 {{</col>}}
 {{</row>}}
