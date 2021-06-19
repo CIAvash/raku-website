@@ -23,12 +23,16 @@ installed in parallel and switch between them.
 
 {{<fullsection id="Ecosystem" heading="Ecosystem">}}
 
+{{<row>}}
+{{<col "md-6">}}
 ### Module Manager
 If a module manager was not installed alongside your Raku implementation, or if it's not available in your software repositories, you can download and install it directly:
 
 #### zef
 {{<button href="https://github.com/ugexe/zef#installation" type="btn-secondary" name="Download zef">}}
+{{</col>}}
 
+{{<col "md-6">}}
 ### Module Repositories
 #### zef
 Account and module upload management can be done with [fez](https://github.com/tony-o/raku-fez).
@@ -42,4 +46,6 @@ zef install --/test fez
 Visit [PAUSE](https://pause.perl.org/pause/query) for account and module upload management. [More details](https://docs.raku.org/language/modules#Upload_your_module_to_CPAN).
 #### git/p6c
 [Uploading your modules](https://docs.raku.org/language/modules#Upload_your_module_to_p6c).
+{{</col>}}
+{{</row>}}
 {{</fullsection>}}

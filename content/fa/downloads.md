@@ -18,6 +18,8 @@ description: یک پیاده‌سازی راکو و مدیر ماژول دانل
 {{</fullsection>}}
 
 {{<fullsection id="Ecosystem" heading="اکوسیستم">}}
+{{<row>}}
+{{<col "md-6">}}
 
 ### مدیر ماژول
 
@@ -25,6 +27,9 @@ description: یک پیاده‌سازی راکو و مدیر ماژول دانل
 
 #### zef
 {{<button href="https://github.com/ugexe/zef#installation" type="btn-secondary" name="دانلود زف">}}
+{{</col>}}
+
+{{<col "md-6">}}
 
 ### مخازن ماژول
 #### zef
@@ -43,4 +48,6 @@ zef install --/test fez
 
 #### git/p6c
 [نحوه آپلود ماژول‌هایتان](https://docs.raku.org/language/modules#Upload_your_module_to_p6c).
+{{</col>}}
+{{</row>}}
 {{</fullsection>}}
