@@ -1,367 +1,367 @@
 <!doctype html><html lang=fa dir=rtl><head><meta name=generator content="Hugo 0.84.0"><meta charset=utf-8><meta name=viewport content="width=device-width"><title>زبان برنامه‌نویسی راکو</title><meta name=description content="زبان برنامه‌نویسی راکو"><link rel=stylesheet href=/assets/css/bootstrap.rtl.min.css><link rel=stylesheet href=/sass/main.min.938652861e541ba7a1d2182a6ba64ec3c72e772a9ada9f5ec9a46a761b44b1f0.css><link rel=stylesheet href=/sass/rtl.min.99ffb8e49e48515fa9b1f511a6d296395f8abdb92b43485c52a227914b762fe9.css><link rel=stylesheet href=/sass/fa.min.826f3ef8e6b49c309a3d674cac8a5f980d1eab945676a0fcd3698ec4832cf3a7.css><link href=/favicon.ico rel="shortcut icon" type=image/x-icon><link rel=alternate type=application/rss+xml href=/blog/index.xml title="Raku core blog"></head><body class=home><div class="wrapper container-sm"><nav class="navbar navbar-expand-lg navbar-dark bg-dark"><a class=navbar-brand href=/><img class=logo src=/assets/img/Camelia.svg width=64px height=64px alt="Camelia Logo">راکو</a><ul class="navbar-nav navbar-collapse"><li class=nav-item><a class=nav-link href=/downloads/>دانلود</a></li><li class=nav-item><a class=nav-link href=https://docs.raku.org/>مستندات</a></li><li class=nav-item><a class=nav-link href=/resources/>منابع</a></li><li class=nav-item><a class=nav-link href=/community/>کامیونیتی</a></li><li class=nav-item><a class=nav-link href=/blog/>بلاگ</a></li><li class=nav-item><a class=nav-link href=https://modules.raku.org/>ماژول‌ها</a></li><li class=nav-item><a class=nav-link href=/fun/>فان</a></li><li class=nav-item><a class=nav-link href=/whatever/>ابزارها+هرچی</a></li><li class=nav-item><a class=nav-link href=https://docs.raku.org/language/faq>پرسش‌های متداول</a></li><li class=nav-item><a class=nav-link href=/about>درباره</a></li></ul></nav><header class=jumbotron><h1>زبان برنامه‌نویسی راکو</h1><p class=lead>یک زبان برنامه‌نویسی قدرتمند، سرشار از ویژگی، چندالگویی</p><a href=/downloads class="btn btn-primary me-2">دانلود</a>
 <a href=/community#GettingInvolved class="btn btn-secondary me-2">مشارکت کنید</a></header><main id=content><div class=row><div class="col-lg-12 raku-accordion-container"><section id=why-raku class=raku-accordion><h2 class=section-heading>چرا راکو؟</h2><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-hello_world class=raku-accordion-input checked>
-<label for=raku-accordion-input-hello_world class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">راحتی نوشتن</h3><p class=card-text>به دنیا سلام بگو!</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>say</span> &#39;<span style=color:#0ff;font-weight:700>Hello World</span>&#39;;</code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-object_oriented class=raku-accordion-input>
-<label for=raku-accordion-input-object_oriented class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">برنامه‌نویسی شی‌گرا</h3><p class=card-text>استفاده از کلاس‌ها و رول‌ها و مولتی‌دیسپچ با سینتکس راحت و زیبا</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#007f7f># Multiple dispatch</span>
-<span style=color:#fff;font-weight:700>multi</span> <span style=color:#fff;font-weight:700>sub</span> fib (<span style=color:#ff0;font-weight:700>0</span> <span style=color:#fff;font-weight:700>--&gt;</span> <span style=color:#ff0;font-weight:700>0</span>) {}
-<span style=color:#fff;font-weight:700>multi</span> <span style=color:#fff;font-weight:700>sub</span> fib (<span style=color:#ff0;font-weight:700>1</span> <span style=color:#fff;font-weight:700>--&gt;</span> <span style=color:#ff0;font-weight:700>1</span>) {}
-<span style=color:#fff;font-weight:700>multi</span> <span style=color:#fff;font-weight:700>sub</span> fib (\n <span style=color:#fff;font-weight:700>where</span> * &gt; <span style=color:#ff0;font-weight:700>1</span>) {
-    fib(n - <span style=color:#ff0;font-weight:700>1</span>) + fib(n - <span style=color:#ff0;font-weight:700>2</span>)
+<label for=raku-accordion-input-hello_world class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">راحتی نوشتن</h3><p class=card-text>به دنیا سلام بگو!</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#ef8383>say</span> &#39;<span style=color:#98c379>Hello World</span>&#39;;</code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-object_oriented class=raku-accordion-input>
+<label for=raku-accordion-input-object_oriented class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">برنامه‌نویسی شی‌گرا</h3><p class=card-text>استفاده از کلاس‌ها و رول‌ها و مولتی‌دیسپچ با سینتکس راحت و زیبا</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#8a93a5;font-style:italic># Multiple dispatch</span>
+<span style=color:#c678dd>multi</span> <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>fib</span> (<span style=color:#d19a66>0</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#d19a66>0</span>) {}
+<span style=color:#c678dd>multi</span> <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>fib</span> (<span style=color:#d19a66>1</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#d19a66>1</span>) {}
+<span style=color:#c678dd>multi</span> <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>fib</span> (\<span style=color:#c1abea>n</span> <span style=color:#c678dd>where</span> <span style=color:#c7bf54>*</span> <span style=color:#c7bf54>&gt;</span> <span style=color:#d19a66>1</span>) {
+    <span style=color:#00b1f7>fib</span>(<span style=color:#c1abea>n</span> <span style=color:#c7bf54>-</span> <span style=color:#d19a66>1</span>) <span style=color:#c7bf54>+</span> <span style=color:#00b1f7>fib</span>(<span style=color:#c1abea>n</span> <span style=color:#c7bf54>-</span> <span style=color:#d19a66>2</span>)
 }
-<span style=color:#fff;font-weight:700>say</span> fib <span style=color:#ff0;font-weight:700>10</span>;
-<span style=color:#007f7f># OUTPUT: 55</span>
+<span style=color:#ef8383>say</span> <span style=color:#c1abea>fib</span> <span style=color:#d19a66>10</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 55</span>
 
-<span style=color:#007f7f># Roles and classes</span>
-<span style=color:#fff;font-weight:700>role</span> Shape {
-    <span style=color:#fff;font-weight:700>method</span> area { ... }
+<span style=color:#8a93a5;font-style:italic># Roles and classes</span>
+<span style=color:#c678dd>role</span> <span style=color:#76a9f9>Shape</span> {
+    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>area</span> { <span style=color:#c7bf54>...</span> }
 
-    <span style=color:#fff;font-weight:700>method</span> print_area {
-        <span style=color:#fff;font-weight:700>say</span> &#34;<span style=color:#0ff;font-weight:700>Area of </span>{<span style=color:#fff;font-weight:700>self</span>.^<span style=color:#fff;font-weight:700>name</span>}<span style=color:#0ff;font-weight:700> is </span>{<span style=color:#fff;font-weight:700>self</span>.area}<span style=color:#0ff;font-weight:700>.</span>&#34;;
+    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>print_area</span> {
+        <span style=color:#ef8383>say</span> &#34;<span style=color:#63c381>Area of </span>{<span style=color:#ef8383>self</span><span style=color:#c7bf54>.^</span><span style=color:#ef8383>name</span>}<span style=color:#63c381> is </span>{<span style=color:#ef8383>self</span><span style=color:#c7bf54>.</span><span style=color:#00b1f7>area</span>}<span style=color:#63c381>.</span>&#34;;
     }
 }
 
-<span style=color:#fff;font-weight:700>class</span> Rectangle <span style=color:#fff;font-weight:700>does</span> Shape {
-    <span style=color:#fff;font-weight:700>has</span> $.width <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>required</span>;
-    <span style=color:#fff;font-weight:700>has</span> $.height <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>required</span>;
+<span style=color:#c678dd>class</span> <span style=color:#76a9f9>Rectangle</span> <span style=color:#c678dd>does</span> <span style=color:#76a9f9>Shape</span> {
+    <span style=color:#c678dd>has</span> <span style=color:#dcaeea>$.width</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>required</span>;
+    <span style=color:#c678dd>has</span> <span style=color:#dcaeea>$.height</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>required</span>;
 
-    <span style=color:#fff;font-weight:700>method</span> area {
-        $!width * $!height
+    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>area</span> {
+        <span style=color:#dcaeea>$!width</span> <span style=color:#c7bf54>*</span> <span style=color:#dcaeea>$!height</span>
     }
 }
 
-Rectangle.<span style=color:#fff;font-weight:700>new</span>(<span style=color:#0ff;font-weight:700>width</span> =&gt; <span style=color:#ff0;font-weight:700>5</span>, <span style=color:#0ff;font-weight:700>height</span> =&gt; <span style=color:#ff0;font-weight:700>7</span>).print_area;
-<span style=color:#007f7f># OUTPUT: Area of Rectangle is 35.</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-functional class=raku-accordion-input>
-<label for=raku-accordion-input-functional class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">برنامه‌نویسی تابعی</h3><p class=card-text>لیست‌های کندرو، سیکوئنس‌های بی‌نهایت، جانکشن‌ها و اپراتورهای فید، ترکیب تابع، متا و هایپر</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#007f7f># Inifinite and lazy list</span>
-<span style=color:#fff;font-weight:700>my</span> @fib = <span style=color:#ff0;font-weight:700>0</span>, <span style=color:#ff0;font-weight:700>1</span>, * + * ... ∞;
-<span style=color:#fff;font-weight:700>say</span> @fib[^<span style=color:#ff0;font-weight:700>11</span>];
-<span style=color:#007f7f># OUTPUT: (0 1 1 2 3 5 8 13 21 34 55)</span>
+<span style=color:#c1abea>Rectangle</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>width</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>5</span>, <span style=color:#98c379>height</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>7</span>)<span style=color:#c7bf54>.</span><span style=color:#00b1f7>print_area</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: Area of Rectangle is 35.</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-functional class=raku-accordion-input>
+<label for=raku-accordion-input-functional class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">برنامه‌نویسی تابعی</h3><p class=card-text>لیست‌های کندرو، سیکوئنس‌های بی‌نهایت، جانکشن‌ها و اپراتورهای فید، ترکیب تابع، متا و هایپر</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#8a93a5;font-style:italic># Inifinite and lazy list</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>@fib</span> <span style=color:#c7bf54>=</span> <span style=color:#d19a66>0</span><span style=color:#c7bf54>,</span> <span style=color:#d19a66>1</span><span style=color:#c7bf54>,</span> <span style=color:#c7bf54>*</span> <span style=color:#c7bf54>+</span> <span style=color:#c7bf54>*</span> <span style=color:#c7bf54>...</span> <span style=color:#b756ff;font-weight:700>∞</span>;
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>@fib</span><span style=color:#c7bf54>[^</span><span style=color:#d19a66>11</span><span style=color:#c7bf54>]</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: (0 1 1 2 3 5 8 13 21 34 55)</span>
 
-<span style=color:#007f7f># Feed operator</span>
-@fib[^<span style=color:#ff0;font-weight:700>20</span>] ==&gt; <span style=color:#fff;font-weight:700>grep</span>(&amp;is-prime) ==&gt; <span style=color:#fff;font-weight:700>say</span>();
-<span style=color:#007f7f># OUTPUT: (2 3 5 13 89 233 1597)</span>
+<span style=color:#8a93a5;font-style:italic># Feed operator</span>
+<span style=color:#dcaeea>@fib</span><span style=color:#c7bf54>[^</span><span style=color:#d19a66>20</span><span style=color:#c7bf54>]</span> <span style=color:#c7bf54>==&gt;</span> <span style=color:#ef8383>grep</span>(<span style=color:#dcaeea>&amp;is-prime</span>) <span style=color:#c7bf54>==&gt;</span> <span style=color:#ef8383>say</span>();
+<span style=color:#8a93a5;font-style:italic># OUTPUT: (2 3 5 13 89 233 1597)</span>
 
-<span style=color:#007f7f># Function composition</span>
-<span style=color:#fff;font-weight:700>my</span> &amp;reverse_primes = &amp;reverse ∘ &amp;grep.<span style=color:#fff;font-weight:700>assuming</span>(&amp;is-prime);
-<span style=color:#fff;font-weight:700>say</span> reverse_primes ^<span style=color:#ff0;font-weight:700>20</span>;
-<span style=color:#007f7f># OUTPUT: (19 17 13 11 7 5 3 2)</span>
+<span style=color:#8a93a5;font-style:italic># Function composition</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>&amp;reverse_primes</span> <span style=color:#c7bf54>=</span> <span style=color:#dcaeea>&amp;reverse</span> <span style=color:#c7bf54>∘</span> <span style=color:#dcaeea>&amp;grep</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>assuming</span>(<span style=color:#dcaeea>&amp;is-prime</span>);
+<span style=color:#ef8383>say</span> <span style=color:#c1abea>reverse_primes</span> <span style=color:#c7bf54>^</span><span style=color:#d19a66>20</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: (19 17 13 11 7 5 3 2)</span>
 
-<span style=color:#fff;font-weight:700>my</span> @a = <span style=color:#ff0;font-weight:700>1</span>..<span style=color:#ff0;font-weight:700>4</span>;
-<span style=color:#fff;font-weight:700>my</span> @b = &#39;<span style=color:#0ff;font-weight:700>a</span>&#39;..&#39;<span style=color:#0ff;font-weight:700>d</span>&#39;;
-<span style=color:#007f7f># Zip two lists using Z meta operator</span>
-<span style=color:#fff;font-weight:700>say</span> @a Z @b;
-<span style=color:#007f7f># OUTPUT: ((1 a) (2 b) (3 c) (4 d))</span>
-<span style=color:#fff;font-weight:700>say</span> @a Z=&gt; @b;
-<span style=color:#007f7f># OUTPUT: (1 =&gt; a 2 =&gt; b 3 =&gt; c 4 =&gt; d)</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>@a</span> <span style=color:#c7bf54>=</span> <span style=color:#d19a66>1</span><span style=color:#c7bf54>..</span><span style=color:#d19a66>4</span>;
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>@b</span> <span style=color:#c7bf54>=</span> &#39;<span style=color:#98c379>a</span>&#39;<span style=color:#c7bf54>..</span>&#39;<span style=color:#98c379>d</span>&#39;;
+<span style=color:#8a93a5;font-style:italic># Zip two lists using Z meta operator</span>
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>@a</span> <span style=color:#b756ff;font-weight:700>Z</span> <span style=color:#dcaeea>@b</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: ((1 a) (2 b) (3 c) (4 d))</span>
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>@a</span> <span style=color:#b756ff;font-weight:700>Z</span><span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>@b</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: (1 =&gt; a 2 =&gt; b 3 =&gt; c 4 =&gt; d)</span>
 
-<span style=color:#007f7f># Hyper Operators</span>
-<span style=color:#fff;font-weight:700>say</span> @b «~» @a;
-<span style=color:#007f7f># OUTPUT: [a1 b2 c3 d4]</span>
+<span style=color:#8a93a5;font-style:italic># Hyper Operators</span>
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>@b</span> <span style=color:#c7bf54>«~»</span> <span style=color:#dcaeea>@a</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: [a1 b2 c3 d4]</span>
 
-<span style=color:#007f7f># Junctions</span>
-<span style=color:#fff;font-weight:700>say</span> &#39;<span style=color:#0ff;font-weight:700>Find all the words starting with a lowercase vowel</span>&#39;.<span style=color:#fff;font-weight:700>words</span>.<span style=color:#fff;font-weight:700>grep</span>: *.<span style=color:#fff;font-weight:700>starts-with</span>: <span style=color:#fff;font-weight:700>any</span> &lt;<span style=color:#0ff;font-weight:700>a e i o u</span>&gt;;
-<span style=color:#007f7f># OUTPUT: (all a)</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-grammars class=raku-accordion-input>
-<label for=raku-accordion-input-grammars class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">گرامرها و عبارات باقاعده</h3><p class=card-text>گرامرها برای تجزیه و پارس کردن راحت داده‌ها و عبارات باقاعده از نو ساخته شده</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>grammar</span> INIParser {
-    <span style=color:#fff;font-weight:700>token</span> TOP {<span style=color:#0ff;font-weight:700> </span>&lt;block&gt;<span style=color:#0ff;font-weight:700> </span>&lt;section&gt;*<span style=color:#0ff;font-weight:700> </span>}
-    <span style=color:#fff;font-weight:700>token</span> section {<span style=color:#0ff;font-weight:700> </span>&lt;header&gt;<span style=color:#0ff;font-weight:700> </span>&lt;block&gt;<span style=color:#0ff;font-weight:700> </span>}
-    <span style=color:#fff;font-weight:700>token</span> header {<span style=color:#0ff;font-weight:700> </span>&#39;<span style=color:#0ff;font-weight:700>[</span>&#39;<span style=color:#0ff;font-weight:700> </span>~<span style=color:#0ff;font-weight:700> </span>&#39;<span style=color:#0ff;font-weight:700>]</span>&#39;<span style=color:#0ff;font-weight:700> </span><span style=color:#0ff;font-weight:700>\w</span>+<span style=color:#0ff;font-weight:700> </span><span style=color:#0ff;font-weight:700>\n</span>+<span style=color:#0ff;font-weight:700> </span>}
-    <span style=color:#fff;font-weight:700>token</span> block {<span style=color:#0ff;font-weight:700> </span>[&lt;pair&gt;<span style=color:#0ff;font-weight:700> </span>|<span style=color:#0ff;font-weight:700> </span>&lt;comment&gt;]*<span style=color:#0ff;font-weight:700> </span>}
-    <span style=color:#fff;font-weight:700>rule</span> pair {<span style=color:#0ff;font-weight:700> </span>&lt;key&gt;<span style=color:#0ff;font-weight:700> </span>&#39;<span style=color:#0ff;font-weight:700>=</span>&#39;<span style=color:#0ff;font-weight:700> </span>&lt;value&gt;<span style=color:#0ff;font-weight:700> </span>}
-    <span style=color:#fff;font-weight:700>token</span> comment {<span style=color:#0ff;font-weight:700> </span>&#39;<span style=color:#0ff;font-weight:700>;</span>&#39;<span style=color:#0ff;font-weight:700> </span><span style=color:#0ff;font-weight:700>\N</span>*<span style=color:#0ff;font-weight:700> </span><span style=color:#0ff;font-weight:700>\n</span>+<span style=color:#0ff;font-weight:700> </span>}
-    <span style=color:#fff;font-weight:700>token</span> key {<span style=color:#0ff;font-weight:700> </span><span style=color:#0ff;font-weight:700>\w</span>+<span style=color:#0ff;font-weight:700> </span>}
-    <span style=color:#fff;font-weight:700>token</span> value {<span style=color:#0ff;font-weight:700> </span>&lt;-[<span style=color:#0ff;font-weight:700>\n</span><span style=color:#0ff;font-weight:700> ;</span>]&gt;+<span style=color:#0ff;font-weight:700> </span>}
+<span style=color:#8a93a5;font-style:italic># Junctions</span>
+<span style=color:#ef8383>say</span> &#39;<span style=color:#98c379>Find all the words starting with a lowercase vowel</span>&#39;<span style=color:#c7bf54>.</span><span style=color:#ef8383>words</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>grep</span><span style=color:#c7bf54>:</span> <span style=color:#c7bf54>*.</span><span style=color:#ef8383>starts-with</span><span style=color:#c7bf54>:</span> <span style=color:#ef8383>any</span> &lt;<span style=color:#98c379>a e i o u</span>&gt;;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: (all a)</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-grammars class=raku-accordion-input>
+<label for=raku-accordion-input-grammars class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">گرامرها و عبارات باقاعده</h3><p class=card-text>گرامرها برای تجزیه و پارس کردن راحت داده‌ها و عبارات باقاعده از نو ساخته شده</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>grammar</span> <span style=color:#76a9f9>INIParser</span> {
+    <span style=color:#c678dd>token</span> <span style=color:#00b1f7>TOP</span> {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>block</span>&gt;<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>section</span>&gt;<span style=color:#c7bf54>*</span><span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>token</span> <span style=color:#00b1f7>section</span> {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>header</span>&gt;<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>block</span>&gt;<span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>token</span> <span style=color:#00b1f7>header</span> {<span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>[</span>&#39;<span style=color:#56b6c2> </span><span style=color:#c7bf54>~</span><span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>]</span>&#39;<span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\w</span><span style=color:#c7bf54>+</span><span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\n</span><span style=color:#c7bf54>+</span><span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>token</span> <span style=color:#00b1f7>block</span> {<span style=color:#56b6c2> </span>[&lt;<span style=color:#00b1f7>pair</span>&gt;<span style=color:#56b6c2> </span><span style=color:#c7bf54>|</span><span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>comment</span>&gt;]<span style=color:#c7bf54>*</span><span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>rule</span> <span style=color:#00b1f7>pair</span> {<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>key</span>&gt;<span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>=</span>&#39;<span style=color:#56b6c2> </span>&lt;<span style=color:#00b1f7>value</span>&gt;<span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>token</span> <span style=color:#00b1f7>comment</span> {<span style=color:#56b6c2> </span>&#39;<span style=color:#98c379>;</span>&#39;<span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\N</span><span style=color:#c7bf54>*</span><span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\n</span><span style=color:#c7bf54>+</span><span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>token</span> <span style=color:#00b1f7>key</span> {<span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\w</span><span style=color:#c7bf54>+</span><span style=color:#56b6c2> </span>}
+    <span style=color:#c678dd>token</span> <span style=color:#00b1f7>value</span> {<span style=color:#56b6c2> </span>&lt;<span style=color:#c7bf54>-</span>[<span style=color:#d26464;font-weight:700>\n</span><span style=color:#56b6c2> ;</span>]&gt;<span style=color:#c7bf54>+</span><span style=color:#56b6c2> </span>}
 }
 
-<span style=color:#fff;font-weight:700>my</span> $match = INIParser.<span style=color:#fff;font-weight:700>parse</span>: <span style=color:#fff;font-weight:700>q</span><span style=color:#0ff;font-weight:700>:to</span>/END/;<span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>; Comment
-</span><span style=color:#0ff;font-weight:700>key1=value1
-</span><span style=color:#0ff;font-weight:700>key2 = value2
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>; Section 1
-</span><span style=color:#0ff;font-weight:700>[section1]
-</span><span style=color:#0ff;font-weight:700>key3=value3
-</span><span style=color:#0ff;font-weight:700></span>END
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$match</span> <span style=color:#c7bf54>=</span> <span style=color:#c1abea>INIParser</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>parse</span><span style=color:#c7bf54>:</span> <span style=color:#c678dd>q</span><span style=color:#98c379>:to</span>/END/;<span style=color:#98c379>
+</span><span style=color:#98c379>; Comment
+</span><span style=color:#98c379>key1=value1
+</span><span style=color:#98c379>key2 = value2
+</span><span style=color:#98c379>
+</span><span style=color:#98c379>; Section 1
+</span><span style=color:#98c379>[section1]
+</span><span style=color:#98c379>key3=value3
+</span><span style=color:#98c379></span>END
 
 
-<span style=color:#fff;font-weight:700>say</span> $match&lt;<span style=color:#0ff;font-weight:700>block</span>&gt;&lt;<span style=color:#0ff;font-weight:700>pair</span>&gt;[<span style=color:#ff0;font-weight:700>0</span>]&lt;<span style=color:#0ff;font-weight:700>value</span>&gt;;
-<span style=color:#007f7f># OUTPUT: ｢value1｣</span>
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>$match</span>&lt;<span style=color:#98c379>block</span>&gt;&lt;<span style=color:#98c379>pair</span>&gt;<span style=color:#c7bf54>[</span><span style=color:#d19a66>0</span><span style=color:#c7bf54>]</span>&lt;<span style=color:#98c379>value</span>&gt;;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: ｢value1｣</span>
 
-<span style=color:#fff;font-weight:700>say</span> $match&lt;<span style=color:#0ff;font-weight:700>section</span>&gt;[<span style=color:#ff0;font-weight:700>0</span>]&lt;<span style=color:#0ff;font-weight:700>block</span>&gt;&lt;<span style=color:#0ff;font-weight:700>pair</span>&gt;[<span style=color:#ff0;font-weight:700>0</span>]&lt;<span style=color:#0ff;font-weight:700>value</span>&gt;;
-<span style=color:#007f7f># OUTPUT: ｢value3｣</span>
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>$match</span>&lt;<span style=color:#98c379>section</span>&gt;<span style=color:#c7bf54>[</span><span style=color:#d19a66>0</span><span style=color:#c7bf54>]</span>&lt;<span style=color:#98c379>block</span>&gt;&lt;<span style=color:#98c379>pair</span>&gt;<span style=color:#c7bf54>[</span><span style=color:#d19a66>0</span><span style=color:#c7bf54>]</span>&lt;<span style=color:#98c379>value</span>&gt;;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: ｢value3｣</span>
 </code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-async class=raku-accordion-input>
-<label for=raku-accordion-input-async class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">async و کانکارنسی سطح بالا</h3><p class=card-text>استفاده از تایپ‌های Promise، Supply، Channel و بلاکهای supply، react و whenever</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#007f7f># Promise</span>
-<span style=color:#fff;font-weight:700>my</span> $promise = <span style=color:#fff;font-weight:700>start</span> {
-    <span style=color:#fff;font-weight:700>my</span> $i = <span style=color:#ff0;font-weight:700>0</span>;
-    <span style=color:#fff;font-weight:700>for</span> <span style=color:#ff0;font-weight:700>1</span> .. <span style=color:#ff0;font-weight:700>10</span> {
-        $i += $_
+<label for=raku-accordion-input-async class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">async و کانکارنسی سطح بالا</h3><p class=card-text>استفاده از تایپ‌های Promise، Supply، Channel و بلاکهای supply، react و whenever</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#8a93a5;font-style:italic># Promise</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$promise</span> <span style=color:#c7bf54>=</span> <span style=color:#c678dd>start</span> {
+    <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$i</span> <span style=color:#c7bf54>=</span> <span style=color:#d19a66>0</span>;
+    <span style=color:#c678dd>for</span> <span style=color:#d19a66>1</span> <span style=color:#c7bf54>..</span> <span style=color:#d19a66>10</span> {
+        <span style=color:#dcaeea>$i</span> <span style=color:#c7bf54>+=</span> <span style=color:#dcaeea>$_</span>
     }
-    $i
+    <span style=color:#dcaeea>$i</span>
 }
-<span style=color:#fff;font-weight:700>my</span> $result = <span style=color:#fff;font-weight:700>await</span> $promise;
-<span style=color:#fff;font-weight:700>say</span> $result;
-<span style=color:#007f7f># OUTPUT: 55</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$result</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>await</span> <span style=color:#dcaeea>$promise</span>;
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>$result</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 55</span>
 
-<span style=color:#007f7f># Concurrency</span>
-<span style=color:#fff;font-weight:700>react</span> {
-    <span style=color:#fff;font-weight:700>my</span> $current-proc;
-    <span style=color:#fff;font-weight:700>whenever</span> $script.<span style=color:#fff;font-weight:700>watch</span>.<span style=color:#fff;font-weight:700>unique</span>(:<span style=color:#0ff;font-weight:700>as</span>(*.<span style=color:#fff;font-weight:700>path</span>), :<span style=color:#0ff;font-weight:700>expires</span>(<span style=color:#ff0;font-weight:700>1</span>)) {
-        .<span style=color:#fff;font-weight:700>kill</span> <span style=color:#fff;font-weight:700>with</span> $current-proc;
-        $current-proc = <span style=color:#fff;font-weight:700>Proc::Async</span>.<span style=color:#fff;font-weight:700>new</span>($*EXECUTABLE, $script);
-        <span style=color:#fff;font-weight:700>my</span> $done = $current-proc.<span style=color:#fff;font-weight:700>start</span>;
-        <span style=color:#fff;font-weight:700>whenever</span> $done {
-            $current-proc = <span style=color:#fff;font-weight:700>Nil</span>;
+<span style=color:#8a93a5;font-style:italic># Concurrency</span>
+<span style=color:#c678dd>react</span> {
+    <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$current-proc</span>;
+    <span style=color:#c678dd>whenever</span> <span style=color:#dcaeea>$script</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>watch</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>unique</span>(:<span style=color:#98c379>as</span>(<span style=color:#c7bf54>*.</span><span style=color:#ef8383>path</span>)<span style=color:#c7bf54>,</span> :<span style=color:#98c379>expires</span>(<span style=color:#d19a66>1</span>)) {
+        <span style=color:#c7bf54>.</span><span style=color:#ef8383>kill</span> <span style=color:#c678dd>with</span> <span style=color:#dcaeea>$current-proc</span>;
+        <span style=color:#dcaeea>$current-proc</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>Proc::Async</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#dcaeea;font-weight:700>$*EXECUTABLE</span><span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$script</span>);
+        <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$done</span> <span style=color:#c7bf54>=</span> <span style=color:#dcaeea>$current-proc</span><span style=color:#c7bf54>.</span><span style=color:#c678dd>start</span>;
+        <span style=color:#c678dd>whenever</span> <span style=color:#dcaeea>$done</span> {
+            <span style=color:#dcaeea>$current-proc</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>Nil</span>;
         }
     }
 }
 
-<span style=color:#fff;font-weight:700>my</span> $modules-load = <span style=color:#fff;font-weight:700>start</span> @files
-    .<span style=color:#fff;font-weight:700>grep</span>(/<span style=color:#0ff;font-weight:700> \</span>.(<span style=color:#0ff;font-weight:700>yaml</span>|<span style=color:#0ff;font-weight:700>yml</span>)<span style=color:#0ff;font-weight:700> </span>$/)
-    .<span style=color:#fff;font-weight:700>sort</span>(-*.<span style=color:#fff;font-weight:700>s</span>)
-    .<span style=color:#fff;font-weight:700>race</span>(<span style=color:#0ff;font-weight:700>batch</span> =&gt; <span style=color:#ff0;font-weight:700>1</span>, <span style=color:#0ff;font-weight:700>degree</span> =&gt; <span style=color:#ff0;font-weight:700>6</span>)
-    .<span style=color:#fff;font-weight:700>map</span>(<span style=color:#fff;font-weight:700>-&gt;</span> $file {
-            <span style=color:#fff;font-weight:700>my</span> $yaml = <span style=color:#fff;font-weight:700>self</span>!load-yaml($file, $schema, $problems);
-            <span style=color:#fff;font-weight:700>with</span> $yaml {
-                Easii::Model::Module.<span style=color:#fff;font-weight:700>new</span>(<span style=color:#0ff;font-weight:700>parsed</span> =&gt; $yaml, <span style=color:#0ff;font-weight:700>source</span> =&gt; $file.<span style=color:#fff;font-weight:700>basename</span>)
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$modules-load</span> <span style=color:#c7bf54>=</span> <span style=color:#c678dd>start</span> <span style=color:#dcaeea>@files</span>
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>grep</span>(/<span style=color:#56b6c2> \</span><span style=color:#bda26f>.</span>(<span style=color:#56b6c2>yaml</span><span style=color:#c7bf54>|</span><span style=color:#56b6c2>yml</span>)<span style=color:#56b6c2> </span><span style=color:#bda26f>$</span>/)
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>sort</span>(<span style=color:#c7bf54>-*.</span><span style=color:#ef8383>s</span>)
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>race</span>(<span style=color:#98c379>batch</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>1</span>, <span style=color:#98c379>degree</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>6</span>)
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>map</span>(<span style=color:#c678dd>-&gt;</span> <span style=color:#dcaeea>$file</span> {
+            <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$yaml</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>self</span><span style=color:#c7bf54>!</span><span style=color:#00b1f7>load-yaml</span>(<span style=color:#dcaeea>$file</span><span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$schema</span><span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$problems</span>);
+            <span style=color:#c678dd>with</span> <span style=color:#dcaeea>$yaml</span> {
+                <span style=color:#c1abea>Easii::Model::Module</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>parsed</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$yaml</span>, <span style=color:#98c379>source</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$file</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>basename</span>)
             }
      })
-    .<span style=color:#fff;font-weight:700>eager</span>;
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>eager</span>;
 
-<span style=color:#007f7f># Supply</span>
-<span style=color:#fff;font-weight:700>my</span> $bread-supplier = <span style=color:#fff;font-weight:700>Supplier</span>.<span style=color:#fff;font-weight:700>new</span>;
-<span style=color:#fff;font-weight:700>my</span> $vegetable-supplier = <span style=color:#fff;font-weight:700>Supplier</span>.<span style=color:#fff;font-weight:700>new</span>;
+<span style=color:#8a93a5;font-style:italic># Supply</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$bread-supplier</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>Supplier</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>;
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$vegetable-supplier</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>Supplier</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>;
 
-<span style=color:#fff;font-weight:700>my</span> $supply = <span style=color:#fff;font-weight:700>supply</span> {
-    <span style=color:#fff;font-weight:700>whenever</span> $bread-supplier.<span style=color:#fff;font-weight:700>Supply</span> {
-        <span style=color:#fff;font-weight:700>emit</span>(&#34;<span style=color:#0ff;font-weight:700>We&#39;ve got bread: </span>&#34; ~ $_);
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$supply</span> <span style=color:#c7bf54>=</span> <span style=color:#c678dd>supply</span> {
+    <span style=color:#c678dd>whenever</span> <span style=color:#dcaeea>$bread-supplier</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>Supply</span> {
+        <span style=color:#ef8383>emit</span>(&#34;<span style=color:#63c381>We&#39;ve got bread: </span>&#34; <span style=color:#c7bf54>~</span> <span style=color:#dcaeea>$_</span>);
     };
-    <span style=color:#fff;font-weight:700>whenever</span> $vegetable-supplier.<span style=color:#fff;font-weight:700>Supply</span> {
-        <span style=color:#fff;font-weight:700>emit</span>(&#34;<span style=color:#0ff;font-weight:700>We&#39;ve got a vegetable: </span>&#34; ~ $_);
+    <span style=color:#c678dd>whenever</span> <span style=color:#dcaeea>$vegetable-supplier</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>Supply</span> {
+        <span style=color:#ef8383>emit</span>(&#34;<span style=color:#63c381>We&#39;ve got a vegetable: </span>&#34; <span style=color:#c7bf54>~</span> <span style=color:#dcaeea>$_</span>);
     };
 }
-$supply.<span style=color:#fff;font-weight:700>tap</span>(<span style=color:#fff;font-weight:700>-&gt;</span> $v { <span style=color:#fff;font-weight:700>say</span> &#34;$v&#34; });
+<span style=color:#dcaeea>$supply</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>tap</span>(<span style=color:#c678dd>-&gt;</span> <span style=color:#dcaeea>$v</span> { <span style=color:#ef8383>say</span> &#34;<span style=color:#dcaeea>$v</span>&#34; });
 
-$vegetable-supplier.<span style=color:#fff;font-weight:700>emit</span>(&#34;<span style=color:#0ff;font-weight:700>Radish</span>&#34;);
-<span style=color:#007f7f># OUTPUT: «We&#39;ve got a vegetable: Radish␤» </span>
-$bread-supplier.<span style=color:#fff;font-weight:700>emit</span>(&#34;<span style=color:#0ff;font-weight:700>Thick sliced</span>&#34;);
-<span style=color:#007f7f># OUTPUT: «We&#39;ve got bread: Thick sliced␤» </span>
-$vegetable-supplier.<span style=color:#fff;font-weight:700>emit</span>(&#34;<span style=color:#0ff;font-weight:700>Lettuce</span>&#34;);
-<span style=color:#007f7f># OUTPUT: «We&#39;ve got a vegetable: Lettuce␤» </span>
+<span style=color:#dcaeea>$vegetable-supplier</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>emit</span>(&#34;<span style=color:#63c381>Radish</span>&#34;);
+<span style=color:#8a93a5;font-style:italic># OUTPUT: «We&#39;ve got a vegetable: Radish␤» </span>
+<span style=color:#dcaeea>$bread-supplier</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>emit</span>(&#34;<span style=color:#63c381>Thick sliced</span>&#34;);
+<span style=color:#8a93a5;font-style:italic># OUTPUT: «We&#39;ve got bread: Thick sliced␤» </span>
+<span style=color:#dcaeea>$vegetable-supplier</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>emit</span>(&#34;<span style=color:#63c381>Lettuce</span>&#34;);
+<span style=color:#8a93a5;font-style:italic># OUTPUT: «We&#39;ve got a vegetable: Lettuce␤» </span>
 </code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-unicode class=raku-accordion-input>
-<label for=raku-accordion-input-unicode class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">پشتیبانی عالی از یونیکد</h3><p class=card-text>پشتیبانی یونیکد بر اساس گرافیم</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>say</span> &#39;<span style=color:#0ff;font-weight:700>🦋</span>&#39;.<span style=color:#fff;font-weight:700>chars</span>;
-<span style=color:#007f7f># OUTPUT: 1</span>
-<span style=color:#fff;font-weight:700>say</span> &#39;<span style=color:#0ff;font-weight:700>🦋</span>&#39;.<span style=color:#fff;font-weight:700>codes</span>;
-<span style=color:#007f7f># OUTPUT: 1</span>
-<span style=color:#fff;font-weight:700>say</span> &#39;<span style=color:#0ff;font-weight:700>🦋</span>&#39;.<span style=color:#fff;font-weight:700>encode</span>.<span style=color:#fff;font-weight:700>bytes</span>;
-<span style=color:#007f7f># OUTPUT: 4</span>
+<label for=raku-accordion-input-unicode class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">پشتیبانی عالی از یونیکد</h3><p class=card-text>پشتیبانی یونیکد بر اساس گرافیم</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#ef8383>say</span> &#39;<span style=color:#98c379>🦋</span>&#39;<span style=color:#c7bf54>.</span><span style=color:#ef8383>chars</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 1</span>
+<span style=color:#ef8383>say</span> &#39;<span style=color:#98c379>🦋</span>&#39;<span style=color:#c7bf54>.</span><span style=color:#ef8383>codes</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 1</span>
+<span style=color:#ef8383>say</span> &#39;<span style=color:#98c379>🦋</span>&#39;<span style=color:#c7bf54>.</span><span style=color:#ef8383>encode</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>bytes</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 4</span>
 
-<span style=color:#fff;font-weight:700>my</span> $raku = &#39;<span style=color:#0ff;font-weight:700>راکو</span>&#39;;
-<span style=color:#fff;font-weight:700>say</span> $raku.<span style=color:#fff;font-weight:700>chars</span>;
-<span style=color:#007f7f># OUTPUT: 4</span>
-<span style=color:#fff;font-weight:700>say</span> $raku.<span style=color:#fff;font-weight:700>uninames</span>;
-<span style=color:#007f7f># OUTPUT: (ARABIC LETTER REH ARABIC LETTER ALEF ARABIC LETTER KEHEH ARABIC LETTER WAW)</span>
-<span style=color:#fff;font-weight:700>say</span> $raku.<span style=color:#fff;font-weight:700>comb</span>;
-<span style=color:#007f7f># OUTPUT: (ر ا ک و)</span>
-<span style=color:#fff;font-weight:700>say</span> +$raku.<span style=color:#fff;font-weight:700>comb</span>;
-<span style=color:#007f7f># OUTPUT: 4</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$raku</span> <span style=color:#c7bf54>=</span> &#39;<span style=color:#98c379>راکو</span>&#39;;
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>$raku</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>chars</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 4</span>
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>$raku</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>uninames</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: (ARABIC LETTER REH ARABIC LETTER ALEF ARABIC LETTER KEHEH ARABIC LETTER WAW)</span>
+<span style=color:#ef8383>say</span> <span style=color:#dcaeea>$raku</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>comb</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: (ر ا ک و)</span>
+<span style=color:#ef8383>say</span> <span style=color:#c7bf54>+</span><span style=color:#dcaeea>$raku</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>comb</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 4</span>
 </code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-types class=raku-accordion-input>
-<label for=raku-accordion-input-types class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">تایپ‌ها</h3><p class=card-text>تایپ‌گذاری تدریجی اختیاری و تایپ‌‌های نیتیو</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>subset</span> ℕ <span style=color:#fff;font-weight:700>of</span> <span style=color:#fff;font-weight:700>Int</span> <span style=color:#fff;font-weight:700>where</span> * &gt; <span style=color:#ff0;font-weight:700>0</span>;
+<label for=raku-accordion-input-types class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">تایپ‌ها</h3><p class=card-text>تایپ‌گذاری تدریجی اختیاری و تایپ‌‌های نیتیو</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>subset</span> <span style=color:#76a9f9>ℕ</span> <span style=color:#c678dd>of</span> <span style=color:#ef8383>Int</span> <span style=color:#c678dd>where</span> <span style=color:#c7bf54>*</span> <span style=color:#c7bf54>&gt;</span> <span style=color:#d19a66>0</span>;
 
-<span style=color:#fff;font-weight:700>sub</span> <span style=color:#fff;font-weight:700>f</span> (ℕ $a, ℕ $b <span style=color:#fff;font-weight:700>--&gt;</span> <span style=color:#fff;font-weight:700>Array</span> <span style=color:#fff;font-weight:700>of</span> ℕ) {
-    <span style=color:#fff;font-weight:700>Array</span>[ℕ].<span style=color:#fff;font-weight:700>new</span>: $a², $b²;
+<span style=color:#c678dd>sub</span> <span style=color:#ef8383>f</span> (<span style=color:#c1abea>ℕ</span> <span style=color:#dcaeea>$a</span><span style=color:#c7bf54>,</span> <span style=color:#c1abea>ℕ</span> <span style=color:#dcaeea>$b</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#ef8383>Array</span> <span style=color:#c678dd>of</span> <span style=color:#76a9f9>ℕ</span>) {
+    <span style=color:#ef8383>Array</span><span style=color:#c7bf54>[</span><span style=color:#c1abea>ℕ</span><span style=color:#c7bf54>].</span><span style=color:#ef8383>new</span><span style=color:#c7bf54>:</span> <span style=color:#dcaeea>$a</span>²<span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$b</span>²;
 }
 
-<span style=color:#fff;font-weight:700>say</span> <span style=color:#fff;font-weight:700>f</span> <span style=color:#ff0;font-weight:700>1</span>,<span style=color:#ff0;font-weight:700>2</span>;
-<span style=color:#007f7f># OUTPUT: [1 4]</span>
+<span style=color:#ef8383>say</span> <span style=color:#ef8383>f</span> <span style=color:#d19a66>1</span><span style=color:#c7bf54>,</span><span style=color:#d19a66>2</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: [1 4]</span>
 
-<span style=color:#007f7f># Native Types</span>
-<span style=color:#fff;font-weight:700>my</span> <span style=color:#fff;font-weight:700>int</span> @a = ^<span style=color:#ff0;font-weight:700>10_000_000</span>;
-<span style=color:#fff;font-weight:700>say</span> [+] @a;
-<span style=color:#007f7f># OUTPUT: 49999995000000</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-cli class=raku-accordion-input>
-<label for=raku-accordion-input-cli class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">رابط خط فرمان</h3><p class=card-text>ایجاد آسان رابط خط فرمان، در دسترس به وسیله تابع MAIN و تولید خودکار پیام نحوه استفاده</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>sub</span> <span style=color:#fff;font-weight:700>MAIN</span>(
-    <span style=color:#fff;font-weight:700>Str</span>   $file <span style=color:#fff;font-weight:700>where</span> *.<span style=color:#fff;font-weight:700>IO</span>.<span style=color:#fff;font-weight:700>f</span> = &#39;<span style=color:#0ff;font-weight:700>file.dat</span>&#39;,  <span style=color:#fff;font-weight:700>#= </span><span style=color:#0ff;font-weight:700>an existing file to frobnicate 
-</span><span style=color:#0ff;font-weight:700></span>    <span style=color:#fff;font-weight:700>Int</span>  :<span style=color:#0ff;font-weight:700>size</span>(:$length) = <span style=color:#ff0;font-weight:700>24</span>,              <span style=color:#fff;font-weight:700>#= </span><span style=color:#0ff;font-weight:700>length/size needed for frobnication 
-</span><span style=color:#0ff;font-weight:700></span>    <span style=color:#fff;font-weight:700>Bool</span> :$verbose,                         <span style=color:#fff;font-weight:700>#= </span><span style=color:#0ff;font-weight:700>required verbosity 
-</span><span style=color:#0ff;font-weight:700></span>) {
-    <span style=color:#fff;font-weight:700>say</span> $length <span style=color:#fff;font-weight:700>if</span> $length.<span style=color:#fff;font-weight:700>defined</span>;
-    <span style=color:#fff;font-weight:700>say</span> $file   <span style=color:#fff;font-weight:700>if</span> $file.<span style=color:#fff;font-weight:700>defined</span>;
-    <span style=color:#fff;font-weight:700>say</span> &#39;<span style=color:#0ff;font-weight:700>Verbosity </span>&#39;, ($verbose ?? &#39;<span style=color:#0ff;font-weight:700>on</span>&#39; !! &#39;<span style=color:#0ff;font-weight:700>off</span>&#39;);
+<span style=color:#8a93a5;font-style:italic># Native Types</span>
+<span style=color:#c678dd>my</span> <span style=color:#ef8383>int</span> <span style=color:#dcaeea>@a</span> <span style=color:#c7bf54>=</span> <span style=color:#c7bf54>^</span><span style=color:#d19a66>10_000_000</span>;
+<span style=color:#ef8383>say</span> <span style=color:#c7bf54>[+]</span> <span style=color:#dcaeea>@a</span>;
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 49999995000000</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-cli class=raku-accordion-input>
+<label for=raku-accordion-input-cli class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">رابط خط فرمان</h3><p class=card-text>ایجاد آسان رابط خط فرمان، در دسترس به وسیله تابع MAIN و تولید خودکار پیام نحوه استفاده</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>sub</span> <span style=color:#ef8383>MAIN</span>(
+    <span style=color:#ef8383>Str</span>   <span style=color:#dcaeea>$file</span> <span style=color:#c678dd>where</span> <span style=color:#c7bf54>*.</span><span style=color:#ef8383>IO</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>f</span> <span style=color:#c7bf54>=</span> &#39;<span style=color:#98c379>file.dat</span>&#39;<span style=color:#c7bf54>,</span>  <span style=color:#c678dd>#= </span><span style=color:#7e97c3>an existing file to frobnicate 
+</span><span style=color:#7e97c3></span>    <span style=color:#ef8383>Int</span>  :<span style=color:#98c379>size</span>(<span style=color:#c7bf54>:</span><span style=color:#dcaeea>$length</span>) <span style=color:#c7bf54>=</span> <span style=color:#d19a66>24</span><span style=color:#c7bf54>,</span>              <span style=color:#c678dd>#= </span><span style=color:#7e97c3>length/size needed for frobnication 
+</span><span style=color:#7e97c3></span>    <span style=color:#ef8383>Bool</span> <span style=color:#c7bf54>:</span><span style=color:#dcaeea>$verbose</span><span style=color:#c7bf54>,</span>                         <span style=color:#c678dd>#= </span><span style=color:#7e97c3>required verbosity 
+</span><span style=color:#7e97c3></span>) {
+    <span style=color:#ef8383>say</span> <span style=color:#dcaeea>$length</span> <span style=color:#c678dd>if</span> <span style=color:#dcaeea>$length</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>defined</span>;
+    <span style=color:#ef8383>say</span> <span style=color:#dcaeea>$file</span>   <span style=color:#c678dd>if</span> <span style=color:#dcaeea>$file</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>defined</span>;
+    <span style=color:#ef8383>say</span> &#39;<span style=color:#98c379>Verbosity </span>&#39;<span style=color:#c7bf54>,</span> (<span style=color:#dcaeea>$verbose</span> <span style=color:#c7bf54>??</span> &#39;<span style=color:#98c379>on</span>&#39; <span style=color:#c7bf54>!!</span> &#39;<span style=color:#98c379>off</span>&#39;);
 }
 
-<span style=color:#007f7f># $ script-name</span>
-<span style=color:#007f7f># Usage:</span>
-<span style=color:#007f7f># script-name [--size|--length=&lt;Int&gt;] [--verbose] [&lt;file&gt;]</span>
+<span style=color:#8a93a5;font-style:italic># $ script-name</span>
+<span style=color:#8a93a5;font-style:italic># Usage:</span>
+<span style=color:#8a93a5;font-style:italic># script-name [--size|--length=&lt;Int&gt;] [--verbose] [&lt;file&gt;]</span>
    
-<span style=color:#007f7f>#    [&lt;file&gt;]                 an existing file to frobnicate</span>
-<span style=color:#007f7f>#    --size|--length=&lt;Int&gt;    length/size needed for frobnication</span>
-<span style=color:#007f7f>#    --verbose                required verbosity</span>
+<span style=color:#8a93a5;font-style:italic>#    [&lt;file&gt;]                 an existing file to frobnicate</span>
+<span style=color:#8a93a5;font-style:italic>#    --size|--length=&lt;Int&gt;    length/size needed for frobnication</span>
+<span style=color:#8a93a5;font-style:italic>#    --verbose                required verbosity</span>
 
-<span style=color:#007f7f># $ raku frobnicate.raku --verbose</span>
-<span style=color:#007f7f># 24</span>
-<span style=color:#007f7f># file.dat</span>
-<span style=color:#007f7f># Verbosity on</span>
+<span style=color:#8a93a5;font-style:italic># $ raku frobnicate.raku --verbose</span>
+<span style=color:#8a93a5;font-style:italic># 24</span>
+<span style=color:#8a93a5;font-style:italic># file.dat</span>
+<span style=color:#8a93a5;font-style:italic># Verbosity on</span>
 
-<span style=color:#007f7f># Another example with multi MAIN</span>
-<span style=color:#fff;font-weight:700>multi</span> <span style=color:#fff;font-weight:700>MAIN</span> (&#39;<span style=color:#0ff;font-weight:700>install</span>&#39;, <span style=color:#fff;font-weight:700>Str</span> $something, <span style=color:#fff;font-weight:700>Bool</span> :$force) {
-    <span style=color:#fff;font-weight:700>say</span> &#34;<span style=color:#0ff;font-weight:700>Installing </span>$something<span style=color:#0ff;font-weight:700> </span>{&#39;<span style=color:#0ff;font-weight:700>by force</span>&#39; <span style=color:#fff;font-weight:700>if</span> $force}&#34;;
+<span style=color:#8a93a5;font-style:italic># Another example with multi MAIN</span>
+<span style=color:#c678dd>multi</span> <span style=color:#ef8383>MAIN</span> (&#39;<span style=color:#98c379>install</span>&#39;<span style=color:#c7bf54>,</span> <span style=color:#ef8383>Str</span> <span style=color:#dcaeea>$something</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>Bool</span> <span style=color:#c7bf54>:</span><span style=color:#dcaeea>$force</span>) {
+    <span style=color:#ef8383>say</span> &#34;<span style=color:#63c381>Installing </span><span style=color:#dcaeea>$something</span><span style=color:#63c381> </span>{&#39;<span style=color:#98c379>by force</span>&#39; <span style=color:#c678dd>if</span> <span style=color:#dcaeea>$force</span>}&#34;;
 }
 
-<span style=color:#fff;font-weight:700>multi</span> <span style=color:#fff;font-weight:700>MAIN</span> (&#39;<span style=color:#0ff;font-weight:700>run</span>&#39;, <span style=color:#fff;font-weight:700>Str</span> $something) {
-    <span style=color:#fff;font-weight:700>say</span> &#34;<span style=color:#0ff;font-weight:700>Running </span>$something&#34;;
+<span style=color:#c678dd>multi</span> <span style=color:#ef8383>MAIN</span> (&#39;<span style=color:#98c379>run</span>&#39;<span style=color:#c7bf54>,</span> <span style=color:#ef8383>Str</span> <span style=color:#dcaeea>$something</span>) {
+    <span style=color:#ef8383>say</span> &#34;<span style=color:#63c381>Running </span><span style=color:#dcaeea>$something</span>&#34;;
 }
 
-<span style=color:#007f7f># $ script-name</span>
-<span style=color:#007f7f># Usage:</span>
-<span style=color:#007f7f># script-name [--force] install &lt;something&gt;</span>
-<span style=color:#007f7f># script-name run &lt;something&gt;</span>
+<span style=color:#8a93a5;font-style:italic># $ script-name</span>
+<span style=color:#8a93a5;font-style:italic># Usage:</span>
+<span style=color:#8a93a5;font-style:italic># script-name [--force] install &lt;something&gt;</span>
+<span style=color:#8a93a5;font-style:italic># script-name run &lt;something&gt;</span>
 
-<span style=color:#007f7f># $ script-name --force install raku</span>
-<span style=color:#007f7f># Installing raku by force</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-nativecall class=raku-accordion-input>
-<label for=raku-accordion-input-nativecall class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Interfacing to external libraries</h3><p class=card-text>Interfacing to C/C++ with NativeCall and others with Inline::* modules</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#007f7f># Using NativeCall to access libnotify and show a notification</span>
-<span style=color:#fff;font-weight:700>use</span> <span style=color:#fff;font-weight:700>NativeCall</span>;
+<span style=color:#8a93a5;font-style:italic># $ script-name --force install raku</span>
+<span style=color:#8a93a5;font-style:italic># Installing raku by force</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-nativecall class=raku-accordion-input>
+<label for=raku-accordion-input-nativecall class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">Interfacing to external libraries</h3><p class=card-text>Interfacing to C/C++ with NativeCall and others with Inline::* modules</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#8a93a5;font-style:italic># Using NativeCall to access libnotify and show a notification</span>
+<span style=color:#c678dd>use</span> <span style=color:#ef8383>NativeCall</span>;
 
-<span style=color:#fff;font-weight:700>sub</span> notify_init (<span style=color:#fff;font-weight:700>str</span> $appname <span style=color:#fff;font-weight:700>--&gt;</span> <span style=color:#fff;font-weight:700>int32</span>) <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>native</span>(&#39;<span style=color:#0ff;font-weight:700>notify</span>&#39;) { * }
-<span style=color:#fff;font-weight:700>sub</span> notify_uninit <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>native</span>(&#39;<span style=color:#0ff;font-weight:700>notify</span>&#39;) { * }
-<span style=color:#fff;font-weight:700>class</span> NotifyNotification <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>repr</span>(&#39;<span style=color:#0ff;font-weight:700>CPointer</span>&#39;) { * }
-<span style=color:#fff;font-weight:700>sub</span> notify_notification_new (<span style=color:#fff;font-weight:700>str</span> $summary, <span style=color:#fff;font-weight:700>str</span> $body, <span style=color:#fff;font-weight:700>str</span> $icon <span style=color:#fff;font-weight:700>--&gt;</span> NotifyNotification) <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>native</span>(&#39;<span style=color:#0ff;font-weight:700>notify</span>&#39;) { * }
-<span style=color:#fff;font-weight:700>sub</span> notify_notification_show (NotifyNotification) <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>native</span>(&#39;<span style=color:#0ff;font-weight:700>notify</span>&#39;) { * }
+<span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_init</span> (<span style=color:#ef8383>str</span> <span style=color:#dcaeea>$appname</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#ef8383>int32</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
+<span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_uninit</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
+<span style=color:#c678dd>class</span> <span style=color:#76a9f9>NotifyNotification</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>repr</span>(&#39;<span style=color:#98c379>CPointer</span>&#39;) { <span style=color:#c7bf54>*</span> }
+<span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_notification_new</span> (<span style=color:#ef8383>str</span> <span style=color:#dcaeea>$summary</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>str</span> <span style=color:#dcaeea>$body</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>str</span> <span style=color:#dcaeea>$icon</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#c1abea>NotifyNotification</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
+<span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_notification_show</span> (<span style=color:#c1abea>NotifyNotification</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
 
-<span style=color:#fff;font-weight:700>if</span> notify_init &#39;<span style=color:#0ff;font-weight:700>MyApp</span>&#39; {
-    notify_notification_show notify_notification_new &#39;<span style=color:#0ff;font-weight:700>My Notification</span>&#39;, &#39;<span style=color:#0ff;font-weight:700>Notification Body</span>&#39;, <span style=color:#fff;font-weight:700>Str</span>;
-    notify_uninit;
+<span style=color:#c678dd>if</span> <span style=color:#c1abea>notify_init</span> &#39;<span style=color:#98c379>MyApp</span>&#39; {
+    <span style=color:#c1abea>notify_notification_show</span> <span style=color:#c1abea>notify_notification_new</span> &#39;<span style=color:#98c379>My Notification</span>&#39;<span style=color:#c7bf54>,</span> &#39;<span style=color:#98c379>Notification Body</span>&#39;<span style=color:#c7bf54>,</span> <span style=color:#ef8383>Str</span>;
+    <span style=color:#c1abea>notify_uninit</span>;
 }
 
-<span style=color:#007f7f># Using Inline::Python to access python and its libraries</span>
-<span style=color:#fff;font-weight:700>use</span> Inline::Python;
-<span style=color:#fff;font-weight:700>my</span> $py = Inline::Python.<span style=color:#fff;font-weight:700>new</span>();
-$py.<span style=color:#fff;font-weight:700>run</span>(&#39;<span style=color:#0ff;font-weight:700>print &#34;hello world&#34;</span>&#39;);
-<span style=color:#007f7f># OUTPUT: hello world</span>
+<span style=color:#8a93a5;font-style:italic># Using Inline::Python to access python and its libraries</span>
+<span style=color:#c678dd>use</span> <span style=color:#76a9f9>Inline::Python</span>;
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea>$py</span> <span style=color:#c7bf54>=</span> <span style=color:#c1abea>Inline::Python</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>();
+<span style=color:#dcaeea>$py</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>run</span>(&#39;<span style=color:#98c379>print &#34;hello world&#34;</span>&#39;);
+<span style=color:#8a93a5;font-style:italic># OUTPUT: hello world</span>
 
-<span style=color:#007f7f># Or</span>
-<span style=color:#fff;font-weight:700>say</span> <span style=color:#fff;font-weight:700>EVAL</span>(&#39;<span style=color:#0ff;font-weight:700>1+3</span>&#39;, :<span style=color:#0ff;font-weight:700>lang</span>&lt;<span style=color:#0ff;font-weight:700>Python</span>&gt;);
-<span style=color:#007f7f># OUTPUT: 4</span>
+<span style=color:#8a93a5;font-style:italic># Or</span>
+<span style=color:#ef8383>say</span> <span style=color:#ef8383>EVAL</span>(&#39;<span style=color:#98c379>1+3</span>&#39;<span style=color:#c7bf54>,</span> :<span style=color:#98c379>lang</span>&lt;<span style=color:#98c379>Python</span>&gt;);
+<span style=color:#8a93a5;font-style:italic># OUTPUT: 4</span>
 
-<span style=color:#fff;font-weight:700>use</span> string:<span style=color:#007f7f>from</span>&lt;<span style=color:#0ff;font-weight:700>Python</span>&gt;;
-<span style=color:#fff;font-weight:700>say</span> string::capwords(&#39;<span style=color:#0ff;font-weight:700>foo bar</span>&#39;);
-<span style=color:#007f7f># OUTPUT: Foo Bar</span>
+<span style=color:#c678dd>use</span> <span style=color:#76a9f9>string</span>:<span style=color:#b3d23c>from</span>&lt;<span style=color:#98c379>Python</span>&gt;;
+<span style=color:#ef8383>say</span> <span style=color:#00b1f7>string::capwords</span>(&#39;<span style=color:#98c379>foo bar</span>&#39;);
+<span style=color:#8a93a5;font-style:italic># OUTPUT: Foo Bar</span>
 </code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-pod class=raku-accordion-input>
-<label for=raku-accordion-input-pod class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">مستندسازی کد با POD6</h3><p class=card-text>یک زبان نشانه‌گذاری با استفاده‌ی آسان برای مستندسازی برنامه‌ها و ماژول‌ها</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>=begin</span><span style=color:#0ff;font-weight:700> </span><span style=color:#fff;font-weight:700>pod</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=head1</span><span style=font-weight:700> Documenting code in </span><span style=color:#fff;font-weight:700>C</span>&lt;<span style=color:#0ff;font-weight:700>Raku</span>&gt;<span style=font-weight:700>
-</span><span style=font-weight:700></span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=item</span><span style=color:#0ff;font-weight:700> </span><span style=color:#fff;font-weight:700>L</span>&lt;<span style=color:#0ff;font-weight:700>Raku docs|https://docs.raku.org</span>&gt;<span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=end pod</span>
+<label for=raku-accordion-input-pod class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">مستندسازی کد با POD6</h3><p class=card-text>یک زبان نشانه‌گذاری با استفاده‌ی آسان برای مستندسازی برنامه‌ها و ماژول‌ها</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>=begin</span><span style=color:#7e97c3> </span><span style=color:#c678dd>pod</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=head1</span><span style=color:#a2cbff;font-weight:700> Documenting code in </span><span style=color:#c678dd>C</span>&lt;<span style=color:#70b33f>Raku</span>&gt;<span style=color:#a2cbff;font-weight:700>
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=item</span><span style=color:#7e97c3> </span><span style=color:#c678dd>L</span>&lt;<span style=color:#70b33f>Raku docs|https://docs.raku.org</span>&gt;<span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=end pod</span>
 
-<span style=color:#fff;font-weight:700>=begin</span><span style=color:#0ff;font-weight:700> </span><span style=color:#fff;font-weight:700>pod</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=head1</span><span style=font-weight:700> Red
-</span><span style=font-weight:700></span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>Take a look at our Documentation: </span><span style=color:#fff;font-weight:700>L</span>&lt;<span style=color:#0ff;font-weight:700>https://fco.github.io/Red/</span>&gt;<span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=head2</span><span style=font-weight:700> Red - A **WiP** ORM for Raku
-</span><span style=font-weight:700></span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=head2</span><span style=font-weight:700> INSTALL
-</span><span style=font-weight:700></span><span style=color:#0ff;font-weight:700>Install with (you need **rakudo 2018.12-94-g495ac7c00** or **newer**):
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=begin code</span> :<span style=color:#007f7f>lang</span>&lt;<span style=color:#0ff;font-weight:700>bash</span>&gt;
+<span style=color:#c678dd>=begin</span><span style=color:#7e97c3> </span><span style=color:#c678dd>pod</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=head1</span><span style=color:#a2cbff;font-weight:700> Red
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>Take a look at our Documentation: </span><span style=color:#c678dd>L</span>&lt;<span style=color:#70b33f>https://fco.github.io/Red/</span>&gt;<span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=head2</span><span style=color:#a2cbff;font-weight:700> Red - A **WiP** ORM for Raku
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=head2</span><span style=color:#a2cbff;font-weight:700> INSTALL
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>Install with (you need **rakudo 2018.12-94-g495ac7c00** or **newer**):
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>bash</span>&gt;
 zef install Red
-<span style=color:#fff;font-weight:700>=end code</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=head2</span><span style=font-weight:700> SYNOPSIS
-</span><span style=font-weight:700></span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=begin code</span> :<span style=color:#007f7f>lang</span>&lt;<span style=color:#0ff;font-weight:700>raku</span>&gt;
-<span style=color:#fff;font-weight:700>use</span> Red:<span style=color:#007f7f>api</span>&lt;<span style=color:#0ff;font-weight:700>2</span>&gt;;
-model Person {...}
-model Post <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>rw</span> {
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Int</span>         $.id        <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>serial</span>;
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Int</span>         $!author-id <span style=color:#fff;font-weight:700>is</span> referencing{ Person.<span style=color:#fff;font-weight:700>id</span> };
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Str</span>         $.title     <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>column</span>{ :<span style=color:#0ff;font-weight:700>unique</span> };
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Str</span>         $.body      <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>column</span>;
-    <span style=color:#fff;font-weight:700>has</span> Person      $.author    <span style=color:#fff;font-weight:700>is</span> relationship{ .author-id };
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Bool</span>        $.deleted   <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>column</span> = <span style=color:#fff;font-weight:700>False</span>;
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>DateTime</span>    $.created   <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>column</span> .= <span style=color:#fff;font-weight:700>now</span>;
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Set</span>         $.tags      <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>column</span>{
-        :<span style=color:#0ff;font-weight:700>type</span>&lt;<span style=color:#0ff;font-weight:700>string</span>&gt;,
-        :<span style=color:#0ff;font-weight:700>deflate</span>{ .<span style=color:#fff;font-weight:700>keys</span>.<span style=color:#fff;font-weight:700>join</span>: &#34;<span style=color:#0ff;font-weight:700>,</span>&#34; },
-        :<span style=color:#0ff;font-weight:700>inflate</span>{ <span style=color:#fff;font-weight:700>set</span>(.<span style=color:#fff;font-weight:700>split</span>: &#34;<span style=color:#0ff;font-weight:700>,</span>&#34;) }
-    } = <span style=color:#fff;font-weight:700>set</span>();
-    <span style=color:#fff;font-weight:700>method</span> <span style=color:#fff;font-weight:700>delete</span> { $!deleted = <span style=color:#fff;font-weight:700>True</span>; <span style=color:#fff;font-weight:700>self</span>.^save }
+<span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=head2</span><span style=color:#a2cbff;font-weight:700> SYNOPSIS
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>raku</span>&gt;
+<span style=color:#c678dd>use</span> <span style=color:#76a9f9>Red</span>:<span style=color:#b3d23c>api</span>&lt;<span style=color:#98c379>2</span>&gt;;
+<span style=color:#c1abea>model</span> <span style=color:#c1abea>Person</span> {<span style=color:#c7bf54>...</span>}
+<span style=color:#c1abea>model</span> <span style=color:#c1abea>Post</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>rw</span> {
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Int</span>         <span style=color:#dcaeea>$.id</span>        <span style=color:#c678dd>is</span> <span style=color:#ef8383>serial</span>;
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Int</span>         <span style=color:#dcaeea>$!author-id</span> <span style=color:#c678dd>is</span> <span style=color:#76a9f9>referencing</span>{ <span style=color:#c1abea>Person</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>id</span> };
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Str</span>         <span style=color:#dcaeea>$.title</span>     <span style=color:#c678dd>is</span> <span style=color:#ef8383>column</span>{ :<span style=color:#98c379>unique</span> };
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Str</span>         <span style=color:#dcaeea>$.body</span>      <span style=color:#c678dd>is</span> <span style=color:#ef8383>column</span>;
+    <span style=color:#c678dd>has</span> <span style=color:#c1abea>Person</span>      <span style=color:#dcaeea>$.author</span>    <span style=color:#c678dd>is</span> <span style=color:#76a9f9>relationship</span>{ <span style=color:#c7bf54>.</span><span style=color:#00b1f7>author-id</span> };
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Bool</span>        <span style=color:#dcaeea>$.deleted</span>   <span style=color:#c678dd>is</span> <span style=color:#ef8383>column</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>False</span>;
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>DateTime</span>    <span style=color:#dcaeea>$.created</span>   <span style=color:#c678dd>is</span> <span style=color:#ef8383>column</span> <span style=color:#c7bf54>.=</span> <span style=color:#ef8383>now</span>;
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Set</span>         <span style=color:#dcaeea>$.tags</span>      <span style=color:#c678dd>is</span> <span style=color:#ef8383>column</span>{
+        :<span style=color:#98c379>type</span>&lt;<span style=color:#98c379>string</span>&gt;<span style=color:#c7bf54>,</span>
+        :<span style=color:#98c379>deflate</span>{ <span style=color:#c7bf54>.</span><span style=color:#ef8383>keys</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>join</span><span style=color:#c7bf54>:</span> &#34;<span style=color:#63c381>,</span>&#34; }<span style=color:#c7bf54>,</span>
+        :<span style=color:#98c379>inflate</span>{ <span style=color:#ef8383>set</span>(<span style=color:#c7bf54>.</span><span style=color:#ef8383>split</span><span style=color:#c7bf54>:</span> &#34;<span style=color:#63c381>,</span>&#34;) }
+    } <span style=color:#c7bf54>=</span> <span style=color:#ef8383>set</span>();
+    <span style=color:#c678dd>method</span> <span style=color:#ef8383>delete</span> { <span style=color:#dcaeea>$!deleted</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>True</span>; <span style=color:#ef8383>self</span><span style=color:#c7bf54>.^</span><span style=color:#00b1f7>save</span> }
 }
-model Person <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>rw</span> {
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Int</span>  $.id            <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>serial</span>;
-    <span style=color:#fff;font-weight:700>has</span> <span style=color:#fff;font-weight:700>Str</span>  $.name          <span style=color:#fff;font-weight:700>is</span> <span style=color:#fff;font-weight:700>column</span>;
-    <span style=color:#fff;font-weight:700>has</span> Post @.posts         <span style=color:#fff;font-weight:700>is</span> relationship{ .author-id };
-    <span style=color:#fff;font-weight:700>method</span> active-posts { @!posts.<span style=color:#fff;font-weight:700>grep</span>: <span style=color:#fff;font-weight:700>not</span> *.deleted }
+<span style=color:#c1abea>model</span> <span style=color:#c1abea>Person</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>rw</span> {
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Int</span>  <span style=color:#dcaeea>$.id</span>            <span style=color:#c678dd>is</span> <span style=color:#ef8383>serial</span>;
+    <span style=color:#c678dd>has</span> <span style=color:#ef8383>Str</span>  <span style=color:#dcaeea>$.name</span>          <span style=color:#c678dd>is</span> <span style=color:#ef8383>column</span>;
+    <span style=color:#c678dd>has</span> <span style=color:#c1abea>Post</span> <span style=color:#dcaeea>@.posts</span>         <span style=color:#c678dd>is</span> <span style=color:#76a9f9>relationship</span>{ <span style=color:#c7bf54>.</span><span style=color:#00b1f7>author-id</span> };
+    <span style=color:#c678dd>method</span> <span style=color:#00b1f7>active-posts</span> { <span style=color:#dcaeea>@!posts</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>grep</span><span style=color:#c7bf54>:</span> <span style=color:#ef8383>not</span> <span style=color:#c7bf54>*.</span><span style=color:#00b1f7>deleted</span> }
 }
-<span style=color:#fff;font-weight:700>my</span> $*RED-DB = database &#34;<span style=color:#0ff;font-weight:700>SQLite</span>&#34;;
-Person.^create-table;
-<span style=color:#fff;font-weight:700>=end code</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=begin code</span> :<span style=color:#007f7f>lang</span>&lt;<span style=color:#0ff;font-weight:700>sql</span>&gt;
-<span style=color:#007f7f>-- Equivalent to the following query:
-</span><span style=color:#007f7f></span><span style=color:#fff;font-weight:700>CREATE</span> <span style=color:#fff;font-weight:700>TABLE</span> person(
-    id <span style=color:#fff;font-weight:700>integer</span> <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span> <span style=color:#fff;font-weight:700>primary</span> <span style=color:#fff;font-weight:700>key</span>
-    AUTOINCREMENT,
-    name <span style=color:#fff;font-weight:700>varchar</span>(<span style=color:#ff0;font-weight:700>255</span>) <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span>
+<span style=color:#c678dd>my</span> <span style=color:#dcaeea;font-weight:700>$*RED-DB</span> <span style=color:#c7bf54>=</span> <span style=color:#c1abea>database</span> &#34;<span style=color:#63c381>SQLite</span>&#34;;
+<span style=color:#c1abea>Person</span><span style=color:#c7bf54>.^</span><span style=color:#00b1f7>create-table</span>;
+<span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>sql</span>&gt;
+<span style=color:#8a93a5;font-style:italic>-- Equivalent to the following query:
+</span><span style=color:#8a93a5;font-style:italic></span><span style=color:#c678dd>CREATE</span> <span style=color:#c678dd>TABLE</span> <span style=color:#c1abea>person</span>(
+    <span style=color:#c1abea>id</span> <span style=color:#ef8383>integer</span> <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span> <span style=color:#c678dd>primary</span> <span style=color:#c678dd>key</span>
+    <span style=color:#c1abea>AUTOINCREMENT</span>,
+    <span style=color:#c1abea>name</span> <span style=color:#ef8383>varchar</span>(<span style=color:#d19a66>255</span>) <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span>
 )
-<span style=color:#fff;font-weight:700>=end code</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=begin code</span> :<span style=color:#007f7f>lang</span>&lt;<span style=color:#0ff;font-weight:700>raku</span>&gt;
-Post.^create-table;
-<span style=color:#fff;font-weight:700>=end code</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=begin code</span> :<span style=color:#007f7f>lang</span>&lt;<span style=color:#0ff;font-weight:700>sql</span>&gt;
-<span style=color:#007f7f>-- Equivalent to the following query:
-</span><span style=color:#007f7f></span><span style=color:#fff;font-weight:700>CREATE</span> <span style=color:#fff;font-weight:700>TABLE</span> post(
-    id <span style=color:#fff;font-weight:700>integer</span> <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span> <span style=color:#fff;font-weight:700>primary</span> <span style=color:#fff;font-weight:700>key</span> AUTOINCREMENT,
-    author_id <span style=color:#fff;font-weight:700>integer</span> <span style=color:#fff;font-weight:700>NULL</span> <span style=color:#fff;font-weight:700>references</span> person(id),
-    title <span style=color:#fff;font-weight:700>varchar</span>(<span style=color:#ff0;font-weight:700>255</span>) <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span>,
-    body <span style=color:#fff;font-weight:700>varchar</span>(<span style=color:#ff0;font-weight:700>255</span>) <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span>,
-    deleted <span style=color:#fff;font-weight:700>integer</span> <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span>,
-    created <span style=color:#fff;font-weight:700>varchar</span>(<span style=color:#ff0;font-weight:700>32</span>) <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span>,
-    tags <span style=color:#fff;font-weight:700>varchar</span>(<span style=color:#ff0;font-weight:700>255</span>) <span style=color:#fff;font-weight:700>NOT</span> <span style=color:#fff;font-weight:700>NULL</span>,
-    <span style=color:#fff;font-weight:700>UNIQUE</span> (title)
+<span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>raku</span>&gt;
+<span style=color:#c1abea>Post</span><span style=color:#c7bf54>.^</span><span style=color:#00b1f7>create-table</span>;
+<span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>sql</span>&gt;
+<span style=color:#8a93a5;font-style:italic>-- Equivalent to the following query:
+</span><span style=color:#8a93a5;font-style:italic></span><span style=color:#c678dd>CREATE</span> <span style=color:#c678dd>TABLE</span> <span style=color:#c1abea>post</span>(
+    <span style=color:#c1abea>id</span> <span style=color:#ef8383>integer</span> <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span> <span style=color:#c678dd>primary</span> <span style=color:#c678dd>key</span> <span style=color:#c1abea>AUTOINCREMENT</span>,
+    <span style=color:#c1abea>author_id</span> <span style=color:#ef8383>integer</span> <span style=color:#c678dd>NULL</span> <span style=color:#c678dd>references</span> <span style=color:#c1abea>person</span>(<span style=color:#c1abea>id</span>),
+    <span style=color:#c1abea>title</span> <span style=color:#ef8383>varchar</span>(<span style=color:#d19a66>255</span>) <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span>,
+    <span style=color:#c1abea>body</span> <span style=color:#ef8383>varchar</span>(<span style=color:#d19a66>255</span>) <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span>,
+    <span style=color:#c1abea>deleted</span> <span style=color:#ef8383>integer</span> <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span>,
+    <span style=color:#c1abea>created</span> <span style=color:#ef8383>varchar</span>(<span style=color:#d19a66>32</span>) <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span>,
+    <span style=color:#c1abea>tags</span> <span style=color:#ef8383>varchar</span>(<span style=color:#d19a66>255</span>) <span style=color:#c678dd>NOT</span> <span style=color:#c678dd>NULL</span>,
+    <span style=color:#c678dd>UNIQUE</span> (<span style=color:#c1abea>title</span>)
 )
-<span style=color:#fff;font-weight:700>=end code</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=begin code</span> :<span style=color:#007f7f>lang</span>&lt;<span style=color:#0ff;font-weight:700>raku</span>&gt;
-<span style=color:#fff;font-weight:700>my</span> Post $post1 = Post.^<span style=color:#fff;font-weight:700>load</span>: :<span style=color:#ff0;font-weight:700>42</span><span style=color:#0ff;font-weight:700>id</span>;
-<span style=color:#fff;font-weight:700>=end code</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=begin code</span> :<span style=color:#007f7f>lang</span>&lt;<span style=color:#0ff;font-weight:700>sql</span>&gt;
-<span style=color:#007f7f>-- Equivalent to the following query:
-</span><span style=color:#007f7f></span><span style=color:#fff;font-weight:700>SELECT</span>
-    post.id,
-    post.author_id <span style=color:#fff;font-weight:700>as</span> <span style=color:#0ff;font-weight:700>&#34;author-id&#34;</span>,
-    post.title,
-    post.body,
-    post.deleted,
-    post.created,
-    post.tags
-<span style=color:#fff;font-weight:700>FROM</span>
-    post
-<span style=color:#fff;font-weight:700>WHERE</span>
-    post.id = <span style=color:#ff0;font-weight:700>42</span>
-<span style=color:#fff;font-weight:700>=end code</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700>
-</span><span style=color:#0ff;font-weight:700></span><span style=color:#fff;font-weight:700>=end pod</span>
+<span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>raku</span>&gt;
+<span style=color:#c678dd>my</span> <span style=color:#c1abea>Post</span> <span style=color:#dcaeea>$post1</span> <span style=color:#c7bf54>=</span> <span style=color:#c1abea>Post</span><span style=color:#c7bf54>.^</span><span style=color:#ef8383>load</span><span style=color:#c7bf54>:</span> :<span style=color:#d19a66>42</span><span style=color:#98c379>id</span>;
+<span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>sql</span>&gt;
+<span style=color:#8a93a5;font-style:italic>-- Equivalent to the following query:
+</span><span style=color:#8a93a5;font-style:italic></span><span style=color:#c678dd>SELECT</span>
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>id</span>,
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>author_id</span> <span style=color:#c678dd>as</span> <span style=color:#63c381>&#34;author-id&#34;</span>,
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>title</span>,
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>body</span>,
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>deleted</span>,
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>created</span>,
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>tags</span>
+<span style=color:#c678dd>FROM</span>
+    <span style=color:#c1abea>post</span>
+<span style=color:#c678dd>WHERE</span>
+    <span style=color:#c1abea>post</span>.<span style=color:#c1abea>id</span> <span style=color:#c7bf54>=</span> <span style=color:#d19a66>42</span>
+<span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3>
+</span><span style=color:#7e97c3></span><span style=color:#c678dd>=end pod</span>
 </code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-version class=raku-accordion-input>
-<label for=raku-accordion-input-version class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">نسخه زبان برنامه‌نویسی</h3><p class=card-text>نسخه زبان برنامه‌نویسی را برای استفاده مشخص کنید</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>use</span> <span style=color:#fff;font-weight:700>v</span><span style=color:#ff0;font-weight:700>6</span>.c;</code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-mutable class=raku-accordion-input>
-<label for=raku-accordion-input-mutable class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">زبان تغییرپذیر</h3><p class=card-text>توابع، اپراتورها، traitها و دیتاتایپ‌های خود را تعریف کنید</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#007f7f># TODO: Add operator, slang, macro examples</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-batteries class=raku-accordion-input>
-<label for=raku-accordion-input-batteries class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">به همراه باتری‌ها</h3><p class=card-text>مجموعه وسیعی از دیتاتایپ‌ها و اپراتورها در دسترسند</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>say</span> <span style=color:#fff;font-weight:700>Date</span>.<span style=color:#fff;font-weight:700>today</span>.<span style=color:#fff;font-weight:700>year</span>;
-<span style=color:#007f7f># Output: 2020</span>
-<span style=color:#fff;font-weight:700>say</span> <span style=color:#fff;font-weight:700>Date</span>.<span style=color:#fff;font-weight:700>today</span>.<span style=color:#fff;font-weight:700>later</span>(:<span style=color:#0ff;font-weight:700>2years</span>).<span style=color:#fff;font-weight:700>year</span>;
-<span style=color:#007f7f># Output: 2022</span>
+<label for=raku-accordion-input-version class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">نسخه زبان برنامه‌نویسی</h3><p class=card-text>نسخه زبان برنامه‌نویسی را برای استفاده مشخص کنید</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>use</span> <span style=color:#c678dd>v</span><span style=color:#d19a66>6</span><span style=color:#bda26f>.c</span>;</code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-mutable class=raku-accordion-input>
+<label for=raku-accordion-input-mutable class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">زبان تغییرپذیر</h3><p class=card-text>توابع، اپراتورها، traitها و دیتاتایپ‌های خود را تعریف کنید</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#8a93a5;font-style:italic># TODO: Add operator, slang, macro examples</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-batteries class=raku-accordion-input>
+<label for=raku-accordion-input-batteries class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">به همراه باتری‌ها</h3><p class=card-text>مجموعه وسیعی از دیتاتایپ‌ها و اپراتورها در دسترسند</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#ef8383>say</span> <span style=color:#ef8383>Date</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>today</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>year</span>;
+<span style=color:#8a93a5;font-style:italic># Output: 2020</span>
+<span style=color:#ef8383>say</span> <span style=color:#ef8383>Date</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>today</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>later</span>(:<span style=color:#98c379>2years</span>)<span style=color:#c7bf54>.</span><span style=color:#ef8383>year</span>;
+<span style=color:#8a93a5;font-style:italic># Output: 2022</span>
 
-<span style=color:#007f7f># TODO: Add more examples</span>
+<span style=color:#8a93a5;font-style:italic># TODO: Add more examples</span>
 </code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-error class=raku-accordion-input>
-<label for=raku-accordion-input-error class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">پیغام‌های خطا</h3><p class=card-text>پیغام‌های خطای مطلوب زمان کامپایل و زمان اجرا</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#fff;font-weight:700>sub</span> <span style=color:#fff;font-weight:700>add</span> (<span style=color:#fff;font-weight:700>Int</span> $a, <span style=color:#fff;font-weight:700>Int</span> $b) {
-    $a + $b
+<label for=raku-accordion-input-error class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">پیغام‌های خطا</h3><p class=card-text>پیغام‌های خطای مطلوب زمان کامپایل و زمان اجرا</p></div></div></label><div class=raku-accordion-content><div class=highlight><pre style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>sub</span> <span style=color:#ef8383>add</span> (<span style=color:#ef8383>Int</span> <span style=color:#dcaeea>$a</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>Int</span> <span style=color:#dcaeea>$b</span>) {
+    <span style=color:#dcaeea>$a</span> <span style=color:#c7bf54>+</span> <span style=color:#dcaeea>$b</span>
 }
 
-<span style=color:#fff;font-weight:700>add</span> &#39;<span style=color:#0ff;font-weight:700>string</span>&#39;;
-<span style=color:#007f7f># ===SORRY!=== Error while compiling error.raku</span>
-<span style=color:#007f7f># Calling add(Str) will never work with declared signature (Int $a, Int $b)</span>
-<span style=color:#007f7f># at file.raku:5</span>
-<span style=color:#007f7f># ------&gt; &lt;BOL&gt;⏏add &#39;string&#39;;</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-backends class=raku-accordion-input>
+<span style=color:#ef8383>add</span> &#39;<span style=color:#98c379>string</span>&#39;;
+<span style=color:#8a93a5;font-style:italic># ===SORRY!=== Error while compiling error.raku</span>
+<span style=color:#8a93a5;font-style:italic># Calling add(Str) will never work with declared signature (Int $a, Int $b)</span>
+<span style=color:#8a93a5;font-style:italic># at file.raku:5</span>
+<span style=color:#8a93a5;font-style:italic># ------&gt; &lt;BOL&gt;⏏add &#39;string&#39;;</span></code></pre></div></div></div><div class=raku-accordion-item><input type=radio name=raku-accordion-input id=raku-accordion-input-backends class=raku-accordion-input>
 <label for=raku-accordion-input-backends class=raku-accordion-button><div class=card><div class=card-body><h3 class="card-title h5">بکندها</h3><p class=card-text>روی back-endهای مختلفی اجرا می‌شود. در حال حاضر MoarVM، JVM و جاوااسکریپت در حال توسعه هستند</p></div></div></label></div></section></div></div><div class=row><div class=col-lg-12><section id=resources><h2 class=section-heading>منابع</h2><div class=row><div class=col-lg-6><h3>راهنماها</h3><ul><li><a href=https://raku.guide/>راهنمای راکو</a></li><li><a href=https://learnxinyminutes.com/docs/raku/>Learn Raku in Y Minutes</a></li></ul><h3>دوره‌های آموزشی</h3><ul><li><a href=https://course.raku.org/>دوره‌ی کامل آموزش زبان برنامه‌نویسی راکو</a></li></ul><h3>مثالها</h3><ul><li><a href=https://rosettacode.org/wiki/Category:Raku>Rosetta Code</a></li></ul><h3>کتاب‌ها</h3><h4>ناآشنا به برنامه‌نویسی هستید؟</h4><ul><li><a href=https://github.com/LaurentRosenfeld/think_raku>Think Raku</a></li></ul></div><div class=col-lg-6><h3>آنلاین امتحان کنید</h3><ul><li><a href=https://glot.io/new/raku>glot.io</a></li><li><a href=https://repl.it/languages/raku>repl.it</a></li></ul><h3>از زبان برنامه‌نویسی دیگری می‌آیید؟</h3><p>اگر از زبان برنامه‌نویسی دیگری می‌آیید، <a href=https://docs.raku.org/language.html#Migration_guides>این مستندات</a> ممکن است به شما کمک کنند:<br><a href=https://docs.raku.org/language/py-nutshell>پایتون</a>,
 <a href=https://docs.raku.org/language/js-nutshell>جاوااسکریپت</a>,
 <a href=https://docs.raku.org/language/rb-nutshell>روبی</a>,
