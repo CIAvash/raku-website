@@ -9,7 +9,7 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    style: doome-one
+    style: doom-one
     anchorLineNos: true
 languages:
   en:
