@@ -16,16 +16,16 @@ other = "مشارکت کنید"
 [why_raku]
 other = "چرا راکو؟"
 
-[card_hello]
+[card_hello_world]
 other = "راحتی نوشتن"
 
-[card_hello_desc]
+[card_hello_world_desc]
 other = "به دنیا سلام بگو!"
 
-[card_objectoriented]
+[card_object_oriented]
 other = "برنامه‌نویسی شی‌گرا"
 
-[card_objectoriented_desc]
+[card_object_oriented_desc]
 other = "استفاده از کلاس‌ها و رول‌ها و مولتی‌دیسپچ با سینتکس راحت و زیبا"
 
 [card_functional]
@@ -70,6 +70,12 @@ other = "رابطه با کتابخانه‌های خارجی"
 [card_native_desc]
 other = "رابطه با زبان‌های C/C++ به وسیله NativeCall و رابطه با زبان‌های دیگر به وسیله ماژول‌های Inline::*"
 
+[card_pod]
+other = "مستندسازی کد با POD6"
+
+[card_pod_desc]
+other = "یک زبان نشانه‌گذاری با استفاده‌ی آسان برای مستندسازی برنامه‌ها و ماژول‌ها"
+
 [card_version]
 other = "نسخه زبان برنامه‌نویسی"
 
@@ -95,7 +101,7 @@ other = "پیغام‌های خطا"
 other = "پیغام‌های خطای مطلوب زمان کامپایل و زمان اجرا"
 
 [card_backends]
-other = "Backendها"
+other = "بکندها"
 
 [card_backends_desc]
 other = "روی back-endهای مختلفی اجرا می‌شود. در حال حاضر MoarVM، JVM و جاوااسکریپت در حال توسعه هستند"

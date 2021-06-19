@@ -1,10 +1,21 @@
 DefaultContentLanguage: fa
 permalinks:
   blog: /:section/:year/:month/:day/:filename/
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    style: doome-one
+    anchorLineNos: true
 languages:
   en:
     contentDir: content/en
     languageName: English
+    languageDirection: ltr
     title: Raku Programming Language
     menu:
       main:
@@ -51,6 +62,7 @@ languages:
   fa:
     contentDir: content/fa
     languageName: فارسی
+    languageDirection: rtl
     title: زبان برنامه‌نویسی راکو
     menu:
       main:

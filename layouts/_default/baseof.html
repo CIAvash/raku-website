@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="{{ $.Site.Language.Lang }}">
-  {{ partial "head.html" . }}
+<html lang="{{ $.Site.Language.Lang }}" dir="{{ $.Site.Language.LanguageDirection }}">
+    {{ partial "head.html" . }}
 
-  <body>
-    <div class="container-sm">
-      {{ partial "nav.html" . }}
-      {{ block "header" . }}{{ end }}
-      <main id="content">
-        {{ block "main" . }}{{ end }}
-      </main>
-      {{ partial "footer.html" . }}
-    </div>
-  </body>
+    <body{{if (eq .Kind `home`)}} class="home"{{end}}>
+        <div class="wrapper container-sm">
+            {{ partial "nav.html" . }}
+            {{ block "header" . }}{{ end }}
+            <main id="content">
+                {{ block "main" . }}{{ end }}
+            </main>
+            {{ partial "footer.html" . }}
+        </div>
+    </body>
 </html>

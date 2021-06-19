@@ -1,8 +1,3 @@
-body {
-    direction: rtl;
-    text-align: right;
-}
-
 .navbar {
     .logo {
         transform: rotate(15deg);
@@ -14,15 +9,8 @@ body {
     }
 }
 
-.jumbotron {
-    .btn {
-        margin-left: 0;
-        margin-left: 5px;
-    }
-}
-
-.accordion-input:checked {
-    ~ .accordion-content {
+.raku-accordion-input:checked {
+    ~ .raku-accordion-content {
         .highlight {
             direction: ltr;
             text-align: left;
@@ -34,14 +22,15 @@ body {
         }
     }
 
-    ~ .accordion-button .card {
+    ~ .raku-accordion-button .card {
         &::before {
-            display: none;
-            // content: '<';
-            // position: absolute;
-            // right: -18px;
-            // left: auto;
-            // top: 12px;
+            font-family: Roboto;
+            direction: ltr;
+            content: '<';
+            position: absolute;
+            right: -18px;
+            left: auto;
+            top: 12px;
         }
     }
 }

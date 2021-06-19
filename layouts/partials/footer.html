@@ -2,65 +2,81 @@
     <div class="row">
         <div class="col-lg-4">
             <div class="footer-section" id="community">
-                <h2 class="section-heading">{{ i18n "community" }}</h2>
+                <h2 class="section-heading">{{ T "community" }}</h2>
                 <ul>
-                    <li>{{ i18n "irc" }}:
-                        <a href="https://web.libera.chat/?channel=#raku">#raku</a>,
-                        <a href="http://colabti.org/irclogger/irclogger_log/raku">
-                            {{ i18n "logs" }}
-                        </a>
-                    </li>
-                    <li>{{ i18n "matrix" }}:
+                    <li>{{ T "irc" }}:
                         <ul>
-                            <li>{{ i18n "room" }}:
-                                <a href="https://matrix.to/#/#raku:libera.chat">
-                                    #raku:libera.chat
+                            <li>
+                                <a href="https://web.libera.chat/?channel=#raku">#raku</a>,
+                                <a href="http://colabti.org/irclogger/irclogger_log/raku">
+                                    {{ T "logs" }}
                                 </a>
                             </li>
-                            <li>{{ i18n "community" }}:
+                            <li>
+                                <a href="https://web.libera.chat/?channel=#raku-dev">#raku-dev</a>,
+                                <a href="http://colabti.org/irclogger/irclogger_log/raku-dev">
+                                    {{ T "logs" }}
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>{{ T "matrix" }}:
+                        <ul>
+                            <li>{{ T "room" }}:
+                                <ul>
+                                    <li>
+                                        <a href="https://matrix.to/#/#raku:libera.chat">
+                                            #raku:libera.chat
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://matrix.to/#/#raku-dev:libera.chat">
+                                            #raku-dev:libera.chat
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>{{ T "community" }}:
                                 <a href="https://matrix.to/#/+raku:matrix.org">
                                     +raku:matrix.org
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li>{{ i18n "proprietary" }}:
-                        <ul>
-                            <li>{{ i18n "discord" }}:
-                                <a href="https://discord.gg/VzYpdQ6">
-                                    {{ i18n "raku_server" }}
-                                </a>
-                            </li>
-                        </ul>
+                    <li>{{ T "discord" }}:
+                        <a href="https://discord.gg/VzYpdQ6">
+                            {{ T "raku_server" }}
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="footer-section" id="social-media">
-                <h2 class="section-heading">{{ i18n "social_media" }}</h2>
+                <h2 class="section-heading">{{ T "social_media" }}</h2>
                 <ul>
-                    <li>{{ i18n "twitter" }}:
+                    <li>{{ T "twitter" }}:
                         <a href="https://twitter.com/raku_news">@raku_news</a>,
                         <a href="https://twitter.com/hashtag/rakulang">#rakulang</a>
                     </li>
-                    <li>{{ i18n "reddit" }}:
+                    <li>{{ T "reddit" }}:
                         <a href="https://www.reddit.com/r/rakulang/">r/rakulang</a>
                     </li>
-                    <li>{{ i18n "github" }}:
+                    <li>{{ T "github" }}:
                         <a href="https://github.com/Raku">@Raku</a>
                     </li>
-                    <li>{{ i18n "stack_overflow" }}:
+                    <li>{{ T "stack_overflow" }}:
                         <a href="https://stackoverflow.com/questions/tagged/raku">[raku]</a>
                     </li>
-                    <li>{{ i18n "rss" }}:
-                        <a href="{{ "/blog/index.xml" | relLangURL }}">{{ i18n "blog_feed" }}</a>
+                    <li>{{ T "rss" }}:
+                        <a href="{{ "/blog/index.xml" | relLangURL }}">{{ T "blog_feed" }}</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="footer-section" id="language">
-                <h2 class="section-heading">{{ i18n "language" }}</h2>
+                <h2 class="section-heading">{{ T "language" }}</h2>
                 <ul>
                     {{ range $.Site.Home.AllTranslations }}
                     <li><a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
@@ -72,56 +88,61 @@
     <div class="row">
         <div class="col-lg-4">
             <div class="footer-section" id="git-repos">
-                <h2 class="section-heading">{{ i18n "git_repos" }}</h2>
+                <h2 class="section-heading">{{ T "git_repos" }}</h2>
                 <ul>
-                    <li><a href="https://github.com/Raku">{{ i18n "raku_organization" }}</a></li>
+                    <li><a href="https://github.com/Raku">{{ T "raku_organization" }}</a></li>
                     <li><a href="https://github.com/Raku/doc">
-                        {{ i18n "documentation" }}</a>
+                        {{ T "documentation" }}</a>
                     </li>
                     <li><a href="https://github.com/Raku/user-experience">
-                        {{ i18n "user_experience" }}</a>
+                        {{ T "user_experience" }}</a>
                     </li>
                     <li><a href="https://github.com/Raku/problem-solving">
-                        {{ i18n "problem_solving" }}</a>
+                        {{ T "problem_solving" }}</a>
                     </li>
                     <li><a href="https://github.com/Raku/marketing">
-                        {{ i18n "marketing" }}</a>
+                        {{ T "marketing" }}</a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="col-lg-4">
             <div class="footer-section" id="raku-steering-counsil">
-                <h2 class="section-heading">{{ i18n "raku_steering_counsil" }}</h2>
+                <h2 class="section-heading">{{ T "raku_steering_counsil" }}</h2>
                 <ul>
                     <li>
-                        <a href="https://github.com/Raku/Raku-Steering-Council">
-                            {{ i18n "git_repo" }}
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/Raku/Raku-Steering-Council/blob/main/papers/Raku_Steering_Council_Code.md">
-                            {{ i18n "raku_governance_code" }}
+                        <a href="https://web.libera.chat/?channel=#raku-steering-council">
+                            {{ T "irc" }}
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Raku/Raku-Steering-Council/blob/main/papers/code_of_conduct.md">
-                            {{ i18n "code_of_conduct" }}
+                            {{ T "code_of_conduct" }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Raku/Raku-Steering-Council/blob/main/papers/Raku_Steering_Council_Code.md">
+                            {{ T "raku_governance_code" }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Raku/Raku-Steering-Council">
+                            {{ T "git_repo" }}
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Raku/Raku-Steering-Council/tree/main/papers">
-                            {{ i18n "papers" }}
+                            {{ T "papers" }}
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Raku/Raku-Steering-Council/tree/main/announcements">
-                            {{ i18n "announcements" }}
+                            {{ T "announcements" }}
                         </a>
                     </li>
                     <li>
                         <a href="https://github.com/Raku/Raku-Steering-Council/tree/main/minutes">
-                            {{ i18n "minutes" }}
+                            {{ T "minutes" }}
                         </a>
                     </li>
                 </ul>
@@ -129,13 +150,13 @@
         </div>
         <div class="col-lg-4">
             <div class="footer-section" id="email">
-                <h2 class="section-heading">{{ i18n "email" }}</h2>
+                <h2 class="section-heading">{{ T "email" }}</h2>
                 <ul>
                     <li>
-                        <a href="mailto::RSC@raku.org">{{ i18n "raku_steering_counsil" }}</a>
+                        <a href="mailto::RSC@raku.org">{{ T "raku_steering_counsil" }}</a>
                     </li>
                     <li>
-                        <a href="mailto:documentation@raku.org">{{ i18n "documentation_team" }}</a>
+                        <a href="mailto:documentation@raku.org">{{ T "documentation_team" }}</a>
                     </li>
                 </ul>
             </div>

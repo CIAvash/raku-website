@@ -1,3 +1,5 @@
+@import 'fonts';
+
 $color1: #242424;
 /* $color2: #292929; */
 $color2: #3a3a3a;
@@ -20,6 +22,10 @@ body {
 }
 
 a {
+    text-decoration: none;
+    &:hover {
+        border-bottom: 1px solid;
+    }
     color: $color13;
 
     &:hover {
@@ -31,11 +37,15 @@ hr {
     border-color: #1c1c1c;
 }
 
-section, article {
+#content > .row, article {
     padding: 10px 15px;
-    margin: 5px 0;
+    margin: 10px 0;
     border-radius: 4px;
     overflow-wrap: break-word;
+}
+
+#content section {
+    margin-bottom: 10px;
 }
 
 .section-heading {
@@ -94,7 +104,7 @@ pre code {
     color: $color5 !important;
 }
 
-.bg-dark, .jumbotron, section, article, .main-footer {
+.bg-dark, .jumbotron, #content > .row, article, .main-footer {
     background-color: $color2 !important;
 }
 
@@ -104,24 +114,23 @@ pre code {
     background-color: transparent;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-
-    .btn {
-        margin-right: 5px;
-    }
 }
 
-.accordion-input {
+.raku-accordion-container {
+    position: relative;
+    height: 600px;
+    overflow-y: auto;
+}
+
+.raku-accordion-input {
     opacity: 0;
 }
 
-.accordion-content {
+.raku-accordion-content {
     display: none;
 }
 
-.accordion {
-    height: 600px;
-    overflow-y: auto;
-
+.raku-accordion {
     .card {
         border-radius: 5px !important;
     }
@@ -129,15 +138,14 @@ pre code {
     .card-body {
         padding: 13px;
     }
-
-    pre {
-        padding: 10px;
-        white-space: pre-wrap;
-    }
 }
 
-.accordion-input {
-    ~ .accordion-button .card {
+.raku-accordion-item {
+    margin-bottom: 10px;
+}
+
+.raku-accordion-input {
+    ~ .raku-accordion-button .card {
         background-color: $color11;
         color: #ddd;
 
@@ -148,45 +156,41 @@ pre code {
     }
 
     &:checked {
-        ~ .accordion-content {
+        ~ .raku-accordion-content {
             display: inline-block;
             vertical-align: top;
             position: relative;
-            width: 94%;
-            margin-left: 5%;
-
-            .highlight {
-                font-family: 'Roboto Mono', monospace;
-
-                pre {
-                    color: lightsteelblue;
-                }
-
-                @media (min-width: 1200px) {
-                    width: 580px;
-                }
-            }
+            width: 95%;
+            margin-left: 4%;
+            margin-top: 10px;
 
             @media (min-width: 768px) {
-                margin-left: 4%;
+                margin-left: 3%;
             }
 
             @media (min-width: 991px) {
                 width: auto;
                 margin-left: 0;
+                margin-top: 0;
 
                 .highlight {
-                        width: 565px;
-                        min-height: 480px;
-                        display: grid;
-                        position: absolute;
-                        top: 0;
-                        left: 3px;
-                        margin-left: 0;
-                    }
+                    width: 560px;
+                    min-height: 480px;
+                    display: grid;
+                    position: absolute;
+                    top: 0;
+                    left: 3px;
+                    margin-left: 0;
                 }
+            }
+
+            .highlight {
+                @media (min-width: 1400px) {
+                    width: 750px;
+                }
+            }
         }
-        ~ .accordion-button .card {
+        ~ .raku-accordion-button .card {
             background-color: lighten($color11, 13%);
             color: #fff;
 
@@ -200,7 +204,7 @@ pre code {
     }
 }
 
-.accordion-button {
+.raku-accordion-button {
     cursor: pointer;
     width: 95%;
 
@@ -209,6 +213,37 @@ pre code {
     }
     @media (min-width: 1200px){
         width: 450px;
+    }
+}
+
+$pre_border_radius: 7px;
+pre {
+    font-family: 'Roboto Mono', monospace !important;
+    background-color: #282c34;
+    color: lightsteelblue;
+    white-space: pre-wrap;
+    border-radius: $pre_border_radius;
+    padding: 12px 13px;
+
+    &, code {
+        unicode-bidi: normal;
+    }
+}
+
+.highlight {
+    border-radius: $pre_border_radius;
+
+    /* tables are shown when line numbers are used */
+    > div, > div table {
+        border-radius: $pre_border_radius;
+
+        pre {
+            padding: 12px 5px;
+        }
+
+        code {
+            white-space: pre;
+        }
     }
 }
 
@@ -254,12 +289,8 @@ article {
         }
     }
 
-    .section-heading {
-        font-size: 150%;
-
-        .main-footer & {
-            font-size: 115%;
-        }
+    .main-footer .section-heading {
+        font-size: 115%;
     }
 }
 

@@ -16,16 +16,16 @@ other = "Get Involved"
 [why_raku]
 other = "Why Raku?"
 
-[card_hello]
+[card_hello_world]
 other = "Easy to write"
 
-[card_hello_desc]
+[card_hello_world_desc]
 other = "Say hello to the world!"
 
-[card_objectoriented]
+[card_object_oriented]
 other = "Object-oriented programming"
 
-[card_objectoriented_desc]
+[card_object_oriented_desc]
 other = "Using classes and roles and multiple dispatch with a nice and easy syntax"
 
 [card_functional]
@@ -64,11 +64,17 @@ other = "Command-Line Interface"
 [card_cli_desc]
 other = "Easy command-line interface, accessible by MAIN subroutine with multiple dispatch and automated usage message generation"
 
-[card_native]
+[card_nativecall]
 other = "Interfacing to external libraries"
 
-[card_native_desc]
+[card_nativecall_desc]
 other = "Interfacing to C/C++ with NativeCall and others with Inline::* modules"
+
+[card_pod]
+other = "Documenting code with POD6"
+
+[card_pod_desc]
+other = "An easy-to-use markup language for documenting Raku modules and programs"
 
 [card_version]
 other = "Language Version"

@@ -10,6 +10,31 @@ my $result = await $promise;
 say $result;
 # OUTPUT: 55
 
+# Concurrency
+react {
+    my $current-proc;
+    whenever $script.watch.unique(:as(*.path), :expires(1)) {
+        .kill with $current-proc;
+        $current-proc = Proc::Async.new($*EXECUTABLE, $script);
+        my $done = $current-proc.start;
+        whenever $done {
+            $current-proc = Nil;
+        }
+    }
+}
+
+my $modules-load = start @files
+    .grep(/ \.(yaml|yml) $/)
+    .sort(-*.s)
+    .race(batch => 1, degree => 6)
+    .map(-> $file {
+            my $yaml = self!load-yaml($file, $schema, $problems);
+            with $yaml {
+                Easii::Model::Module.new(parsed => $yaml, source => $file.basename)
+            }
+     })
+    .eager;
+
 # Supply
 my $bread-supplier = Supplier.new;
 my $vegetable-supplier = Supplier.new;
