@@ -11,13 +11,22 @@
 
 .raku-accordion-input:checked {
     ~ .raku-accordion-content {
-        .highlight {
-            direction: ltr;
-            text-align: left;
+        margin-right: 4%;
+        margin-left: 0;
+        
+        @media (min-width: 768px) {
+            margin-right: 3%;
+        }
 
-            @media (min-width: 992px) {
-                right: 3px;
+        @media (min-width: 991px) {
+            margin-right: 0;
+
+            .highlight {
+                direction: ltr;
+                text-align: left;
+                right: 7px;
                 left: auto;
+                margin-right: 0;
             }
         }
     }
