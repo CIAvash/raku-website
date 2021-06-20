@@ -68,8 +68,12 @@ pre code {
 .navbar {
     padding: 0 10px;
 
-    .logo {
-        transform: rotate(-15deg);
+    .navbar-brand {
+        border: 0;
+
+        .logo {
+            transform: rotate(-15deg);
+        }
     }
 
     .nav-link {
