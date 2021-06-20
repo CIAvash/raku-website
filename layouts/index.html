@@ -25,10 +25,10 @@
                         </div>
                     </div>
                 </label>
-                {{ $file_path := printf "/code_examples/%s.raku" $card_name}}
-                {{ if (fileExists $file_path) }}
+                {{- $file_path := printf "/code_examples/%s.raku" $card_name -}}
+                {{- if (fileExists $file_path) -}}
                 <div class="raku-accordion-content">
-                    {{ $code := readFile $file_path }}
+                    {{- $code := readFile $file_path -}}
                     {{ highlight $code $highlight_language "" }}
                 </div>
                 {{ end }}
