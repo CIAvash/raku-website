@@ -172,6 +172,9 @@ other = "ماتریکس"
 [room]
 other = "اتاق"
 
+[space]
+other = "مکان"
+
 [proprietary]
 other = "انحصاری"
 

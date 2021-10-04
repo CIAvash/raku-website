@@ -8,7 +8,7 @@ title: کامیونیتی
 ### IRC
 بیشتر گفتگوها در [#raku، کانال آی‌آر‌سی ما]({{< relref "irc" >}}) اتفاق می‌افتد. این سریع‌ترین راه برای گرفتن کمک است.
 ### Matrix
-یک [اتاق](https://matrix.to/#/#raku:libera.chat) و همچنین یک [کامیونیتی](https://matrix.to/#/+raku:matrix.org) برای ماتریکس وجود دارد.
+یک [اتاق](https://matrix.to/#/#raku:libera.chat) و همچنین یک [مکان](https://matrix.to/#/#raku-space:matrix.org) برای ماتریکس وجود دارد.
 ### Discord
 اگر دیسکورد را برای چت ترجیح میدهید، [یک سرور راکو](https://discord.gg/VzYpdQ6) موجود است که پلی هم دارد به آی‌آر‌سی.
 ### Stack Overflow

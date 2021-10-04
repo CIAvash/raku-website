@@ -178,6 +178,9 @@ other = "Matrix"
 [room]
 other = "Room"
 
+[space]
+other = "Space"
+
 [proprietary]
 other = "Proprietary"
 
