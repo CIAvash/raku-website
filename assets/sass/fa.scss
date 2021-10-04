@@ -3,6 +3,10 @@
     src: url('/assets/font/fa/byekan.ttf');
 }
 
-body {
+:lang(fa) :dir(rtl) {
     font-family: Yekan;
+}
+
+:dir(ltr) :dir(rtl) {
+    line-height: 0.9;
 }

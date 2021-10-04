@@ -33,7 +33,7 @@
 
     ~ .raku-accordion-button .card {
         &::before {
-            font-family: Roboto;
+            font-family: Roboto, sans-serif;
             direction: ltr;
             content: '<';
             position: absolute;
@@ -42,4 +42,9 @@
             top: 12px;
         }
     }
+}
+
+:dir(ltr) {
+    font-family: Roboto, sans-serif;
+    text-align: left;
 }

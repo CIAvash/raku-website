@@ -5,10 +5,10 @@
                 <h2 class="section-heading">{{ T "community" }}</h2>
                 <ul>
                     <li>{{ T "irc" }}:
-                        <ul>
+                        <ul dir="ltr">
                             <li>
                                 <a href="https://web.libera.chat/?channel=#raku">#raku</a>,
-                                <a href="http://colabti.org/irclogger/irclogger_log/raku">
+                                <a class="d-inline-block" dir="{{$.Site.Language.LanguageDirection}}" href="http://colabti.org/irclogger/irclogger_log/raku">
                                     {{ T "logs" }}
                                 </a>
                             </li>
@@ -17,7 +17,7 @@
                             </li>
                             <li>
                                 <a href="https://web.libera.chat/?channel=#raku-dev">#raku-dev</a>,
-                                <a href="http://colabti.org/irclogger/irclogger_log/raku-dev">
+                                <a class="d-inline-block" dir="{{$.Site.Language.LanguageDirection}}" href="http://colabti.org/irclogger/irclogger_log/raku-dev">
                                     {{ T "logs" }}
                                 </a>
                             </li>
@@ -26,7 +26,7 @@
                     <li>{{ T "matrix" }}:
                         <ul>
                             <li>{{ T "room" }}:
-                                <ul>
+                                <ul dir="ltr">
                                     <li>
                                         <a href="https://matrix.to/#/#raku:libera.chat">
                                             #raku:libera.chat
@@ -45,7 +45,7 @@
                                 </ul>
                             </li>
                             <li>{{ T "space" }}:
-                                <ul>
+                                <ul dir="ltr">
                                     <li>
                                         <a href="https://matrix.to/#/#raku-space:matrix.org">
                                             #raku-space:matrix.org
@@ -78,17 +78,17 @@
                 <h2 class="section-heading">{{ T "social_media" }}</h2>
                 <ul>
                     <li>{{ T "twitter" }}:
-                        <a href="https://twitter.com/raku_news">@raku_news</a>,
-                        <a href="https://twitter.com/hashtag/rakulang">#rakulang</a>
+                        <a class="d-inline-block" dir="ltr" href="https://twitter.com/raku_news">@raku_news</a>,
+                        <a class="d-inline-block" dir="ltr" href="https://twitter.com/hashtag/rakulang">#rakulang</a>
                     </li>
                     <li>{{ T "reddit" }}:
-                        <a href="https://www.reddit.com/r/rakulang/">r/rakulang</a>
+                        <a class="d-inline-block" dir="ltr" href="https://www.reddit.com/r/rakulang/">r/rakulang</a>
                     </li>
                     <li>{{ T "github" }}:
-                        <a href="https://github.com/Raku">@Raku</a>
+                        <a class="d-inline-block" dir="ltr" href="https://github.com/Raku">@Raku</a>
                     </li>
                     <li>{{ T "stack_overflow" }}:
-                        <a href="https://stackoverflow.com/questions/tagged/raku">[raku]</a>
+                        <a class="d-inline-block" dir="ltr" href="https://stackoverflow.com/questions/tagged/raku">[raku]</a>
                     </li>
                     <li>{{ T "rss" }}:
                         <a href="{{ "/blog/index.xml" | relLangURL }}">{{ T "blog_feed" }}</a>
