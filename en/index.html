@@ -1,6 +1,6 @@
 <!doctype html><html lang=en dir=ltr>
 <head>
-<meta name=generator content="Hugo 0.88.1">
+<meta name=generator content="Hugo 0.91.2">
 <meta charset=utf-8>
 <meta name=viewport content="width=device-width">
 <title> Raku Programming Language </title>
@@ -109,7 +109,7 @@
     }
 }
 
-<span style=color:#c1abea>Rectangle</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>width</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>5</span>, <span style=color:#98c379>height</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>7</span>)<span style=color:#c7bf54>.</span><span style=color:#00b1f7>print_area</span>;
+<span style=color:#c1abea>Rectangle</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>width</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>5</span><span style=color:#c7bf54>,</span> <span style=color:#98c379>height</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>7</span>)<span style=color:#c7bf54>.</span><span style=color:#00b1f7>print_area</span>;
 <span style=color:#8a93a5;font-style:italic># OUTPUT: Area of Rectangle is 35.</span></code></pre></div>
 </div>
 </div>
@@ -227,13 +227,13 @@
 }
 
 <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$modules-load</span> <span style=color:#c7bf54>=</span> <span style=color:#c678dd>start</span> <span style=color:#dcaeea>@files</span>
-    <span style=color:#c7bf54>.</span><span style=color:#ef8383>grep</span>(/<span style=color:#56b6c2> \</span><span style=color:#bda26f>.</span>(<span style=color:#56b6c2>yaml</span><span style=color:#c7bf54>|</span><span style=color:#56b6c2>yml</span>)<span style=color:#56b6c2> </span><span style=color:#bda26f>$</span>/)
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>grep</span>(/<span style=color:#56b6c2> </span><span style=color:#d26464;font-weight:700>\</span><span style=color:#56b6c2>.</span>(<span style=color:#56b6c2>yaml</span><span style=color:#c7bf54>|</span><span style=color:#56b6c2>yml</span>)<span style=color:#56b6c2> </span><span style=color:#bda26f>$</span>/)
     <span style=color:#c7bf54>.</span><span style=color:#ef8383>sort</span>(<span style=color:#c7bf54>-*.</span><span style=color:#ef8383>s</span>)
-    <span style=color:#c7bf54>.</span><span style=color:#ef8383>race</span>(<span style=color:#98c379>batch</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>1</span>, <span style=color:#98c379>degree</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>6</span>)
+    <span style=color:#c7bf54>.</span><span style=color:#ef8383>race</span>(<span style=color:#98c379>batch</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>1</span><span style=color:#c7bf54>,</span> <span style=color:#98c379>degree</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#d19a66>6</span>)
     <span style=color:#c7bf54>.</span><span style=color:#ef8383>map</span>(<span style=color:#c678dd>-&gt;</span> <span style=color:#dcaeea>$file</span> {
             <span style=color:#c678dd>my</span> <span style=color:#dcaeea>$yaml</span> <span style=color:#c7bf54>=</span> <span style=color:#ef8383>self</span><span style=color:#c7bf54>!</span><span style=color:#00b1f7>load-yaml</span>(<span style=color:#dcaeea>$file</span><span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$schema</span><span style=color:#c7bf54>,</span> <span style=color:#dcaeea>$problems</span>);
             <span style=color:#c678dd>with</span> <span style=color:#dcaeea>$yaml</span> {
-                <span style=color:#c1abea>Easii::Model::Module</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>parsed</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$yaml</span>, <span style=color:#98c379>source</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$file</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>basename</span>)
+                <span style=color:#c1abea>Easii::Model::Module</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>new</span>(<span style=color:#98c379>parsed</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$yaml</span><span style=color:#c7bf54>,</span> <span style=color:#98c379>source</span> <span style=color:#c7bf54>=&gt;</span> <span style=color:#dcaeea>$file</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>basename</span>)
             }
      })
     <span style=color:#c7bf54>.</span><span style=color:#ef8383>eager</span>;
@@ -376,7 +376,7 @@
 <span style=color:#c678dd>use</span> <span style=color:#ef8383>NativeCall</span>;
 
 <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_init</span> (<span style=color:#ef8383>str</span> <span style=color:#dcaeea>$appname</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#ef8383>int32</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
-<span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_uninit</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
+<span style=color:#c678dd>sub</span> <span style=color:#c1abea>notify_uninit</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
 <span style=color:#c678dd>class</span> <span style=color:#76a9f9>NotifyNotification</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>repr</span>(&#39;<span style=color:#98c379>CPointer</span>&#39;) { <span style=color:#c7bf54>*</span> }
 <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_notification_new</span> (<span style=color:#ef8383>str</span> <span style=color:#dcaeea>$summary</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>str</span> <span style=color:#dcaeea>$body</span><span style=color:#c7bf54>,</span> <span style=color:#ef8383>str</span> <span style=color:#dcaeea>$icon</span> <span style=color:#c678dd>--&gt;</span> <span style=color:#c1abea>NotifyNotification</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
 <span style=color:#c678dd>sub</span> <span style=color:#00b1f7>notify_notification_show</span> (<span style=color:#c1abea>NotifyNotification</span>) <span style=color:#c678dd>is</span> <span style=color:#c678dd>native</span>(&#39;<span style=color:#98c379>notify</span>&#39;) { <span style=color:#c7bf54>*</span> }
@@ -414,29 +414,29 @@
 </label><div class=raku-accordion-content><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#c678dd>=begin</span><span style=color:#7e97c3> </span><span style=color:#c678dd>pod</span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3></span><span style=color:#c678dd>=head1</span><span style=color:#a2cbff;font-weight:700> Documenting code in </span><span style=color:#c678dd>C</span>&lt;<span style=color:#70b33f>Raku</span>&gt;<span style=color:#a2cbff;font-weight:700>
-</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
-</span><span style=color:#7e97c3></span><span style=color:#c678dd>=item</span><span style=color:#7e97c3> </span><span style=color:#c678dd>L</span>&lt;<span style=color:#70b33f>Raku docs|https://docs.raku.org</span>&gt;<span style=color:#7e97c3>
+</span><span style=color:#a2cbff;font-weight:700>
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#c678dd>=item</span><span style=color:#7e97c3> </span><span style=color:#c678dd>L</span>&lt;<span style=color:#70b33f>Raku docs|https://docs.raku.org</span>&gt;<span style=color:#7e97c3>
 </span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3></span><span style=color:#c678dd>=end pod</span>
 
 <span style=color:#c678dd>=begin</span><span style=color:#7e97c3> </span><span style=color:#c678dd>pod</span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3></span><span style=color:#c678dd>=head1</span><span style=color:#a2cbff;font-weight:700> Red
-</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
-</span><span style=color:#7e97c3>Take a look at our Documentation: </span><span style=color:#c678dd>L</span>&lt;<span style=color:#70b33f>https://fco.github.io/Red/</span>&gt;<span style=color:#7e97c3>
+</span><span style=color:#a2cbff;font-weight:700>
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>Take a look at our Documentation: </span><span style=color:#c678dd>L</span>&lt;<span style=color:#70b33f>https://fco.github.io/Red/</span>&gt;<span style=color:#7e97c3>
 </span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3></span><span style=color:#c678dd>=head2</span><span style=color:#a2cbff;font-weight:700> Red - A **WiP** ORM for Raku
-</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
-</span><span style=color:#7e97c3></span><span style=color:#c678dd>=head2</span><span style=color:#a2cbff;font-weight:700> INSTALL
-</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>Install with (you need **rakudo 2018.12-94-g495ac7c00** or **newer**):
-</span><span style=color:#7e97c3>
-</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>bash</span>&gt;
+</span><span style=color:#a2cbff;font-weight:700>
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#c678dd>=head2</span><span style=color:#a2cbff;font-weight:700> INSTALL
+</span><span style=color:#a2cbff;font-weight:700>Install with (you need **rakudo 2018.12-94-g495ac7c00** or **newer**):
+</span><span style=color:#a2cbff;font-weight:700>
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>bash</span>&gt;
 zef install Red
 <span style=color:#c678dd>=end code</span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3>
 </span><span style=color:#7e97c3></span><span style=color:#c678dd>=head2</span><span style=color:#a2cbff;font-weight:700> SYNOPSIS
-</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#7e97c3>
-</span><span style=color:#7e97c3></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>raku</span>&gt;
+</span><span style=color:#a2cbff;font-weight:700>
+</span><span style=color:#a2cbff;font-weight:700></span><span style=color:#c678dd>=begin code</span> :<span style=color:#b3d23c>lang</span>&lt;<span style=color:#98c379>raku</span>&gt;
 <span style=color:#c678dd>use</span> <span style=color:#76a9f9>Red</span>:<span style=color:#b3d23c>api</span>&lt;<span style=color:#98c379>2</span>&gt;;
 <span style=color:#c1abea>model</span> <span style=color:#c1abea>Person</span> {<span style=color:#c7bf54>...</span>}
 <span style=color:#c1abea>model</span> <span style=color:#c1abea>Post</span> <span style=color:#c678dd>is</span> <span style=color:#c678dd>rw</span> {
@@ -550,7 +550,7 @@ zef install Red
 </div>
 </label><div class=raku-accordion-content><div class=highlight><pre tabindex=0 style=color:#b0c4de;background-color:#282c34;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-raku data-lang=raku><span style=color:#ef8383>say</span> <span style=color:#ef8383>Date</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>today</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>year</span>;
 <span style=color:#8a93a5;font-style:italic># Output: 2020</span>
-<span style=color:#ef8383>say</span> <span style=color:#ef8383>Date</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>today</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>later</span>(:<span style=color:#98c379>2years</span>)<span style=color:#c7bf54>.</span><span style=color:#ef8383>year</span>;
+<span style=color:#ef8383>say</span> <span style=color:#ef8383>Date</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>today</span><span style=color:#c7bf54>.</span><span style=color:#ef8383>later</span>(:<span style=color:#d19a66>2</span><span style=color:#98c379>years</span>)<span style=color:#c7bf54>.</span><span style=color:#ef8383>year</span>;
 <span style=color:#8a93a5;font-style:italic># Output: 2022</span>
 
 <span style=color:#8a93a5;font-style:italic># TODO: Add more examples</span>
