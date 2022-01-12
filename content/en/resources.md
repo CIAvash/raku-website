@@ -85,7 +85,7 @@ See [a helpful chart of Raku Books](https://perl6book.com/) or pick from the lis
 - [Perl 6 Fundamentals](https://www.apress.com/us/book/9781484228982), by Moritz Lenz (published, print and ebook)
 - [Parsing with Perl 6 Regexes and Grammars](https://smile.amazon.com/dp/1484232275/), by Moritz Lenz (published, print and ebook)
 - [Learning Perl 6](https://www.learningperl6.com/), by Brian D. Foy (published, print)
-- [Metagenomics](https://www.gitbook.com/book/kyclark/metagenomics/details), by Ken Youens-Clark (published, ebook)
+- [Metagenomics](https://kyclark.gitbooks.io/metagenomics/content/), by Ken Youens-Clark (published, ebook)
 - [Learning to program with Perl 6: First Steps](https://www.amazon.com/gp/product/B07221XCVL), by JJ Merelo (published, ebook)
 - [Migrating to Perl 6](https://deeptext.media/migrating-to-perl6/), by Andrew Shitov (in work)
 - [Web Application Development in Perl 6](https://leanpub.com/bailador), by Gabor Szabo (in work)
