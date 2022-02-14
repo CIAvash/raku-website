@@ -13,7 +13,7 @@ If you don't have an IRC client installed, you can use [your browser to connect 
 
 If you prefer to chat on Matrix or Discord, our [Discord server](https://discord.gg/VzYpdQ6) and [matrix room](https://matrix.to/#/#raku:libera.chat) are bridged with the IRC channels.
 
-If you missed an interesting discussion on #raku - don't worry, there are [public logs available at colabti.org](http://colabti.org/irclogger/irclogger_log/raku).
+If you missed an interesting discussion on #raku - don't worry, there are [public logs available at irclogs.raku.org](https://irclogs.raku.org).
 {{</section>}}
 {{</col>}}
 

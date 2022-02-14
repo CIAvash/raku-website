@@ -14,7 +14,7 @@ url: community/irc
 
 اگر ترجیح میدید در ماتریکس یا دیسکورد با ما چت کنید، [سرور دیسکورد](https://discord.gg/VzYpdQ6) و [اتاق ماتریکس](https://matrix.to/#/#raku:libera.chat) به کانال‌های آی‌آرسی بریج شده‌اند.
 
-اگر گفتگوی جالبی را از دست دادید، نگران نباشید، [لاگ‌های عمومی در colabti.org در دسترس هستند](http://colabti.org/irclogger/irclogger_log/raku).
+اگر گفتگوی جالبی را از دست دادید، نگران نباشید، [لاگ‌های عمومی در irclogs.raku.org در دسترس هستند](https://irclogs.raku.org).
 
 {{</section>}}
 {{</col>}}
