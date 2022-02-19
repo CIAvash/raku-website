@@ -41,7 +41,7 @@ languages:
           weight: 5
         - identifier: modules
           name: Modules
-          url: https://modules.raku.org/
+          url: https://raku.land/
           weight: 6
         - identifier: fun
           name: Fun
@@ -88,7 +88,7 @@ languages:
           weight: 5
         - identifier: modules
           name: ماژول‌ها
-          url: https://modules.raku.org/
+          url: https://raku.land/
           weight: 6
         - identifier: fun
           name: فان
