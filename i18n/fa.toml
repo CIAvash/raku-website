@@ -190,6 +190,9 @@ other = "شبکه‌های اجتماعی"
 [twitter]
 other = "توئیتر"
 
+[mastodon]
+other = "ماستودون"
+
 [reddit]
 other = "ردیت"
 

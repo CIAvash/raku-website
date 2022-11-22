@@ -196,6 +196,9 @@ other = "Social Media"
 [twitter]
 other = "Twitter"
 
+[mastodon]
+other = "Mastodon"
+
 [reddit]
 other = "Reddit"
 
