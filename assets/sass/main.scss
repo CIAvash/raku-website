@@ -148,11 +148,6 @@ pre code {
 
 .raku-accordion-item {
     margin-bottom: 10px;
-
-    @media (min-width: 991px) {
-        display: grid;
-        grid-template-columns: 15px 1fr 2fr;
-    }
 }
 
 .raku-accordion-input {
