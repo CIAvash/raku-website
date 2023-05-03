@@ -18,3 +18,4 @@ url: community/irc
 
 {{</section>}}
 {{</col>}}
+{{</row>}}
