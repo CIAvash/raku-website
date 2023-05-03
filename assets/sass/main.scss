@@ -60,14 +60,11 @@ hr {
 code {
     color: #e45797;
     background-color: $color1;
-    padding: 2px;
+    padding: 7px 5px;
+    border-radius: 5px;
 }
 
-pre code {
-    background: transparent;
-}
-
-.navbar {
+.wrapper .navbar {
     padding: 0 10px;
 
     .navbar-brand {
@@ -85,15 +82,11 @@ pre code {
         /* text-decoration-thickness: 2px; */
         border-bottom: 2px solid $color3;
         margin: 0 5px;
-        padding: 5px 0px !important;
-        color: #bbb !important;
+        padding: 5px 0px;
+        color: #bbb;
 
-        &.active {
-            color: lighten($color3, 33%) !important;
-        }
-
-        &:hover {
-            color: lighten($color3, 33%) !important;
+        &:hover, &.active {
+            color: lighten($color3, 33%);
         }
     }
 
@@ -107,11 +100,11 @@ pre code {
 }
 
 .navbar-brand, .jumbotron h1 {
-    color: $color5 !important;
+    color: $color5;
 }
 
-.bg-dark, .jumbotron, #content > .row, article, .main-footer {
-    background-color: $color2 !important;
+.navbar, header.jumbotron, #content > .row, article, .main-footer {
+    background-color: $color2;
 }
 
 .jumbotron {
@@ -138,7 +131,7 @@ pre code {
 
 .raku-accordion {
     .card {
-        border-radius: 5px !important;
+        border-radius: 5px;
     }
 
     .card-body {
@@ -224,7 +217,7 @@ pre code {
 
 $pre_border_radius: 7px;
 pre {
-    font-family: 'Roboto Mono', monospace !important;
+    font-family: 'Roboto Mono', monospace;
     background-color: #282c34;
     color: lightsteelblue;
     white-space: pre-wrap;
@@ -233,6 +226,11 @@ pre {
 
     &, code {
         unicode-bidi: normal;
+    }
+
+    code {
+        background: transparent;
+        padding: 0;
     }
 }
 
@@ -306,4 +304,68 @@ article {
             margin: 0 4px;
         }
     }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+      background: #eee;
+      color: $color2;
+  }
+
+  a {
+      color: #026982;
+
+      &:hover {
+          color: #13505e;
+      }
+  }
+
+  code {
+      color: $color5;
+      background-color: $color11;
+  }
+
+  .navbar, header.jumbotron, #content > .row, section, article, .main-footer {
+      background-color: #ddd;
+  }
+
+  .wrapper .navbar a[href*="//"]::after {
+      filter: brightness(70%);
+  }
+
+  .navbar-brand {
+      font-weight: bold;
+  }
+
+  .navbar-brand, .jumbotron h1 {
+      color: $color3;
+  }
+
+  .section-heading {
+      color: darken($color12, 16%);
+  }
+
+  .wrapper .navbar .nav-link {
+      color: $color2;
+
+      &:hover, &.active {
+          color: $color3;
+      }
+  }
+
+  .raku-accordion-input {
+      ~ .raku-accordion-button .card {
+            background-color: lighten($color11, 30%);
+            color: darken($color11, 15%);
+      }
+
+      &:checked ~ .raku-accordion-button .card {
+          background-color: lighten($color11, 10%);
+          color: #fbfbfb;
+
+          &::before {
+              color: $color1;
+          }
+      }
+  }
 }
