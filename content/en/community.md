@@ -10,8 +10,6 @@ description:  We are a bunch of volunteers developing Raku and Raku applications
 Much discussion happens on [#raku, our IRC channel]({{< relref "/irc" >}}). This is the fastest way to get help.
 ### Matrix
 There is a matrix [room](https://matrix.to/#/#raku:libera.chat) and also a [space](https://matrix.to/#/#raku-space:matrix.org). 
-### Discord
-If you prefer Discord for live chat, there is [a Discord server](https://discord.gg/VzYpdQ6) available that is also bridged to the IRC.
 ### Stack Overflow
 Many questions and answers marked with [Raku tag](https://stackoverflow.com/questions/tagged/raku).
 {{</section>}}

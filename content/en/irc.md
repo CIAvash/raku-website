@@ -11,7 +11,7 @@ We discuss questions about Raku, how to install a compiler, proposals for small 
 
 If you don't have an IRC client installed, you can use [your browser to connect to IRC](https://web.libera.chat/?channel=#raku).
 
-If you prefer to chat on Matrix or Discord, our [Discord server](https://discord.gg/VzYpdQ6) and [matrix room](https://matrix.to/#/#raku:libera.chat) are bridged with the IRC channels.
+If you prefer to chat on Matrix, our [matrix room](https://matrix.to/#/#raku:libera.chat) is bridged with the IRC channels.
 
 If you missed an interesting discussion on #raku - don't worry, there are [public logs available at irclogs.raku.org](https://irclogs.raku.org).
 {{</section>}}

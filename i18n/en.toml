@@ -184,9 +184,6 @@ other = "Space"
 [proprietary]
 other = "Proprietary"
 
-[discord]
-other = "Discord"
-
 [raku_server]
 other = "Raku server"
 
