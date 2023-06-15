@@ -199,9 +199,6 @@ other = "Twitter"
 [mastodon]
 other = "Mastodon"
 
-[reddit]
-other = "Reddit"
-
 [github]
 other = "GitHub"
 
