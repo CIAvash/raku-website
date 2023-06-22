@@ -9,7 +9,9 @@ description:  We are a bunch of volunteers developing Raku and Raku applications
 ### Internet Relay Chat (IRC)
 Much discussion happens on [#raku, our IRC channel]({{< relref "/irc" >}}). This is the fastest way to get help.
 ### Matrix
-There is a matrix [room](https://matrix.to/#/#raku:libera.chat) and also a [space](https://matrix.to/#/#raku-space:matrix.org). 
+There is a Matrix [room](https://matrix.to/#/#raku:libera.chat) and also a [space](https://matrix.to/#/#raku-space:matrix.org).
+### Zulip
+We have a [Zulip organization](https://raku.zulipchat.com), using the Cloud Standard hosting, thanks to [Zulip](https://zulip.com/)'s sponsorship.
 ### Stack Overflow
 Many questions and answers marked with [Raku tag](https://stackoverflow.com/questions/tagged/raku).
 {{</section>}}

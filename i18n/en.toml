@@ -181,6 +181,12 @@ other = "Room"
 [space]
 other = "Space"
 
+[zulip]
+other = "Zulip"
+
+[zulip_org]
+other = "Zulip organization"
+
 [proprietary]
 other = "Proprietary"
 

@@ -173,7 +173,13 @@ other = "ماتریکس"
 other = "اتاق"
 
 [space]
-other = "مکان"
+other = "فضا"
+
+[zulip]
+other = "زولیپ"
+
+[zulip_org]
+other = "سازمان زولیپ"
 
 [proprietary]
 other = "انحصاری"
