@@ -196,6 +196,9 @@ other = "توئیتر"
 [mastodon]
 other = "ماستودون"
 
+[lemmy]
+other = "لمی"
+
 [github]
 other = "گیت‌هاب"
 

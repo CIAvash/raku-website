@@ -202,6 +202,9 @@ other = "Twitter"
 [mastodon]
 other = "Mastodon"
 
+[lemmy]
+other = "Lemmy"
+
 [github]
 other = "GitHub"
 
