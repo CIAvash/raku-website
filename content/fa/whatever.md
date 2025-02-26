@@ -17,6 +17,7 @@ description: تمام چیزهایی که در دسته‌بندی‌های دی
 - [Neovim](https://neovim.io/): [vim-perl6 plugin](https://github.com/vim-perl/vim-perl6)
 - Emacs:
   - [raku-mode](https://github.com/Raku/raku-mode)، یک major-mode ایمکس برای راکو که برجسته‌سازی نحو و کارهای بیشتری انجام می‌دهد.
+  - [flymake-rakudo](https://github.com/Raku/flymake-rakudo)، بررسی نحو راکو با Flymake.
   - [flycheck-raku](https://github.com/Raku/flycheck-raku)، بررسی نحو راکو با Flycheck.
   - [Unified Raku + Perl + Moose/MooseX::Declare](https://github.com/jrockway/cperl-mode) برجسته‌ساز نحو
   - [Spacemacs](https://github.com/syl20bnr/spacemacs): پوشش ایمکس با کلیدهای ویم و چیزهای بیشتر

@@ -17,6 +17,7 @@ description: Everything that can't be categorized otherwise fits into the "Whate
 - [Neovim](https://neovim.io/): [vim-perl6 plugin](https://github.com/vim-perl/vim-perl6) for better highlighting
 - Emacs:
   - [raku-mode](https://github.com/Raku/raku-mode), an Emacs major mode for Raku which provides syntax highlighting (and more)
+  - [flymake-rakudo](https://github.com/Raku/flymake-rakudo), makes Flymake syntax-check Raku code.
   - [flycheck-raku](https://github.com/Raku/flycheck-raku), makes Flycheck syntax-check Raku code.
   - [Unified Raku + Perl + Moose/MooseX::Declare](https://github.com/jrockway/cperl-mode) syntax highlighting
   - [Spacemacs](https://github.com/syl20bnr/spacemacs): Emacs wrapper with vim key-bindings and with extra stuff
