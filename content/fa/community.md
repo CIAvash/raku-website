@@ -8,7 +8,7 @@ title: کامیونیتی
 ### IRC
 بیشتر گفتگوها در [#raku، کانال آی‌آر‌سی ما]({{< relref "irc" >}}) اتفاق می‌افتد. این سریع‌ترین راه برای گرفتن کمک است.
 ### Matrix
-یک [اتاق](https://matrix.to/#/#raku:libera.chat) و همچنین یک [فضا](https://matrix.to/#/#raku-space:matrix.org) برای ماتریکس وجود دارد.
+یک [فضا](https://matrix.to/#/#raku-space:matrix.org) برای ماتریکس وجود دارد.
 ### Zulip
 ما یک [سازمان زولیپ](https://raku.zulipchat.com) داریم که از میزبانی استاندارد ابری با حمایت [زولیپ](https://zulip.com/) استفاده می‌کند.
 ### Stack Overflow
