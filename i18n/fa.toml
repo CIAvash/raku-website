@@ -258,3 +258,6 @@ other = "ایمیل"
 
 [documentation_team]
 other = "تیم مستندات"
+
+[report_security_issues]
+other = "گزارش مشکلات امنیتی"

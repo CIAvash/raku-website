@@ -264,3 +264,6 @@ other = "Email"
 
 [documentation_team]
 other = "Documentation Team"
+
+[report_security_issues]
+other = "Report Security Issues"
