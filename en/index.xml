@@ -1,19 +1,293 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raku Programming Language</title><link>/en/</link><description>Recent content on Raku Programming Language</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/en/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>/en/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/about/</guid><description>Contributing to this website If you find a bug or want to contribute to this website, you can find the source code repository here. Acknowledgments This site owes its existence to:
-Dozens and dozens of volunteers and drive-by contributors Larry Wall (Perl, Raku, Camelia, helpful feedback, content) Susanne Schmidt (design) Moritz Lenz (initiative, initial version, content, design, server administration) Carl Mäsak (Design, content, constructive bikeshedding) Daniel Ruoso (content, design fixes) Daniel Wright (perl6.</description></item><item><title>Community</title><link>/en/community/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/community/</guid><description>Internet Relay Chat (IRC) Much discussion happens on #raku, our IRC channel. This is the fastest way to get help.
-Matrix There is a Matrix room and also a space.
-Zulip We have a Zulip organization, using the Cloud Standard hosting, thanks to Zulip&amp;rsquo;s sponsorship.
-Stack Overflow Many questions and answers marked with Raku tag.
-Mailing Lists For more persistent discussions (and for the poor folks who can&amp;rsquo;t use IRC) we have several mailing lists.</description></item><item><title>Download</title><link>/en/downloads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/downloads/</guid><description>Rakudo The most mature, production-ready implementation of the Raku language.
-For information on how to download and install Rakudo on your operating system, view rakudo&amp;rsquo;s downloads Page.
-Download Rakudo
-Rakubrew rakubrew is a Raku installation tool. It allows to have multiple versions of different Raku implementations installed in parallel and switch between them.
-Download Rakubrew
-Ecosystem Module Manager If a module manager was not installed alongside your Raku implementation, or if it&amp;rsquo;s not available in your software repositories, you can download and install it directly:</description></item><item><title>Raku Compilers</title><link>/en/compilers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/compilers/</guid><description>Compilers Rakudo and NQP Rakudo runs on MoarVM and the Java Virtual Machine (JVM). It is actively developed on the Rakudo GitHub site. Download or compile Rakudo.
-NQP is not a Raku compiler. NQP is a small subset of Raku used as a foundational tool to help write compilers (including Rakudo) and libraries.
-Historical Compilers Niecza Niecza is a compiler targeting the Common Language Runtime (.NET and Mono). Its goal is to explore the static aspects of Perl 6 and the possibilities for compile-time optimization.</description></item><item><title>raku IRC channel</title><link>/en/community/irc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/community/irc/</guid><description>#raku We discuss questions about Raku, how to install a compiler, proposals for small enhancements to the specification, ideas for new modules - you name it.
-If you don&amp;rsquo;t have an IRC client installed, you can use your browser to connect to IRC.
-If you prefer to chat on Matrix, our matrix room is bridged with the IRC channels.
-If you missed an interesting discussion on #raku - don&amp;rsquo;t worry, there are public logs available at irclogs.</description></item><item><title>Raku is optimized for fun!</title><link>/en/fun/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/fun/</guid><description> Ofun slides Perl 6 is my MMORPG Optimized for fun (IRC conversations) Lessons learned from open source communities My hobby: Troll hugging On Troll Hugging, Hole Digging, and Improving Open Source Communities The Principle of Charity: on the Importance of Using Constructive Arguments (orig. paper)</description></item><item><title>Resources</title><link>/en/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/resources/</guid><description>For Newcommers The Raku Guide Learn Raku in Y minutes Raku Tutorials Perl and Raku Weekly Challenge Code Examples Rosetta Code, programming problems solved in Raku side-by-side with hundreds of other languages Raku Examples, lots of example programs written in Raku Screencasts szabgab.com, Raku screencasts Youtube Raku videos English Programming in Raku - Youtube videos English Youtube Raku videos Non-English Blogs Raku Blog Aggregator Rakudo Weekly Weekly changes in and around Rakudo Raku Advent Calendar help for contributors Misc.</description></item><item><title>STD and viv</title><link>/en/compilers/std-viv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/compilers/std-viv/</guid><description>Note: STD and viv aren't actively developed anymore STD The Raku standard grammar is written in Raku, and specifies how a Raku program is parsed.
-The source code can be found on github in the perl6/std project in the file STD.pm6.
-Both STD.pm and viv are included in the STD package on CPAN.
-viv viv should be read as VI ➔ V, where V and I are Roman numerals. So it&amp;rsquo;s a translator from Perl 6 to Perl 5, expressly designed to run STD.</description></item><item><title>Tools+Whatever</title><link>/en/whatever/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/whatever/</guid><description>Editors, IDEs, * Editors and IDEs CommaIDE: designed specifically for Raku. Community edition available for free, additional features and more regular updates through paid Supporter Program. Atom: Raku syntax highlighter, a plugin that provides Raku highlighting. Follow the instructions in the package readme. Raku script runner See here how to configure both the above plugins, as well as others, to turn Atom into a Raku IDE. Works with the syntax highlighter listed above.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Raku Programming Language</title><link>/en/</link><description>Recent content on Raku Programming Language</description><generator>Hugo -- gohugo.io</generator><language>en</language><atom:link href="/en/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>/en/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/about/</guid><description>&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;section id="Contributing">
+&lt;h2 class="section-heading">Contributing to this website&lt;/h2>
+If you find a bug or want to contribute to this website, you can find the source code repository &lt;a href="https://github.com/CIAvash/raku-website">here&lt;/a>.
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;section id="Acknowledgments">
+&lt;h2 class="section-heading">Acknowledgments&lt;/h2>
+&lt;p>This site owes its existence to:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Raku/raku.org/graphs/contributors">Dozens and dozens of volunteers and drive-by contributors&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.wall.org/~larry/">Larry Wall&lt;/a> (Perl, Raku, Camelia, helpful feedback, content)&lt;/li>
+&lt;li>&lt;a href="http://sushee.schreibsturm.org/">Susanne Schmidt&lt;/a> (design)&lt;/li>
+&lt;li>&lt;a href="https://perlgeek.de/">Moritz Lenz&lt;/a> (initiative, initial version, content, design, server administration)&lt;/li>
+&lt;li>&lt;a href="http://strangelyconsistent.org/">Carl Mäsak&lt;/a> (Design, content, constructive bikeshedding)&lt;/li>
+&lt;li>&lt;a href="http://daniel.ruoso.com/">Daniel Ruoso&lt;/a> (content, design fixes)&lt;/li>
+&lt;li>&lt;a href="http://www.dwright.org/">Daniel Wright&lt;/a> (perl6.org domain)&lt;/li>
+&lt;li>&lt;a href="https://viennan.net/">Carlin Bingham&lt;/a> (pedantic bug fixing)&lt;/li>
+&lt;li>&lt;a href="http://wiki.perl-community.de/Main/HerbertBreunung">Herbert Breunung&lt;/a> (minor content)&lt;/li>
+&lt;li>&lt;a href="https://github.com/zoffixznet">Zoffix Znet&lt;/a> (conversion to Bootstrap)&lt;/li>
+&lt;li>&lt;a href="https://ciavash.name/">Siavash Askari Nasr&lt;/a> (redesign, content, translation)&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;/div></description></item><item><title>Community</title><link>/en/community/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/community/</guid><description>&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;section >
+&lt;h3 id="internet-relay-chat-irc">Internet Relay Chat (IRC)&lt;/h3>
+&lt;p>Much discussion happens on &lt;a href="/en/community/irc/">#raku, our IRC channel&lt;/a>. This is the fastest way to get help.&lt;/p>
+&lt;h3 id="matrix">Matrix&lt;/h3>
+&lt;p>There is a Matrix &lt;a href="https://matrix.to/#/%23raku-space:matrix.org">space&lt;/a>.&lt;/p>
+&lt;h3 id="zulip">Zulip&lt;/h3>
+&lt;p>We have a &lt;a href="https://raku.zulipchat.com">Zulip organization&lt;/a>, using the Cloud Standard hosting, thanks to &lt;a href="https://zulip.com/">Zulip&lt;/a>&amp;rsquo;s sponsorship.&lt;/p>
+&lt;h3 id="stack-overflow">Stack Overflow&lt;/h3>
+&lt;p>Many questions and answers marked with &lt;a href="https://stackoverflow.com/questions/tagged/raku">Raku tag&lt;/a>.&lt;/p>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;section id="MailingLists">
+&lt;h2 class="section-heading">Mailing Lists&lt;/h2>
+&lt;p>For more persistent discussions (and for the poor folks who can&amp;rsquo;t use IRC) we have several mailing lists.&lt;/p>
+&lt;p>As of 2014, the lists have very low traffic (because most activity is on &lt;a href="/en/community/irc/">#raku&lt;/a>), but every question sent to it usually gets answered swiftly by at least one person.&lt;/p></description></item><item><title>Download</title><link>/en/downloads/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/downloads/</guid><description>&lt;div class="row">
+&lt;div class="col-md-12">
+&lt;section id="Rakudo">
+&lt;h2 class="section-heading">Rakudo&lt;/h2>
+&lt;p>The most mature, production-ready implementation of the Raku language.&lt;/p>
+&lt;p>For information on how to download and install Rakudo on your operating system, view &lt;a href="https://rakudo.org/downloads">rakudo&amp;rsquo;s downloads Page&lt;/a>.&lt;/p>
+&lt;p>&lt;a href="https://rakudo.org/downloads" class="btn btn-secondary">Download Rakudo&lt;/a>&lt;/p>
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-12">
+&lt;section id="Rakubrew">
+&lt;h2 class="section-heading">Rakubrew&lt;/h2>
+&lt;p>&lt;a href="https://rakubrew.org/">rakubrew&lt;/a> is a Raku installation
+tool. It allows to have multiple versions of different Raku implementations
+installed in parallel and switch between them.&lt;/p>
+&lt;p>&lt;a href="https://rakubrew.org/" class="btn btn-secondary">Download Rakubrew&lt;/a>&lt;/p>
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-12">
+&lt;section id="Ecosystem">
+&lt;h2 class="section-heading">Ecosystem&lt;/h2>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;h3 id="module-manager">Module Manager&lt;/h3>
+&lt;p>If a module manager was not installed alongside your Raku implementation, or if it&amp;rsquo;s not available in your software repositories, you can download and install it directly:&lt;/p></description></item><item><title>Raku Compilers</title><link>/en/compilers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/compilers/</guid><description>&lt;div class="row">
+&lt;div class="col-md-8">
+&lt;section id="Compilers">
+&lt;h2 class="section-heading">Compilers&lt;/h2>
+&lt;h3 id="rakudo-and-nqp">&lt;a href="https://rakudo.org/">Rakudo&lt;/a> and &lt;a href="https://github.com/Raku/nqp">NQP&lt;/a>&lt;/h3>
+&lt;p>Rakudo runs on &lt;a href="http://moarvm.org/">MoarVM&lt;/a> and the Java Virtual Machine (JVM). It is actively developed on the &lt;a href="https://github.com/rakudo/rakudo">Rakudo GitHub&lt;/a> site. &lt;a href="https://rakudo.org/downloads">Download or compile Rakudo&lt;/a>.&lt;/p>
+&lt;p>NQP is not a Raku compiler. NQP is a small subset of Raku used as a foundational tool to help write compilers (including &lt;a href="https://github.com/rakudo/rakudo/blob/master/src/main.nqp">Rakudo&lt;/a>) and libraries.&lt;/p>
+&lt;h3 id="historical-compilers">Historical Compilers&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sorear/niecza">Niecza&lt;/a>
+Niecza is a compiler targeting the Common Language Runtime (.NET and Mono). Its goal is to explore the static aspects of Perl 6 and the possibilities for compile-time optimization.&lt;/li>
+&lt;li>&lt;a href="/en/compilers/std-viv/">STD&lt;/a>
+STD is Larry Wall&amp;rsquo;s reference implementation of the Perl 6 grammar, parser generator, and some of the semantic verifier. STD is an abbreviation of &amp;ldquo;Standard&amp;rdquo;, as in &amp;ldquo;Perl6.0.0-STD&amp;rdquo;. It is written in Perl 6, transliterated into Perl 5 by viv. It is also used by various phases of several other compilers (mildew, perlito, elf).&lt;/li>
+&lt;li>&lt;a href="/en/compilers/std-viv/">viv&lt;/a>
+viv (&amp;ldquo;vi&amp;rdquo; to &amp;ldquo;v&amp;rdquo;, 6 to 5) is a compiler that uses STD as its front-end. STD itself uses viv to build. It is actively developed along with STD.&lt;/li>
+&lt;li>&lt;a href="https://fglock.github.io/Perlito/">Perlito&lt;/a>
+Perlito, also known as MiniPerl6, is a subset of Perl 6, designed as a light bootstrapping language. You can &lt;a href="https://fglock.github.io/Perlito/perlito/perlito6.html">try it online&lt;/a>. It is actively developed &lt;a href="https://github.com/fglock/Perlito/">here&lt;/a>.&lt;/li>
+&lt;li>&lt;a href="https://en.wikipedia.org/wiki/Pugs">Pugs&lt;/a>
+Pugs is written in Haskell. Maintenance releases for successive versions of ghc are &lt;a href="https://hackage.haskell.org/package/Pugs">published&lt;/a> to Hackage.&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="Supplementals">
+&lt;h2 class="section-heading">Supplementals&lt;/h2>
+&lt;p>&lt;a href="https://github.com/niner/Inline-Perl5">Inline::Perl5&lt;/a> executes Perl code in Raku. Supports Perl modules including XS modules like DBI. Allows passing integers, strings, arrays and hashes. Also supports calling methods on Perl objects from Raku and calling methods on Raku objects from Perl.&lt;/p></description></item><item><title>raku IRC channel</title><link>/en/community/irc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/community/irc/</guid><description>&lt;div class="row">
+&lt;div class="col-md-4">
+&lt;section id="Raku">
+&lt;h2 class="section-heading">#raku&lt;/h2>
+&lt;p>We discuss questions about Raku, how to install a compiler, proposals for small enhancements to the specification, ideas for new modules - you name it.&lt;/p>
+&lt;p>If you don&amp;rsquo;t have an IRC client installed, you can use &lt;a href="https://web.libera.chat/?channel=#raku">your browser to connect to IRC&lt;/a>.&lt;/p>
+&lt;p>If you missed an interesting discussion on #raku - don&amp;rsquo;t worry, there are &lt;a href="https://irclogs.raku.org">public logs available at irclogs.raku.org&lt;/a>.&lt;/p>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-8">
+&lt;section id="Bots">
+&lt;h2 class="section-heading">Bots&lt;/h2>
+&lt;p>A variety of IRC bots make our life easier, here&amp;rsquo;s a short explanation of what they do - &lt;a href="https://howcaniexplainthis.blogspot.com/2009/11/what-perl6-irc-bots-do.html">courtesy by frettled&lt;/a>.&lt;/p></description></item><item><title>Raku is optimized for fun!</title><link>/en/fun/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/fun/</guid><description>&lt;div class="row">
+&lt;div class="col-md-12">
+&lt;section >
+&lt;ul>
+&lt;li>&lt;a href="http://www.slideshare.net/autang/ofun-optimizing-for-fun">Ofun slides&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://strangelyconsistent.org/blog/perl-6-is-my-mmorpg">Perl 6 is my MMORPG&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://perlgeek.de/blog-en/perl-6/optimized-for-fun.html">Optimized for fun&lt;/a> (IRC conversations)&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@audrey.tang/lessons-i-ve-learned-32f5d8107e34">Lessons learned from open source communities&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://pugs.blogs.com/audrey/2009/08/my-hobby-troll-hugging.html">My hobby: Troll hugging&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://perl6.party/post/On-Troll-Hugging-Hole-Digging-and-Improving-Open-Source-Communities">On Troll Hugging, Hole Digging, and Improving Open Source Communities&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://effectiviology.com/principle-of-charity/">The Principle of Charity&lt;/a>: on the Importance of Using Constructive Arguments (&lt;a href="https://www.jstor.org/stable/20123725">orig. paper&lt;/a>)&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;/div></description></item><item><title>Resources</title><link>/en/resources/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/resources/</guid><description>&lt;div class="row">
+&lt;div class="col-md-4">
+&lt;section id="ForNewcomers">
+&lt;h2 class="section-heading">For Newcommers&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://raku.guide/">The Raku Guide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://learnxinyminutes.com/docs/raku/">Learn Raku in Y minutes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/perlpilot/perl6-docs">Raku Tutorials&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://perlweeklychallenge.org/">Perl and Raku Weekly Challenge&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="CodeExamples">
+&lt;h2 class="section-heading">Code Examples&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://rosettacode.org/wiki/Category:Raku">Rosetta Code&lt;/a>, programming problems solved in Raku side-by-side with hundreds of other languages&lt;/li>
+&lt;li>&lt;a href="https://examples.perl6.org/">Raku Examples&lt;/a>, lots of example programs written in Raku&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="Screencasts">
+&lt;h2 class="section-heading">Screencasts&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://szabgab.com/perl6.html#screencast">szabgab.com&lt;/a>, Raku screencasts&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLRuESFRW2Fa77XObvk7-BYVFwobZHdXdK">Youtube Raku videos&lt;/a> English&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLY6oTPmKnKbbMOdyKsY9U2KS4BCOMmAzR">Programming in Raku - Youtube videos&lt;/a> English&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/playlist?list=PLRuESFRW2Fa6PBxZ8oQhKqV8zZak3bHNN">Youtube Raku videos&lt;/a> Non-English&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-4">
+&lt;section id="Blogs">
+&lt;h2 class="section-heading">Blogs&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://pl6anet.org/">Raku Blog Aggregator&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://rakudoweekly.blog/">Rakudo Weekly&lt;/a> Weekly changes in and around Rakudo&lt;/li>
+&lt;li>&lt;a href="https://raku-advent.blog/">Raku Advent Calendar&lt;/a> &lt;a href="https://github.com/Raku/advent/blob/master/CONTRIBUTING.md">help for contributors&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="MiscellaneousSources">
+&lt;h2 class="section-heading">Misc. Sources&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="http://www.jnthn.net/articles.shtml">Presentations by Jonathan Worthington&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.ozonehouse.com/mark/periodic/">Periodic table&lt;/a> of Raku operators&lt;/li>
+&lt;li>&lt;a href="https://github.com/perl6/mu/raw/master/docs/Perl6/Cheatsheet/cheatsheet.txt">Raku Cheat Sheet&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="RakufromOtherLanguages">
+&lt;h2 class="section-heading">Raku from Other Languages&lt;/h2>
+&lt;ul>
+&lt;li>Haskell: &lt;a href="https://docs.raku.org/language/haskell-to-p6">Raku from Haskell&lt;/a>&lt;/li>
+&lt;li>Perl:
+&lt;ul>
+&lt;li>&lt;a href="https://perlgeek.de/en/article/5-to-6">perlgeek.de/en/article/5-to-6&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://docs.raku.org/language.html#Migration_guides">docs.raku.org migration guides&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Python: &lt;a href="https://docs.raku.org/language/py-nutshell">Raku from Python&lt;/a>&lt;/li>
+&lt;li>Ruby: &lt;a href="https://docs.raku.org/language/rb-nutshell">Raku from Ruby&lt;/a>&lt;/li>
+&lt;li>JavaScript (Node.JS): &lt;a href="https://docs.raku.org/language/js-nutshell">Raku from JavaScript&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-4">
+&lt;section id="PracticeOnline">
+&lt;h2 class="section-heading">Practice Online&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://exercism.io/tracks/raku">Raku track on exercism.io&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://glot.io/new/raku">Online Raku REPL (glot.io)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://repl.it/languages/raku">Online Raku REPL (repl.it)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://tio.run/#perl6">Online Perl 6 REPL (tio.run)&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="Compilers">
+&lt;h2 class="section-heading">Compilers&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="/en/compilers/">Available Raku compilers&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="PromoteRaku">
+&lt;h2 class="section-heading">Promote Raku&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://marketing.raku.org/">Marketing materials&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-12">
+&lt;section id="Books">
+&lt;h2 class="section-heading">Books published or in work&lt;/h2>
+&lt;p>See &lt;a href="https://perl6book.com/">a helpful chart of Raku Books&lt;/a> or pick from the list below.&lt;/p></description></item><item><title>STD and viv</title><link>/en/compilers/std-viv/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/compilers/std-viv/</guid><description>&lt;div class="alert alert-danger">
+Note: STD and viv aren't actively developed anymore
+&lt;/div>
+&lt;div class="row">
+&lt;div class="col-md-6">
+&lt;section id="STD">
+&lt;h2 class="section-heading">STD&lt;/h2>
+&lt;p>The Raku standard grammar is written in Raku, and specifies how a Raku program is parsed.&lt;/p>
+&lt;p>The source code can be found on &lt;a href="https://github.com/perl6/std/">github in the perl6/std project&lt;/a> in the file &lt;a href="https://github.com/perl6/std/blob/master/STD.pm6">STD.pm6&lt;/a>.&lt;/p>
+&lt;p>Both STD.pm and viv are included in the &lt;a href="https://metacpan.org/release/STD">STD&lt;/a> package on CPAN.&lt;/p>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-6">
+&lt;section id="viv">
+&lt;h2 class="section-heading">viv&lt;/h2>
+&lt;em>viv&lt;/em> should be read as &lt;em>VI&lt;/em> ➔ &lt;em>V&lt;/em>, where V and I are Roman numerals. So it&amp;rsquo;s a translator from Perl 6 to Perl 5, expressly designed to run STD.pm6 - it compiles to Perl 5 code only features that are needed to run STD.pm6. However it can be used by other compilers as a base to produce code for other backends.
+&lt;/section>
+&lt;/div>
+&lt;/div></description></item><item><title>Tools+Whatever</title><link>/en/whatever/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/en/whatever/</guid><description>&lt;div class="row">
+&lt;div class="col-md-8">
+&lt;section id="Whatever">
+&lt;h2 class="section-heading">Editors, IDEs, *&lt;/h2>
+&lt;h3 id="editors-and-ides">Editors and IDEs&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://commaide.com/">CommaIDE&lt;/a>: designed specifically for Raku. Community edition available for free, additional features and more regular updates through paid Supporter Program.&lt;/li>
+&lt;li>&lt;a href="https://atom.io/">Atom&lt;/a>:
+&lt;ul>
+&lt;li>&lt;a href="https://atom.io/packages/language-perl6">Raku syntax highlighter&lt;/a>, a plugin that provides Raku highlighting. Follow the instructions in the package readme.&lt;/li>
+&lt;li>&lt;a href="https://atom.io/packages/script">Raku script runner&lt;/a>&lt;/li>
+&lt;li>See here how to configure both the above plugins, as well as others, to turn &lt;a href="https://github.com/perl6/Atom-as-a-Perl6-IDE">Atom into a Raku IDE&lt;/a>. Works with the syntax highlighter listed above. Can run Raku code from the screen buffer, selection, or a file.&lt;/li>
+&lt;li>&lt;a href="https://atom.io/packages/atom-perl6-editor-tools">Raku Editor Tools&lt;/a>, an Atom plugin that provides a collection of useful Raku editing tools (may not be compatible with the latest Atom).&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Vim: &lt;a href="https://github.com/Raku/vim-raku">Raku syntax highlighting&lt;/a> for better highlighting&lt;/li>
+&lt;li>&lt;a href="https://neovim.io/">Neovim&lt;/a>: &lt;a href="https://github.com/vim-perl/vim-perl6">vim-perl6 plugin&lt;/a> for better highlighting&lt;/li>
+&lt;li>Emacs:
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/Raku/raku-mode">raku-mode&lt;/a>, an Emacs major mode for Raku which provides syntax highlighting (and more)&lt;/li>
+&lt;li>&lt;a href="https://github.com/Raku/flymake-rakudo">flymake-rakudo&lt;/a>, makes Flymake syntax-check Raku code.&lt;/li>
+&lt;li>&lt;a href="https://github.com/Raku/flycheck-raku">flycheck-raku&lt;/a>, makes Flycheck syntax-check Raku code.&lt;/li>
+&lt;li>&lt;a href="https://github.com/jrockway/cperl-mode">Unified Raku + Perl + Moose/MooseX::Declare&lt;/a> syntax highlighting&lt;/li>
+&lt;li>&lt;a href="https://github.com/syl20bnr/spacemacs">Spacemacs&lt;/a>: Emacs wrapper with vim key-bindings and with extra stuff&lt;/li>
+&lt;li>&lt;a href="https://github.com/hlissner/doom-emacs">Doom Emacs&lt;/a>: Emacs wrapper with vim key-bindings and with extra stuff&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Nano: &lt;a href="https://github.com/hankache/raku.nanorc">Raku syntax highlighting&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://padre.perlide.org/">Padre, the Perl IDE&lt;/a>: &lt;a href="https://metacpan.org/pod/Padre::Plugin::Perl6">Padre::Plugin::Perl6&lt;/a>, Raku highlighting and code execution&lt;/li>
+&lt;li>&lt;a href="http://uvviewsoft.com/cudatext/">CudaText&lt;/a>: Raku lexer is present in Addon Manager&lt;/li>
+&lt;/ul>
+&lt;h3 id="miscellaneous">Miscellaneous&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://metacpan.org/pod/Inline::Perl6">Inline::Perl6&lt;/a>, embedding Raku code in Perl&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;div class="col-md-4">
+&lt;section id="Merchandising">
+&lt;h2 class="section-heading">Merchandising&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a href="https://rakudo.spreadshirt.com/">Spreadshirt&lt;/a> (&lt;a href="https://rakudo.spreadshirt.net/de/DE/Shop/">Spreadshirt Germany&lt;/a>)&lt;/li>
+&lt;li>&lt;a href="https://cafepress.com/rakudo">Cafepress&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.zazzle.com/rakudo">Zazzle&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/section>
+&lt;/div>
+&lt;/div></description></item></channel></rss>
